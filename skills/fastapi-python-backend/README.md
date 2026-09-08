@@ -13,4 +13,4 @@ Panduan membangun REST API production-grade dengan FastAPI: struktur proyek, mod
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Pydantic Documentation](https://docs.pydantic.dev/)
 - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
-- [Starlette Documentation](https://www.starlette.io/)
+- [Starlette Documentation](https://starlette.dev/)

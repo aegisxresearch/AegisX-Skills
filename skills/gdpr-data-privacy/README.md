@@ -12,4 +12,5 @@ Panduan menerapkan data privacy (GDPR/undang-undang serupa) secara teknis: data 
 
 - [GDPR (Regulation)](https://gdpr-info.eu/)
 - [EDPB Guidelines](https://www.edpb.europa.eu/)
-- [Privacy by Design](https://iapp.org/resources/article/privacy-by-design-the-7-foundational-principles/)
+- [Privacy by Design (IAPP)](https://iapp.org/news/a/privacy-by-design-gdprs-sleeping-giant)
+- [Privacy by Design: 7 Foundational Principles (PDF)](https://www.thesedonaconference.org/sites/default/files/conference_papers/Recommended%20%5B08b%5D%20Privacy%20By%20Design_Cavoukian.pdf)
