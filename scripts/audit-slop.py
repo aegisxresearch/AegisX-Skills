@@ -72,7 +72,10 @@ GENERIC_VAR_NAMES = re.compile(
 # Anti-AI-slop: AI signature patterns that should NOT appear in content
 AI_SIGNATURE_PATTERNS = [
     re.compile(r"(?i)co-authored-by:\s*(ai|bot|chatgpt|claude|copilot|gemini|openai|anthropic|codebuff|freebuff)"),
-    re.compile(r"(?i)(generated|created|written|produced)\s+(with|by)\s+(ai|artificial intelligence|chatgpt|claude|copilot)"),
+    re.compile(
+        r"(?i)(generated|created|written|produced)\s+(with|by)\s+"
+        r"(ai|artificial intelligence|chatgpt|claude|copilot)"
+    ),
     re.compile(r"(?i)(powered|assisted)\s+by\s+(ai|artificial intelligence|chatgpt|claude|copilot)"),
     re.compile(r"🤖|🧠|✨\s*(generated|created|written)"),
     re.compile(r"(?i)this\s+(document|file|guide|content)\s+was\s+(generated|created|written)\s+(by|with|using)"),
@@ -90,7 +93,11 @@ WATERMARK_PATTERNS = [
 HEADING_EMOJI_RE = re.compile(r"^(#{1,6})\s+[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B50]+\s*", re.M)
 
 # Filler words
-FILLER_WORDS = re.compile(r"\b(just|simply|easily|obviously|clearly|of course|it's worth noting|it is worth noting)\b", re.I)
+FILLER_WORDS = re.compile(
+    r"\b(just|simply|easily|obviously|clearly|"
+    r"of course|it's worth noting|it is worth noting)\b",
+    re.I,
+)
 
 CODE_FENCE_RE = re.compile(r"^```(\w*)", re.M)
 CHECKLIST_EMPTY_RE = re.compile(r"^[-*]\s+\[[ x]\]\s*$", re.M)
@@ -330,16 +337,21 @@ def main() -> int:
             print(f"   [{sev_label}] L{iss['line'] or '---':>4} ({iss['code']}): {iss['message']}")
         print()
 
-    print("--- Ringkasan error (harus diperbaiki) ---")
-    error_types: dict[str, int] = {}
-    for r in all_results.values():
-        for iss in r["issues"]:
-            if iss["severity"] == "error":
-                error_types[iss["code"]] = error_types.get(iss["code"], 0) + 1
-    for code, count in sorted(error_types.items(), key=lambda x: -x[1]):
-        print(f"   {code}: {count}")
+    if total_errors > 0:
+        print("--- Ringkasan error (harus diperbaiki) ---")
+        error_types: dict[str, int] = {}
+        for r in all_results.values():
+            for iss in r["issues"]:
+                if iss["severity"] == "error":
+                    error_types[iss["code"]] = error_types.get(iss["code"], 0) + 1
+        for code, count in sorted(error_types.items(), key=lambda x: -x[1]):
+            print(f"   {code}: {count}")
+        return 1
 
-    return 1
+    if total_warnings > 0:
+        print(f"Warning: {total_warnings} non-blocking issues found. "
+              "Fix when possible but not required for CI.")
+    return 0
 
 
 if __name__ == "__main__":
