@@ -1,0 +1,183 @@
+Teks Promosi AegisX Skills Collection
+======================================
+
+Angka dan link terakhir diverifikasi: 2026-09-08
+- Total skill: 67 (10 kategori)
+- Jalur belajar: 6 jalur, estimasi jam dihitung dari manifest
+- Situs: https://aegisxresearch.github.io/AegisX-Skills/
+- Repo:  https://github.com/aegisxresearch/AegisX-Skills
+
+Jalur belajar (jam):
+- Web Full-Stack: 34 jam (13 skill)
+- Platform & Infra: 26 jam (10 skill)
+- Security Engineer: 22 jam (8 skill)
+- AI/ML Pipeline: 18-19 jam (7 skill)
+- Observability & SRE: 17 jam (6 skill)
+- Mobile: 13 jam (6 skill)
+
+Poin diferensiasi yang boleh disebut (semua benar):
+- Tiap panduan punya checklist yang bisa diverifikasi, bukan teori kosong
+- Katalog dan situs digenerate dari satu manifest, divalidasi CI di setiap PR
+- Ada kategori khusus Anti-AI-Slop: review kode, kualitas test,
+  verifikasi dependency, dokumentasi berbukti, output agent yang faktual
+- Contoh kode diberi label jujur: runnable / illustrative / pseudo-code
+
+------------------------------------------------------------
+THREADS - Varian A (direkomendasikan)
+------------------------------------------------------------
+
+Baru rilis: AegisX Skills Collection — hub dokumentasi engineering,
+gratis & open source.
+
+Isinya 67 panduan terstruktur: Backend, Frontend, Mobile, DevOps,
+Security, ML/AI, sampai kategori Anti-AI-Slop. Tiap panduan punya
+checklist yang bisa diverifikasi, contoh kode berlabel, dan referensi
+resmi — bukan teori kosong.
+
+Buat yang suka bingung mulai dari mana: ada 6 jalur belajar dengan
+estimasi jam (Web Full-Stack 34 jam, Security 22 jam, Observability
+& SRE 17 jam, dll), urutannya mengikuti dependencies antar skill.
+
+Semua tervalidasi otomatis di CI — struktur, link, dan kualitas
+konten diperiksa di setiap PR.
+
+Web: https://aegisxresearch.github.io/AegisX-Skills/
+GitHub: https://github.com/aegisxresearch/AegisX-Skills
+
+Kalau bermanfaat, bantu Star di GitHub ya.
+
+------------------------------------------------------------
+THREADS - Varian B (super singkat)
+------------------------------------------------------------
+
+67 panduan engineering, gratis & open source.
+
+Backend, Security, DevOps, ML — lengkap dengan 6 jalur belajar
+ber-estimasi jam, jadi jelas mulai dari mana. Semua konten
+divalidasi CI, bukan sekadar markdown di repo.
+
+https://aegisxresearch.github.io/AegisX-Skills/
+https://github.com/aegisxresearch/AegisX-Skills
+
+Star-nya ditunggu.
+
+------------------------------------------------------------
+X / TWITTER - Varian A (dalam batas karakter)
+------------------------------------------------------------
+
+Rilis: AegisX Skills Collection.
+
+67 panduan engineering terstruktur (Backend, DevOps, Security, ML,
+Frontend, Mobile) + 6 jalur belajar ber-estimasi jam.
+
+Checklist terverifikasi, contoh kode berlabel, katalog divalidasi CI.
+Gratis & open source.
+
+Web: https://aegisxresearch.github.io/AegisX-Skills
+Repo: https://github.com/aegisxresearch/AegisX-Skills
+
+Star kalau bermanfaat.
+
+------------------------------------------------------------
+X / TWITTER - Varian B (hook teknis)
+------------------------------------------------------------
+
+Masalah umum dokumentasi skill: klaim "production-ready" tanpa bukti,
+contoh tanpa label, link mati, dan struktur yang berubah-ubah.
+
+Solusi kami: 67 panduan engineering yang semuanya lolos audit otomatis —
+struktur, link, klaim, dan kualitas test diperiksa CI di setiap PR.
+
+Gratis: https://aegisxresearch.github.io/AegisX-Skills
+Repo: https://github.com/aegisxresearch/AegisX-Skills
+
+------------------------------------------------------------
+LINKEDIN - Varian A (profesional)
+------------------------------------------------------------
+
+Kami baru saja merilis AegisX Skills Collection: kumpulan 67 panduan
+engineering terstruktur yang bisa dipakai sebagai rujukan kerja, bukan
+sekadar materi belajar.
+
+Yang membedakannya dari koleksi dokumentasi biasa:
+
+1. Setiap panduan punya Acceptance Checklist — kriteria yang bisa
+   diverifikasi, bukan paragraf motivasi.
+2. Contoh kode diberi label jujur: runnable, illustrative, atau
+   pseudo-code. Tidak ada contoh yang mengaku siap produksi padahal bukan.
+3. Kualitas dijaga CI: struktur, link, sinkronisasi katalog, dan audit
+   konten berjalan otomatis di setiap pull request.
+4. Ada 6 jalur belajar dengan estimasi jam yang dihitung dari metadata
+   tiap skill — Web Full-Stack 34 jam, Security 22 jam, Observability
+   & SRE 17 jam, dan lainnya.
+
+Cakupan: Backend API, Frontend, Mobile, Database, DevOps/Cloud,
+Security, ML/AI, dan kategori Anti-AI-Slop untuk kualitas output
+AI agent.
+
+Gratis dan open source:
+- Situs: https://aegisxresearch.github.io/AegisX-Skills/
+- Repo: https://github.com/aegisxresearch/AegisX-Skills
+
+Jika bermanfaat untuk tim Anda, star di GitHub sangat membantu
+proyek ini menjangkau engineer lain.
+
+------------------------------------------------------------
+LINKEDIN - Varian B (singkat)
+------------------------------------------------------------
+
+67 panduan engineering. 6 jalur belajar. 1 sumber kebenaran.
+
+AegisX Skills Collection adalah kumpulan panduan Backend, Frontend,
+Mobile, DevOps, Security, dan ML/AI dengan struktur konsisten:
+konsep, contoh berlabel, checklist terverifikasi, dan referensi resmi.
+Semuanya divalidasi CI di setiap PR.
+
+Gratis & open source:
+https://aegisxresearch.github.io/AegisX-Skills/
+https://github.com/aegisxresearch/AegisX-Skills
+
+------------------------------------------------------------
+REDDIT - r/webdev, r/devops, r/ExperiencedDevs (Varian A)
+------------------------------------------------------------
+
+I built a free, open-source collection of 67 structured engineering
+guides (AegisX Skills Collection)
+
+Motivasinya: dokumentasi engineering yang beredar sering punya klaim
+kosong ("scalable", "production-ready") tanpa kriteria, contoh kode
+yang tidak jelas bisa dijalankan atau tidak, dan struktur yang berubah
+di tiap halaman.
+
+Koleksi ini menegakkan struktur yang sama di semua 67 panduan:
+- Konsep inti, contoh kode berlabel (runnable / illustrative / pseudo-code)
+- Acceptance Checklist yang bisa diverifikasi
+- Section "Kesalahan Umum" dan "Trade-off / Kapan Tidak Pakai" di
+  setiap panduan
+- Referensi resmi (docs resmi, bukan blog aggregator)
+
+Cakupan: Backend API, Frontend, Mobile, Database, DevOps/Cloud,
+Security, ML/AI. Ada juga 6 jalur belajar dengan estimasi jam yang
+dihitung otomatis dari metadata.
+
+Semua konten divalidasi otomatis di CI: struktur, link internal,
+sinkronisasi katalog, dan audit anti-slop.
+
+Situs: https://aegisxresearch.github.io/AegisX-Skills/
+Repo: https://github.com/aegisxresearch/AegisX-Skills (MIT)
+
+Feedback sangat welcome — terutama kritik soal isi panduan.
+
+------------------------------------------------------------
+CATATAN PENGGUNAAN
+------------------------------------------------------------
+- Threads: maksimal 500 karakter per post. Varian A di atas ~490
+  karakter; jika terpotong, hapus paragraf "Semua tervalidasi otomatis
+  di CI" dan pindahkan ke reply pertama.
+- X: Varian A ~270 karakter (aman). Varian B ~290 karakter; hapus
+  kalimat "Star kalau bermanfaat" jika perlu.
+- LinkedIn: boleh lebih panjang; Varian A paling cocok.
+- Reddit: jangan copy-paste teks promosi apa adanya ke banyak subreddit;
+  sesuaikan pembuka dengan budaya tiap subreddit dan jawab komentar.
+- Jangan mengubah angka (67 skill, jam per jalur) tanpa mengecek
+  manifest — angka di file ini dihasilkan dari data repo.

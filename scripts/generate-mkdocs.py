@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from learning_paths import load_hours, render_docs_page
+from learning_paths import PATHS, load_hours, path_hours, path_skill_count, render_docs_page
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "skills" / "manifest.json"
@@ -184,6 +184,7 @@ def build_index(manifest: dict) -> str:
     categories = manifest.get("categories", {})
     by_category = _group_by_category(manifest)
     total = len(manifest.get("skills", []))
+    hours = load_hours()
 
     lines = [
         "# AegisX Skills Collection",
@@ -215,6 +216,24 @@ def build_index(manifest: dict) -> str:
         f"| Database/Data | {len(by_category.get('database-data', []))} |",
         f"| DevOps/Cloud | {len(by_category.get('devops-cloud', []))} |",
         f"| Security | {len(by_category.get('security', []))} |",
+        "",
+        "## Jalur Belajar",
+        "",
+        "<div class=\"path-grid\">",
+    ]
+    for path in PATHS:
+        lo, hi = path_hours(path, hours)
+        dur = f"{lo}-{hi} jam" if lo != hi else f"{lo} jam"
+        lines.append(
+            f'<a class="path-card" href="learning-paths/#{path.key}">'
+            f"<strong>{path.title}</strong>"
+            f'<span class="path-meta">{path_skill_count(path)} skill | {dur}</span>'
+            f"</a>"
+        )
+    lines += [
+        "</div>",
+        "",
+        '<p><a class="md-button" href="learning-paths/">Lihat detail semua jalur</a></p>',
         "",
         "## Daftar Skill per Kategori",
         "",

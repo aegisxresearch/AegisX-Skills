@@ -213,6 +213,42 @@
   font-size: 0.72rem;
 }
 
+/* --- Learning path cards on home --------------------------------------- */
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.path-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--aegis-border);
+  border-left: 3px solid var(--aegis-bronze);
+  border-radius: 12px;
+  text-decoration: none !important;
+  background: var(--aegis-surface);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.path-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--aegis-bronze);
+  box-shadow: 0 6px 18px rgba(176, 141, 87, 0.18);
+}
+
+.path-card strong {
+  display: block;
+  color: var(--aegis-ink);
+  margin-bottom: 0.25rem;
+}
+
+.path-card .path-meta {
+  color: var(--aegis-ink-soft);
+  font-size: 0.78rem;
+}
+
 /* --- Responsive hero ----------------------------------------------------- */
 @media (max-width: 600px) {
   .hero {
