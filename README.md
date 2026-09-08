@@ -174,30 +174,50 @@ Setiap jalur menunjukkan urutan skill yang sebaiknya dipelajari. Estimasi waktu 
 ### Web full-stack
 ```text
 System Design (4h) -> API Design (2h) -> Auth (3h) -> PostgreSQL (3h)
--> React/Next.js (3h) -> Design System (3h) -> A11y (2h) -> Testing (3h)
--> Observability (3h) -> Docker/CI-CD (2+2h)
-Total: ~30 jam
+-> PostgreSQL Query Tuning (3h) -> React/Next.js (3h) -> Design System (3h)
+-> A11y (2h) -> Testing (3h) -> API Observability (2h) -> Docker (2h)
+-> CI/CD (2h) -> GitHub Actions Workflows (2h)
+Total: ~34 jam
 ```
 
 ### AI/ML pipeline
 ```text
 Data Engineering (3h) -> RAG Pipeline (4h) atau LLM Application (3h)
--> MLOps (4h) -> Observability (3h) -> Security (3h)
-Total: ~16-17 jam
+-> MLOps (4h) -> API Observability (2h) -> OpenTelemetry Tracing (3h)
+-> Security (3h)
+Total: ~19-22 jam
 ```
 
 ### Platform & infra
 ```text
 Threat Modeling (3h) -> Secrets (2h) -> Terraform (3h) -> Kubernetes (4h)
--> CI/CD (2h) -> Supply-Chain (2h) -> Incident Response (2h)
-Total: ~18 jam
+-> GitOps (4h) -> CI/CD (2h) -> GitHub Actions Workflows (2h)
+-> SAST & Dependency Scanning (2h) -> Supply-Chain (2h)
+-> Incident Response (2h)
+Total: ~26 jam
+```
+
+### Security engineer
+```text
+Threat Modeling (3h) -> Cybersecurity Fundamentals (3h) -> Auth (3h)
+-> API Security Hardening (3h) -> SAST & Dependency Scanning (2h)
+-> Security Testing DAST+SAST (3h) -> Zero Trust (3h) -> GDPR (2h)
+Total: ~22 jam
+```
+
+### Observability & SRE
+```text
+API Observability (2h) -> OpenTelemetry Tracing (3h)
+-> Prometheus + Grafana (3h) -> Prometheus Alerting & SLO (3h)
+-> Kubernetes Production (4h) -> Incident Response (2h)
+Total: ~17 jam
 ```
 
 ### Mobile
 ```text
 React Native (3h) atau Flutter (3h) -> Offline/state (3h) -> Push (2h)
 -> Security (3h) -> Observability (3h) -> Release (2h)
-Total: ~16 jam
+Total: ~16-19 jam
 ```
 
 ---
