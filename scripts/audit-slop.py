@@ -61,7 +61,8 @@ HOLLOW_CLAIMS = [
 ]
 
 TRADEOFF_KEYWORDS = re.compile(
-    r"\b(kapan tidak|when not|trade-?off|downside|limitation|caveat|hindari|avoid|jeleknya|drawback|failure mode|pros and cons|when to use)\b",
+    r"\b(kapan tidak|when not|trade-?off|downside|limitation|caveat|hindari|avoid|"
+    r"jeleknya|drawback|failure mode|pros and cons|when to use)\b",
     re.I,
 )
 
