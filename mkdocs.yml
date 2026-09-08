@@ -1,8 +1,8 @@
 site_name: AegisX Skills Collection
-site_description: "Kumpulan panduan engineering terstruktur: backend, frontend, AI/ML, database, DevOps, dan security."
+site_description: "Panduan engineering: backend, frontend, AI, data, DevOps, security."
 site_url: https://aegisxresearch.github.io/AegisX-Skills/
 repo_url: https://github.com/aegisxresearch/AegisX-Skills
-docs_dir: .
+docs_dir: docs
 site_dir: site
 theme:
   name: material
@@ -15,24 +15,13 @@ theme:
     scheme: slate
     primary: indigo
     accent: indigo
-exclude_docs: |
-  /.github/
-  /.freebuff/
-  /.venv/
-  /scripts/
-  /site/
-  /AGENTS.md
-  /LICENSE
-  /requirements-docs.txt
-  /ruff.toml
-  /mkdocs.yml
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
   - pymdownx.superfences
 nav:
-  - Home: docs_index.md
+  - Home: index.md
   - Backend API dan Realtime:
       - api-design-patterns: skills/api-design-patterns/README.md
       - api-design-patterns — Panduan Lengkap: skills/api-design-patterns/api-design-patterns.md

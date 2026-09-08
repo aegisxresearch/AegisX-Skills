@@ -89,7 +89,9 @@ def main() -> int:
     end_idx = readme.index(END_MARKER) + len(END_MARKER)
 
     catalog = build_catalog(manifest)
-    new_readme = readme[:start_idx] + START_MARKER + "\n\n" + catalog + END_MARKER + readme[end_idx:]
+    new_readme = (
+        readme[:start_idx] + START_MARKER + "\n\n" + catalog + END_MARKER + readme[end_idx:]
+    )
 
     if new_readme == readme:
         print("✅ Katalog README sudah sinkron, tidak ada perubahan.")

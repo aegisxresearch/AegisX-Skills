@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint GitHub Actions workflows
-        uses: rhysd/actionlint@v1
+        uses: rhysd/actionlint@v1.7.12
         with:
           config_file: .github/actionlint.yml
 
@@ -64,13 +64,13 @@ jobs:
           fi
           echo "✅ Katalog README sinkron dengan manifest."
 
-      - name: Regenerate MkDocs config and home page
+      - name: Regenerate MkDocs config
         run: python3 scripts/generate-mkdocs.py
 
-      - name: Fail if MkDocs files are out of sync
+      - name: Fail if MkDocs config is out of sync
         run: |
-          if ! git diff --exit-code -- mkdocs.yml docs_index.md; then
-            echo "::error::mkdocs.yml / docs_index.md tidak sinkron dengan skills/manifest.json."
+          if ! git diff --exit-code -- mkdocs.yml; then
+            echo "::error::mkdocs.yml tidak sinkron dengan skills/manifest.json."
             echo "Jalankan 'python3 scripts/generate-mkdocs.py' dan commit hasilnya."
             exit 1
           fi

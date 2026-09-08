@@ -1,23 +1,30 @@
 #!/usr/bin/env python3
-"""Generator konfigurasi MkDocs dan halaman home dari skills/manifest.json.
+"""Generator situs MkDocs dari skills/manifest.json.
 
-Menghasilkan:
-1. `mkdocs.yml` — nav dikelompokkan per kategori dari manifest.
-2. `docs_index.md` — halaman home yang menautkan overview dan guide tiap skill.
+Strategi:
+1. Menyinkronkan markdown skill + manifest.json ke `docs/skills/` dan
+   menyalin `CONTRIBUTING.md` ke `docs/`. `docs/` adalah artefak build
+   (gitignored), jadi `skills/` tetap satu-satunya source of truth.
+2. Menghasilkan `docs/index.md` — halaman home yang menautkan overview
+   dan guide tiap skill.
+3. Menghasilkan `mkdocs.yml` dengan `docs_dir: docs` (direktori anak dari
+   config, sesuai aturan MkDocs 1.6+).
 
-Idempotent: tidak menulis file jika isinya sama dengan yang sudah ada.
+Idempotent: file tidak ditulis ulang jika isinya sama.
 """
 
 from __future__ import annotations
 
 import json
+import shutil
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "skills" / "manifest.json"
+DOCS_DIR = ROOT / "docs"
 MKDOCS_YML = ROOT / "mkdocs.yml"
-INDEX_PATH = ROOT / "docs_index.md"
+INDEX_PATH = DOCS_DIR / "index.md"
 
 LEVEL_DISPLAY = {
     "beginner": "Beginner",
@@ -28,26 +35,35 @@ LEVEL_DISPLAY = {
     "beginner-advanced": "Beginner–Advanced",
 }
 
-EXCLUDE_DOCS = [
-    "/.github/",
-    "/.freebuff/",
-    "/.venv/",
-    "/scripts/",
-    "/site/",
-    "/AGENTS.md",
-    "/LICENSE",
-    "/requirements-docs.txt",
-    "/ruff.toml",
-    "/mkdocs.yml",
-]
+
+def _copy_if_changed(src: Path, dst: Path) -> bool:
+    if dst.is_file() and dst.read_bytes() == src.read_bytes():
+        return False
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    return True
 
 
-def _indent(lines: list[str], spaces: int = 2) -> str:
-    prefix = " " * spaces
-    return "\n".join(prefix + line for line in lines) + "\n"
+def sync_docs() -> list[str]:
+    """Salin markdown skill, manifest, dan CONTRIBUTING ke docs/. Kembalikan file yang berubah."""
+    changed: list[str] = []
+
+    for src in sorted((ROOT / "skills").rglob("*.md")):
+        rel = src.relative_to(ROOT / "skills")
+        if _copy_if_changed(src, DOCS_DIR / "skills" / rel):
+            changed.append(f"docs/skills/{rel}")
+
+    manifest_src = ROOT / "skills" / "manifest.json"
+    if _copy_if_changed(manifest_src, DOCS_DIR / "skills" / "manifest.json"):
+        changed.append("docs/skills/manifest.json")
+
+    if _copy_if_changed(ROOT / "CONTRIBUTING.md", DOCS_DIR / "CONTRIBUTING.md"):
+        changed.append("docs/CONTRIBUTING.md")
+
+    return changed
 
 
-def build_mkdocs(manifest: dict, index_name: str) -> str:
+def build_mkdocs(manifest: dict) -> str:
     categories = manifest.get("categories", {})
     skills = manifest.get("skills", [])
 
@@ -57,7 +73,7 @@ def build_mkdocs(manifest: dict, index_name: str) -> str:
     for key in by_category:
         by_category[key].sort(key=lambda s: s.get("id", ""))
 
-    nav = ["  - Home: docs_index.md"]
+    nav = ["  - Home: index.md"]
     for cat_key, cat_title in categories.items():
         cat_skills = by_category.get(cat_key)
         if not cat_skills:
@@ -71,10 +87,10 @@ def build_mkdocs(manifest: dict, index_name: str) -> str:
 
     return f"""\
 site_name: AegisX Skills Collection
-site_description: "Kumpulan panduan engineering terstruktur: backend, frontend, AI/ML, database, DevOps, dan security."
+site_description: "Panduan engineering: backend, frontend, AI, data, DevOps, security."
 site_url: https://aegisxresearch.github.io/AegisX-Skills/
 repo_url: https://github.com/aegisxresearch/AegisX-Skills
-docs_dir: .
+docs_dir: docs
 site_dir: site
 theme:
   name: material
@@ -87,8 +103,7 @@ theme:
     scheme: slate
     primary: indigo
     accent: indigo
-exclude_docs: |
-{_indent(EXCLUDE_DOCS)}markdown_extensions:
+markdown_extensions:
   - admonition
   - toc:
       permalink: true
@@ -115,8 +130,7 @@ def build_index(manifest: dict) -> str:
         "Database, DevOps, Cloud, dan Security.",
         "",
         "> Dokumen ini dihasilkan secara otomatis dari "
-        "[`skills/manifest.json`](./skills/manifest.json). "
-        "Jangan mengedit secara manual.",
+        "[`skills/manifest.json`](./skills/manifest.json). Jangan mengedit secara manual.",
         "",
     ]
 
@@ -143,14 +157,14 @@ def build_index(manifest: dict) -> str:
         "",
         "## Kontribusi",
         "",
-        "Lihat [CONTRIBUTING.md](./CONTRIBUTING.md). ",
+        "Lihat [CONTRIBUTING.md](./CONTRIBUTING.md).",
         "Situs ini dibangun otomatis dari `manifest.json` oleh GitHub Actions.",
         "",
     ]
     return "\n".join(lines).rstrip() + "\n"
 
 
-def write_if_changed(path: Path, content: str) -> bool:
+def _write_if_changed(path: Path, content: str) -> bool:
     if path.is_file() and path.read_text(encoding="utf-8") == content:
         return False
     path.write_text(content, encoding="utf-8")
@@ -163,14 +177,19 @@ def main() -> int:
         return 1
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
-    mkdocs_changed = write_if_changed(MKDOCS_YML, build_mkdocs(manifest, "docs_index.md"))
-    index_changed = write_if_changed(INDEX_PATH, build_index(manifest))
+    synced = sync_docs()
+    mkdocs_changed = _write_if_changed(MKDOCS_YML, build_mkdocs(manifest))
+    index_changed = _write_if_changed(INDEX_PATH, build_index(manifest))
 
     count = len(manifest.get("skills", []))
-    if mkdocs_changed or index_changed:
-        print(f"✅ mkdocs.yml / docs_index.md diperbarui — {count} skill dari manifest.")
+    if synced or mkdocs_changed or index_changed:
+        print(
+            f"✅ docs/ disinkronkan ({len(synced)} file), "
+            f"mkdocs.yml {('diperbarui' if mkdocs_changed else 'sama')}, "
+            f"index.md {('diperbarui' if index_changed else 'sama')} — {count} skill."
+        )
     else:
-        print("✅ mkdocs.yml / docs_index.md sudah sinkron, tidak ada perubahan.")
+        print(f"✅ docs/, mkdocs.yml, dan index.md sudah sinkron — {count} skill.")
     return 0
 
 

@@ -137,7 +137,8 @@ def main() -> int:
                 datetime.strptime(last_reviewed, "%Y-%m-%d")
             except ValueError:
                 errors.append(
-                    f"[manifest] {sid}: last_reviewed bukan tanggal ISO (YYYY-MM-DD): {last_reviewed}"
+                    f"[manifest] {sid}: last_reviewed bukan tanggal ISO "
+                    f"(YYYY-MM-DD): {last_reviewed}"
                 )
 
     # --- 4. Placeholder dan karakter kontrol di file skill ------------------
@@ -207,7 +208,10 @@ def main() -> int:
             print(f"  - {e}")
         return 1
 
-    print(f"✅ Validasi sukses — {len(skill_dirs)} skill, {len(md_files)} file Markdown, manifest sinkron.")
+    print(
+        f"✅ Validasi sukses — {len(skill_dirs)} skill, "
+        f"{len(md_files)} file Markdown, manifest sinkron."
+    )
     return 0
 
 
