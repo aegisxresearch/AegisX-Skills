@@ -21,12 +21,16 @@ import shutil
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from learning_paths import load_hours, render_docs_page
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "skills" / "manifest.json"
 DOCS_DIR = ROOT / "docs"
 ASSETS_DIR = ROOT / "assets"
 MKDOCS_YML = ROOT / "mkdocs.yml"
 INDEX_PATH = DOCS_DIR / "index.md"
+PATHS_PATH = DOCS_DIR / "learning-paths.md"
 
 LEVEL_DISPLAY = {
     "beginner": "Beginner",
@@ -99,7 +103,7 @@ def build_mkdocs(manifest: dict) -> str:
     categories = manifest.get("categories", {})
     by_category = _group_by_category(manifest)
 
-    nav = ["  - Home: index.md"]
+    nav = ["  - Home: index.md", "  - Jalur Belajar: learning-paths.md"]
     for cat_key, cat_title in categories.items():
         cat_skills = by_category.get(cat_key)
         if not cat_skills:
@@ -190,8 +194,8 @@ def build_index(manifest: dict) -> str:
         f"<p>Kumpulan <strong>{total} panduan engineering terstruktur</strong> untuk "
         "programmer, software engineer, DevOps, security, dan ML engineer.</p>",
         '<p class="hero-cta">',
-        '<a class="md-button md-button--primary" href="#daftar-skill">Jelajahi Skill</a>',
-        '<a class="md-button" href="#jalur-belajar">Jalur Belajar</a>',
+        '<a class="md-button md-button--primary" href="learning-paths/">Jalur Belajar</a>',
+        '<a class="md-button" href="#daftar-skill">Jelajahi Skill</a>',
         "</p>",
         "</div>",
         "",
@@ -310,13 +314,17 @@ def main() -> int:
     synced = sync_docs()
     mkdocs_changed = _write_if_changed(MKDOCS_YML, build_mkdocs(manifest))
     index_changed = _write_if_changed(INDEX_PATH, build_index(manifest))
+    hours = load_hours()
+    paths_changed = _write_if_changed(PATHS_PATH, render_docs_page(hours))
 
     count = len(manifest.get("skills", []))
-    if synced or mkdocs_changed or index_changed:
+    if synced or mkdocs_changed or index_changed or paths_changed:
         print(
             f"docs/ disinkronkan ({len(synced)} file), "
             f"mkdocs.yml {'diperbarui' if mkdocs_changed else 'sama'}, "
-            f"index.md {'diperbarui' if index_changed else 'sama'} -- {count} skill."
+            f"index.md {'diperbarui' if index_changed else 'sama'}, "
+            f"learning-paths.md {'diperbarui' if paths_changed else 'sama'} "
+            f"-- {count} skill."
         )
     else:
         print(f"docs/, mkdocs.yml, dan index.md sudah sinkron -- {count} skill.")

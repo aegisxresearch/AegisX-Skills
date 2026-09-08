@@ -13,12 +13,17 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from learning_paths import load_hours, render_readme_section
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "skills" / "manifest.json"
 README_PATH = ROOT / "README.md"
 
 START_MARKER = "<!-- CATALOG_START -->"
 END_MARKER = "<!-- CATALOG_END -->"
+PATHS_START_MARKER = "<!-- PATHS_START -->"
+PATHS_END_MARKER = "<!-- PATHS_END -->"
 
 LEVEL_DISPLAY = {
     "beginner": "Beginner",
@@ -92,6 +97,15 @@ def main() -> int:
     new_readme = (
         readme[:start_idx] + START_MARKER + "\n\n" + catalog + END_MARKER + readme[end_idx:]
     )
+
+    # Regenerate Jalur Belajar section from learning_paths module
+    hours = load_hours()
+    paths_section = render_readme_section(hours)
+    if PATHS_START_MARKER in new_readme and PATHS_END_MARKER in new_readme:
+        p_start = new_readme.index(PATHS_START_MARKER)
+        p_end = new_readme.index(PATHS_END_MARKER) + len(PATHS_END_MARKER)
+        paths_block = PATHS_START_MARKER + "\n\n" + paths_section + PATHS_END_MARKER
+        new_readme = new_readme[:p_start] + paths_block + new_readme[p_end:]
 
     if new_readme == readme:
         print("✅ Katalog README sudah sinkron, tidak ada perubahan.")

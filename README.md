@@ -167,58 +167,98 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 
 ---
 
+<!-- PATHS_START -->
+
 ## Jalur Belajar
 
-Setiap jalur menunjukkan urutan skill yang sebaiknya dipelajari. Estimasi waktu per skill ada di `difficulty_hours` di manifest.
+Setiap jalur menunjukkan urutan skill yang sebaiknya dipelajari.
+Estimasi jam dihitung otomatis dari `difficulty_hours` di manifest
+oleh `scripts/learning_paths.py` — jangan mengedit bagian ini manual.
 
-### Web full-stack
+| Jalur | Skill | Durasi |
+|-------|-------|--------|
+| [Web Full-Stack](#web-full-stack) | 13 skill | 34 jam |
+| [AI/ML Pipeline](#aiml-pipeline) | 7 skill | 18-19 jam |
+| [Platform & Infra](#platform--infra) | 10 skill | 26 jam |
+| [Security Engineer](#security-engineer) | 8 skill | 22 jam |
+| [Observability & SRE](#observability--sre) | 6 skill | 17 jam |
+| [Mobile](#mobile) | 6 skill | 13 jam |
+
+### Web Full-Stack
+
+Engineer yang membangun aplikasi web end-to-end: dari desain API sampai deploy dan monitoring.
+
 ```text
-System Design (4h) -> API Design (2h) -> Auth (3h) -> PostgreSQL (3h)
--> PostgreSQL Query Tuning (3h) -> React/Next.js (3h) -> Design System (3h)
--> A11y (2h) -> Testing (3h) -> API Observability (2h) -> Docker (2h)
--> CI/CD (2h) -> GitHub Actions Workflows (2h)
+system-design-architect (4h) -> api-design-patterns (2h)
+-> auth-implementation-guide (3h) -> postgresql-master (3h)
+-> postgresql-query-tuning (3h) -> react-nextjs-patterns (3h)
+-> design-system-builder (3h) -> accessibility-wcag (2h)
+-> frontend-testing-playbook (3h) -> api-observability (2h)
+-> docker-production-checklist (2h) -> ci-cd-production (2h)
+-> github-actions-workflows (2h)
 Total: ~34 jam
 ```
 
-### AI/ML pipeline
+### AI/ML Pipeline
+
+Engineer yang membangun aplikasi LLM atau pipeline ML produksi.
+
 ```text
-Data Engineering (3h) -> RAG Pipeline (4h) atau LLM Application (3h)
--> MLOps (4h) -> API Observability (2h) -> OpenTelemetry Tracing (3h)
--> Security (3h)
-Total: ~19-22 jam
+data-engineering-pipelines (3h)
+-> rag-pipeline-architect (4h) atau llm-application-engineering (3h)
+-> ml-evaluation-mlops (4h) -> api-observability (2h)
+-> opentelemetry-tracing (3h) -> cybersecurity-fundamentals (3h)
+Total: ~18-19 jam
 ```
 
-### Platform & infra
+### Platform & Infra
+
+Engineer yang mengelola infrastruktur, cluster, dan pipeline deployment.
+
 ```text
-Threat Modeling (3h) -> Secrets (2h) -> Terraform (3h) -> Kubernetes (4h)
--> GitOps (4h) -> CI/CD (2h) -> GitHub Actions Workflows (2h)
--> SAST & Dependency Scanning (2h) -> Supply-Chain (2h)
--> Incident Response (2h)
+threat-modeling-stride (3h) -> secrets-management (2h)
+-> terraform-infrastructure (3h) -> kubernetes-production (4h)
+-> gitops-kubernetes (4h) -> ci-cd-production (2h)
+-> github-actions-workflows (2h) -> sast-dependency-scanning (2h)
+-> supply-chain-security (2h) -> incident-response-sre (2h)
 Total: ~26 jam
 ```
 
-### Security engineer
+### Security Engineer
+
+Engineer yang fokus pada keamanan aplikasi dan infrastruktur.
+
 ```text
-Threat Modeling (3h) -> Cybersecurity Fundamentals (3h) -> Auth (3h)
--> API Security Hardening (3h) -> SAST & Dependency Scanning (2h)
--> Security Testing DAST+SAST (3h) -> Zero Trust (3h) -> GDPR (2h)
+threat-modeling-stride (3h) -> cybersecurity-fundamentals (3h)
+-> auth-implementation-guide (3h) -> api-security-hardening (3h)
+-> sast-dependency-scanning (2h) -> security-testing-dast-sast (3h)
+-> zero-trust-application-security (3h) -> gdpr-data-privacy (2h)
 Total: ~22 jam
 ```
 
 ### Observability & SRE
+
+Engineer yang menjaga reliability: metrik, tracing, alerting, dan respons insiden.
+
 ```text
-API Observability (2h) -> OpenTelemetry Tracing (3h)
--> Prometheus + Grafana (3h) -> Prometheus Alerting & SLO (3h)
--> Kubernetes Production (4h) -> Incident Response (2h)
+api-observability (2h) -> opentelemetry-tracing (3h)
+-> observability-prometheus-grafana (3h)
+-> prometheus-alerting-slo (3h) -> kubernetes-production (4h)
+-> incident-response-sre (2h)
 Total: ~17 jam
 ```
 
 ### Mobile
+
+Engineer yang membangun aplikasi mobile produksi.
+
 ```text
-React Native (3h) atau Flutter (3h) -> Offline/state (3h) -> Push (2h)
--> Security (3h) -> Observability (3h) -> Release (2h)
-Total: ~16-19 jam
+react-native-expo (3h) atau flutter-development (3h)
+-> pwa-offline-first (3h) -> api-security-hardening (3h)
+-> api-observability (2h) -> ci-cd-production (2h)
+Total: ~13 jam
 ```
+<!-- PATHS_END -->
 
 ---
 
