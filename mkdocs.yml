@@ -6,20 +6,47 @@ docs_dir: docs
 site_dir: site
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.sections
     - navigation.expand
+    - navigation.top
     - content.code.copy
     - toc.integrate
+    - search.highlight
   palette:
-    scheme: slate
-    primary: indigo
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+extra_css:
+  - assets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/aegisxresearch
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
   - pymdownx.superfences
+  - pymdownx.details
 nav:
   - Home: index.md
   - Backend API dan Realtime:

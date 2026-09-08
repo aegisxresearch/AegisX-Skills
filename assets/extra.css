@@ -1,0 +1,193 @@
+/* ============================================================
+   AegisX Skills Collection — custom theme
+   Palette sourced from assets/brand-reference.jpeg:
+   warm cream background (#faf8f2), warm black (#14100e),
+   cream-grey (#cfc3bb); bronze accent derived for interactivity.
+   ============================================================ */
+
+/* --- Brand palette --------------------------------------------------- */
+:root {
+  --aegis-bg: #faf8f2;
+  --aegis-surface: #ffffff;
+  --aegis-ink: #14100e;
+  --aegis-ink-soft: #3d3834;
+  --aegis-border: #e6dfd4;
+  --aegis-code-bg: #f3efe8;
+  --aegis-bronze: #b08d57;
+
+  --md-primary-fg-color: #14100e;
+  --md-primary-fg-color--light: #3d3834;
+  --md-primary-fg-color--dark: #000000;
+  --md-accent-fg-color: #b08d57;
+  --md-default-bg-color: var(--aegis-bg);
+  --md-default-fg-color: var(--aegis-ink);
+  --md-default-fg-color--light: var(--aegis-ink-soft);
+  --md-code-bg-color: var(--aegis-code-bg);
+  --md-typeset-a-color: #8a6a3a;
+  --md-typeset-table-color: var(--aegis-border);
+}
+
+[data-md-color-scheme="slate"] {
+  --aegis-bg: #171310;
+  --aegis-surface: #201b17;
+  --aegis-ink: #f5efe6;
+  --aegis-ink-soft: #cfc3bb;
+  --aegis-border: #332c26;
+  --aegis-code-bg: #221d19;
+  --aegis-bronze: #d4b483;
+
+  --md-primary-fg-color: #f5efe6;
+  --md-primary-fg-color--light: #cfc3bb;
+  --md-primary-fg-color--dark: #171310;
+  --md-accent-fg-color: #d4b483;
+  --md-default-bg-color: #171310;
+  --md-default-fg-color: #f5efe6;
+  --md-default-fg-color--light: #cfc3bb;
+  --md-code-bg-color: #221d19;
+  --md-typeset-a-color: #d4b483;
+}
+
+/* --- Typography ------------------------------------------------------- */
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--aegis-ink);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* --- Header ------------------------------------------------------------- */
+.md-header {
+  background: #14100e;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: #0d0a08;
+}
+
+.md-header__button:hover {
+  opacity: 0.85;
+}
+
+/* --- Hero section on the home page ----------------------------------- */
+.hero {
+  padding: 2.6rem 2.2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  color: #faf8f2;
+  background:
+    radial-gradient(1100px 420px at 15% -20%, rgba(176, 141, 87, 0.35), transparent 60%),
+    linear-gradient(135deg, #0d0a08 0%, #1d1712 60%, #2a2118 100%);
+  border: 1px solid rgba(207, 195, 187, 0.25);
+  box-shadow: 0 14px 34px rgba(20, 16, 14, 0.28);
+}
+
+.hero h1 {
+  margin: 0 0 0.6rem;
+  color: #faf8f2;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0.2rem 0;
+  color: rgba(250, 248, 242, 0.92);
+  font-size: 1rem;
+  max-width: 46rem;
+}
+
+.hero strong {
+  color: #e3c78f;
+}
+
+.hero-cta {
+  margin-top: 1.2rem;
+}
+
+.hero-cta .md-button {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+.hero-cta .md-button--primary {
+  background: #b08d57;
+  border-color: #b08d57;
+  color: #14100e;
+}
+
+/* --- Category cards ---------------------------------------------------- */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.cat-card {
+  display: block;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--aegis-border);
+  border-radius: 12px;
+  text-decoration: none !important;
+  background: var(--aegis-surface);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--aegis-bronze);
+  box-shadow: 0 6px 18px rgba(176, 141, 87, 0.18);
+}
+
+.cat-card .cat-icon {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.cat-card strong {
+  display: block;
+  margin: 0.3rem 0 0.15rem;
+  color: var(--aegis-ink);
+}
+
+.cat-card .cat-count {
+  color: var(--aegis-ink-soft);
+  font-size: 0.78rem;
+}
+
+/* --- Tables -------------------------------------------------------------- */
+.md-typeset table:not([class]) th {
+  background: #14100e;
+  color: #faf8f2;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #0d0a08;
+}
+
+/* --- Code blocks -------------------------------------------------------- */
+.md-typeset pre > code {
+  border-radius: 8px;
+}
+
+/* --- Footer -------------------------------------------------------------- */
+.md-footer {
+  background: #14100e;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: #0d0a08;
+}
+
+/* --- Responsive hero ----------------------------------------------------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.6rem 1.1rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
