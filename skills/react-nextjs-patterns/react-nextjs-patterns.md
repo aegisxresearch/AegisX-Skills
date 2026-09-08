@@ -297,6 +297,19 @@ import Image from 'next/image'
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Client-side state that should be server-side.
+- No caching strategy — every request hits the origin.
+- Server Actions without error handling — silent failures.
+- Ignoring Next.js caching headers — CDN misses.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Server Components are great for SEO but limit interactivity — use client where needed.
+- Server Actions simplify mutations but complicate optimistic UI — weigh them.
+- App Router is the future but has migration cost — plan it.
+
 ## References
 - https://nextjs.org/docs/app
 - https://react.dev/learn

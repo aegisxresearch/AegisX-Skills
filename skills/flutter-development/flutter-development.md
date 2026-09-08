@@ -64,6 +64,12 @@ class CounterView extends ConsumerWidget {
 - Mengabaikan `const` — rebuild dan memory tidak optimal.
 - Keystore/iOS signing tidak aman — secret bocor atau build tidak bisa rilis.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Flutter is fast to build but Dart is a niche language — consider team familiarity.
+- Hot reload is great but hides state issues — test thoroughly.
+- Platform channels are powerful but add complexity — use them judiciously.
+
 ## Referensi
 
 - https://docs.flutter.dev/ — dokumentasi resmi

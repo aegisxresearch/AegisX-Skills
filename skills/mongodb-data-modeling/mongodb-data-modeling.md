@@ -62,6 +62,12 @@ db.orders.createIndex({ userId: 1, createdAt: -1 });
 - Menaruh data sensitif tanpa enkripsi field.
 - Mengandalkan `$lookup` untuk join yang sebenarnya bisa di-embed.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Embedding is fast but limits flexibility — reference for many-to-many.
+- MongoDB is great for flexible schemas but weak for transactions — use Postgres for relational data.
+- Aggregation pipeline is powerful but complex — know when to use it.
+
 ## Referensi
 
 - https://www.mongodb.com/docs/manual/data-modeling/ — panduan resmi

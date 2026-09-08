@@ -40,6 +40,19 @@ Classify severity, exploitability, exposure, and available mitigation. Patch rea
 - [ ] Incident response includes rebuild and credential rotation.
 - [ ] Deployed artifact digests are auditable.
 
+## Kesalahan Umum / Pitfalls
+
+- No SBOM — you cannot know what is in your software.
+- No dependency pinning — builds break or get hijacked.
+- No signature verification — tampered artifacts.
+- Ignoring known CVEs in transitive dependencies.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- SBOMs add process overhead — start with critical services.
+- Pinning everything prevents drift but blocks updates — balance.
+- Signature verification is important but adds key management.
+
 ## References
 - https://slsa.dev/spec/v1.0/
 - https://www.cisa.gov/topics/cyber-threats-and-advisories/software-supply-chain-security

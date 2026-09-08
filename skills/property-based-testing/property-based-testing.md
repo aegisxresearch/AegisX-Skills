@@ -61,6 +61,12 @@ def test_json_round_trip(text):
 - Hanya property test tanpa example test untuk kasus bisnis spesifik.
 - Memakai generator default yang tidak mencakup edge domain.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Property-based testing finds edge cases but needs good generators — invest in them.
+- It complements, not replaces, example-based tests — use both.
+- Hypothesis/QuickCheck add a learning curve — start with simple properties.
+
 ## Referensi
 
 - https://hypothesis.readthedocs.io/ — Hypothesis (Python)

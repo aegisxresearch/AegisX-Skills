@@ -204,6 +204,19 @@ def assemble_context(retrieved_chunks, max_tokens):
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Chunking without considering semantic boundaries — context gets split.
+- No evaluation — retrieval quality is unmeasured.
+- Embedding model mismatch between indexing and querying.
+- Ignoring hybrid search — pure vector misses exact matches.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Vector search is powerful but not always better than keyword — use hybrid.
+- Reranking improves quality but adds latency — measure the trade-off.
+- Indexing is expensive — balance freshness with cost.
+
 ## References
 - https://docs.smith.langchain.com/evaluation
 - https://docs.pinecone.io/guides/get-started/quick-tour

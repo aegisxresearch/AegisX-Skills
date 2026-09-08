@@ -59,6 +59,12 @@ const formatter = new Intl.NumberFormat(locale, { style: "currency", currency })
 - Satu file terjemahan raksasa tanpa namespace — konflik PR terus-menerus.
 - Mengabaikan plural: "1 items" atau "2 item" muncul di beberapa bahasa.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- i18n adds complexity — start with a few locales and grow.
+- Machine translation is fast but error-prone — human review for customer-facing text.
+- Locale routing (URL prefixes) is SEO-friendly but adds URL complexity.
+
 ## Referensi
 
 - https://www.w3.org/International/ — panduan W3C i18n

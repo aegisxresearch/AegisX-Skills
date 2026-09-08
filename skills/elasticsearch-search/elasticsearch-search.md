@@ -64,6 +64,12 @@ Membangun fitur pencarian yang cepat dan relevan dengan `Elasticsearch`/OpenSear
 - Shard terlalu kecil/banyak — overhead; terlalu besar — lambat recover.
 - Relevance tanpa evaluasi — tuning berdasarkan perasaan.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Elasticsearch is powerful but operationally heavy — consider managed search.
+- Keyword vs full-text — know which field type fits each query.
+- Reindexing is disruptive — plan for downtime or use aliases.
+
 ## Referensi
 
 - https://www.elastic.co/docs/ — dokumentasi resmi

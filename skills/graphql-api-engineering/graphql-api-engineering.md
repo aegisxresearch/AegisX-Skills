@@ -63,6 +63,19 @@ Give each subgraph clear ownership and avoid cross-subgraph joins in hot paths. 
 - [ ] Metrics cover operation name, latency, errors, and cost.
 - [ ] Schema changes run compatibility checks.
 
+## Kesalahan Umum / Pitfalls
+
+- No query cost limits — a client can request the whole database.
+- N+1 queries in resolvers — database hammering.
+- Exposing internal fields via introspection.
+- No pagination on list fields — unbounded responses.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- GraphQL is powerful but complex — REST is simpler for public APIs.
+- Schema evolution is easier with GraphQL but harder to cache.
+- Persisted queries help caching — but add complexity.
+
 ## References
 - https://graphql.org/learn/
 - https://spec.graphql.org/

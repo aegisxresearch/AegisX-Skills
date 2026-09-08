@@ -297,6 +297,19 @@ scenarios:
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Only happy-path tests — failures and edge cases untested.
+- Contract tests that drift from the real spec — keep them generated from OpenAPI.
+- Load tests run against a toy environment — results don't transfer to prod.
+- Test data with hardcoded IDs — tests break when data changes.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- E2E tests are slow and brittle — use them sparingly, unit tests heavily.
+- Contract testing adds tooling overhead — worth it for cross-team APIs.
+- Load testing costs infrastructure — run in CI on schedules, not every commit.
+
 ## References
 - https://docs.pytest.org/
 - https://k6.io/docs/

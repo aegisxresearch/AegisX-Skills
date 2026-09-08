@@ -313,11 +313,32 @@ npx prisma studio
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- No migrations in version control — schema drift.
+- N+1 queries from lazy loading relations.
+- Raw SQL mixed with the ORM inconsistently.
+- No transaction wrapping on multi-write operations.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Prisma is convenient but abstracts SQL — learn SQL for complex queries.
+- Migrations are automated but review them — they can be destructive.
+- Prisma's query engine adds overhead — consider raw SQL for hot paths.
+
 ## References
 - https://www.prisma.io/docs
 - https://www.prisma.io/docs/concepts/components/prisma-client
 - https://www.prisma.io/docs/concepts/components/prisma-migrate
 
 ---
+
+## Checklist
+
+- [ ] Schema reflects the domain model, not the other way around
+- [ ] All relations use explicit `onDelete` behavior
+- [ ] Migrations are reviewed before apply
+- [ ] Transactions wrap multi-write operations
+- [ ] N+1 queries eliminated with `include` or `select`
 
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

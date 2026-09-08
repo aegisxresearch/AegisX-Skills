@@ -236,6 +236,19 @@ gsap.to('.card', {
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Animating `width`/`height`/`top`/`left` — triggers layout + paint on every frame.
+- Animating `filter` or `box-shadow` — expensive to repaint; prefer composited properties.
+- Forgetting `prefers-reduced-motion` — users with vestibular disorders get nauseous.
+- Testing only on a fast machine — always profile on the slowest target device.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- GPU compositing helps, but memory bandwidth is still finite — batch effects.
+- CSS animations are simpler, JS (requestAnimationFrame) gives control — pick by need.
+- Not every animation needs 60fps; 30fps is fine for subtle transitions and saves battery.
+
 ## References
 - https://web.dev/articles/sticky-headers
 - https://developer.mozilla.org/en-US/docs/Web/Performance

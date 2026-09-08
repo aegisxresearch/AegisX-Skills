@@ -60,6 +60,12 @@ async def get_contract(user, contract_id, db):
 - Error "resource not found" yang membedakan 403 vs 404 — membantu attacker.
 - Secret di header contoh/response — log bocor.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Security hardening adds latency (rate limiting, auth checks) — measure the cost.
+- WAFs help but are bypassable — defense in depth.
+- Pen testing is periodic — continuous scanning is better.
+
 ## Referensi
 
 - https://owasp.org/API-Security/editions/2023/en/0x11-t10/ — API Top 10

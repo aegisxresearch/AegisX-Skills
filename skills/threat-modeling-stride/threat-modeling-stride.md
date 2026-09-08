@@ -54,6 +54,19 @@ Map every high-risk threat to a test, policy, scanner, monitoring signal, or rev
 - [ ] Security logging avoids sensitive payloads.
 - [ ] Threat model is reviewed with architecture changes.
 
+## Kesalahan Umum / Pitfalls
+
+- Modeling after implementation — too late to change design.
+- No abuse cases — only happy-path threats.
+- Trust boundaries drawn too coarsely — internal threats missed.
+- Mitigations listed but not implemented or tested.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Threat modeling is time-consuming — focus on high-value assets.
+- STRIDE is a checklist, not a substitute for thinking.
+- Automated tools help but miss business logic threats.
+
 ## References
 - https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
 - https://owasp.org/www-community/Threat_Modeling

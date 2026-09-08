@@ -179,6 +179,19 @@ X-CSRF-Token: random-token-here
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Storing secrets in localStorage — XSS can steal them.
+- Rolling your own crypto or JWT library — almost always a mistake.
+- No token expiry or rotation — long-lived tokens are a liability.
+- Session fixation — not regenerating session ID after login.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- JWT vs opaque sessions: JWTs scale horizontally but cannot be revoked .
+- OAuth2 adds complexity — only needed when third parties access your API.
+- Passwordless (WebAuthn) is more secure but has UX and browser support costs.
+
 ## References
 - https://auth0.com/docs/secure/tokens
 - https://owasp.org/www-community/attacks/csrf

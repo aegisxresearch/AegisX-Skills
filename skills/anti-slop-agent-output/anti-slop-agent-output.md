@@ -56,4 +56,22 @@ Prefer specific bullets over celebratory prose. Include file paths and meaningfu
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Reporting 'done' without listing what was changed and what was tested.
+- Stating assumptions as facts ('the endpoint is slow') without measurements.
+- Omitting risks or known limitations to look more competent.
+- Writing vague summaries instead of file-level, verifiable change lists.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Short reports are faster to read but may hide context — match depth to audience.
+- Forcing a report format on trivial one-line fixes adds ceremony.
+- Machine-readable output helps pipelines but hurts human debugging — use both.
+
+## References
+
+- https://www.anthropic.com/research/building-effective-agents
+- https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
+
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

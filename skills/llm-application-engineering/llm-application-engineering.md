@@ -61,6 +61,19 @@ Return a safe partial response, ask for clarification, route to a human, or use 
 - [ ] Fallback behavior is tested.
 - [ ] High-impact actions require deterministic confirmation.
 
+## Kesalahan Umum / Pitfalls
+
+- No structured output — parsing free text is fragile.
+- No cost limits — a runaway loop burns the budget.
+- Prompt injection — untrusted input reaches the model.
+- No evaluation — you cannot tell if a change improves quality.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- LLM APIs are non-deterministic — add tests with tolerance, not exact match.
+- Smaller models are cheaper and faster but less capable — match model to task.
+- Caching responses helps cost but may serve stale data.
+
 ## References
 - https://platform.openai.com/docs/guides/structured-outputs
 - https://owasp.org/www-project-top-10-for-large-language-model-applications/

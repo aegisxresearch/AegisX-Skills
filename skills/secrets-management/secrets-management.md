@@ -40,6 +40,19 @@ Use pre-commit and CI secret scanners, repository push protection, log redaction
 - [ ] Leak response includes revocation and impact analysis.
 - [ ] Development uses separate credentials and safe fixtures.
 
+## Kesalahan Umum / Pitfalls
+
+- Secrets in code or config files committed to git.
+- No rotation — a leaked secret is valid forever.
+- Broad access to the vault — least privilege forgotten.
+- No audit log — you cannot know who accessed what.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Vault adds operational complexity — start with environment variables for small apps.
+- Rotation is disruptive — balance frequency with risk.
+- Centralized vaults are a single point of failure — plan for availability.
+
 ## References
 - https://owasp.org/www-project-application-security-verification-standard/
 - https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final

@@ -53,6 +53,19 @@ Track run status, duration, input/output row counts, freshness, lag, rejected re
 - [ ] Freshness and lag have alerts.
 - [ ] Cost and capacity are monitored.
 
+## Kesalahan Umum / Pitfalls
+
+- No schema validation — bad data silently corrupts downstream.
+- Batch jobs that fail at 2am with no alerting.
+- Incremental loads without idempotency — double-loading duplicates data.
+- No data lineage — cannot trace a bug to its source.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Streaming is lower latency but more complex — batch is fine for daily reports.
+- Full reloads are simpler but expensive — incremental saves cost but add complexity.
+- A single pipeline tool may not fit all teams — standardize on contracts instead.
+
 ## References
 - https://www.dataengineeringweekly.com/
 - https://opentelemetry.io/docs/concepts/observability-primer/

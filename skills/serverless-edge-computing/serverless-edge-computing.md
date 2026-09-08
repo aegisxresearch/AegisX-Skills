@@ -53,6 +53,12 @@ export default {
 - Tanpa observability — function gagal senyap.
 - Over-provisioning concurrency — biaya melonjak tanpa manfaat.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Serverless is great for bursty workloads but costly for sustained load — compare pricing.
+- Edge functions reduce latency but limit compute — match task to layer.
+- Cold starts are a real UX issue — use warm pools or keep-alive.
+
 ## Referensi
 
 - https://docs.aws.amazon.com/lambda/ — Lambda

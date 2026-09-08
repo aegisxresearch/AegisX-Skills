@@ -36,16 +36,16 @@ SKILLS_DIR = ROOT / "skills"
 
 REQUIRED_SECTIONS = [
     (
-        "tujuan|prasyarat|konsep inti|overview|getting started|introduction|struktur",
-        "inti section (Konsep inti / Getting Started / Overview)",
+        "tujuan|prasyarat|konsep inti|overview|getting started|introduction|struktur|goal|objective",
+        "inti section (Konsep inti / Getting Started / Overview / Goal)",
     ),
     (
         "checklist|check-list|verification|verifikasi",
         "Checklist section",
     ),
     (
-        "kesalahan umum|pitfalls|common mistakes|anti-patterns",
-        "Kesalahan umum / Pitfalls section",
+        "kesalahan umum|pitfalls|common mistakes|anti-patterns|failure modes|failure modes|common failure",
+        "Kesalahan umum / Pitfalls / Failure modes section",
     ),
     (
         "referensi|references|resources|see also",
@@ -61,7 +61,7 @@ HOLLOW_CLAIMS = [
 ]
 
 TRADEOFF_KEYWORDS = re.compile(
-    r"\b(kapan tidak|when not|trade-?off|downside|limitation|caveat|hindari|avoid|jeleknya|drawback)\b",
+    r"\b(kapan tidak|when not|trade-?off|downside|limitation|caveat|hindari|avoid|jeleknya|drawback|failure mode|pros and cons|when to use)\b",
     re.I,
 )
 
@@ -102,6 +102,7 @@ FILLER_WORDS = re.compile(
 CODE_FENCE_RE = re.compile(r"^```(\w*)", re.M)
 CHECKLIST_EMPTY_RE = re.compile(r"^[-*]\s+\[[ x]\]\s*$", re.M)
 URL_RE = re.compile(r"\[([^\]]*)\]\((https?://[^)]+)\)")
+BARE_URL_RE = re.compile(r"(?:^|\s)(https?://[^\s)\)]+)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+)", re.M)
 
 
@@ -190,10 +191,12 @@ def audit_guide(sid: str, text: str) -> list[Issue]:
                     ref_section_start = pos
             break
     if ref_section_start >= 0:
-        refs_after = [u for u, _ in refs if text.find(u, ref_section_start) > 0]
-        if len(refs_after) < 2:
+        refs_after = [url for _, url in refs if text.find(url, ref_section_start) > 0]
+        bare_after = [u for u in BARE_URL_RE.findall(text[ref_section_start:])]
+        total_refs = len(refs_after) + len(bare_after)
+        if total_refs < 2:
             issues.append(
-                Issue("warning", 0, "few-refs", f"Referensi terlalu sedikit ({len(refs_after)}), idealnya >= 3")
+                Issue("warning", 0, "few-refs", f"Referensi terlalu sedikit ({total_refs}), idealnya >= 3")
             )
 
     # --- 8. Wall of text (no sub-heading for > 60 lines) ---

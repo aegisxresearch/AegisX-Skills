@@ -65,6 +65,12 @@ class SqlOrderRepository(OrderRepository):
 - Repository "generic" untuk semua entity tanpa alasan.
 - Anemic domain: semua logic di service, domain hanya data container.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- DDD shines in complex domains — skip it for simple CRUD.
+- Ports & adapters add indirection — worth it for testability of core logic.
+- Event-driven DDD is powerful but hard to debug — start with commands/queries.
+
 ## Referensi
 
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html — Clean Architecture

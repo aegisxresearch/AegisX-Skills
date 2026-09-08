@@ -252,6 +252,19 @@ train_loader = DataLoader(..., prefetch_factor=2)
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- No seed — training is not reproducible.
+- Mixed precision without checking for numerical instability.
+- Gradient accumulation without proper loss scaling.
+- Training on the full dataset without a validation split.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Mixed precision is faster but can overflow — monitor loss curves.
+- Distributed training adds complexity — start single-GPU.
+- Checkpointing every epoch is expensive — save best + last.
+
 ## References
 - https://pytorch.org/tutorials/
 - https://pytorch.org/docs/stable/notes/cuda.html

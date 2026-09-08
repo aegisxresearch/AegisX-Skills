@@ -88,6 +88,19 @@ Parallelize independent suites, but preserve artifact collection when a test fai
 - [ ] CI stores traces, screenshots, and console output.
 - [ ] Flaky tests are quarantined with an owner and expiry date.
 
+## Kesalahan Umum / Pitfalls
+
+- Testing only the happy path — no error states or edge cases.
+- Snapshot tests that change on every layout tweak — brittle.
+- E2E tests that are slow and flaky — CI becomes a lottery.
+- No accessibility testing — a11y regressions are silent.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Visual regression testing is powerful but noisy — use it on critical pages only.
+- Component tests are fast but miss integration issues — combine with E2E.
+- Test coverage is not the goal — behavior coverage is.
+
 ## References
 - https://testing-library.com/docs/
 - https://playwright.dev/docs/test-intro

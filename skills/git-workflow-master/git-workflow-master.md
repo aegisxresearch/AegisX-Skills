@@ -218,6 +218,19 @@ git stash pop
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Force-pushing to shared branches — history rewrite breaks others.
+- Huge PRs that are impossible to review.
+- Merging without running CI.
+- Committing secrets or large binaries.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Rebase keeps history clean but rewrites it — never rebase shared branches.
+- Feature branches isolate work but create merge overhead — trunk-based is faster.
+- Squash merges are clean but lose commit granularity — pick per repo.
+
 ## References
 - https://git-scm.com/book/en/v2
 - https://conventionalcommits.org/

@@ -49,6 +49,12 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 - Dashboard penuh panel tanpa konteks — tidak menjawab pertanyaan apa pun.
 - SLO tanpa error budget — target "100%" tidak realistis.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Prometheus is great for metrics but not logs — use Loki or ELK for logs.
+- Grafana is powerful but has a learning curve — start with templates.
+- High-cardinality metrics are expensive — aggregate where possible.
+
 ## Referensi
 
 - https://prometheus.io/docs/ — dokumentasi `Prometheus`

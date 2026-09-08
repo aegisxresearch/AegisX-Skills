@@ -30,6 +30,19 @@ Use one of these labels:
 
 Do not present pseudo-code as copy-paste production code.
 
+## Kesalahan Umum / Pitfalls
+
+- Claiming something 'works' without a runnable example or test.
+- Copying examples from other projects without adapting them to your stack.
+- Using '' and '' — hides real complexity from readers.
+- Documenting the happy path only, never failure modes or limits.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Deep docs cost time to write and maintain — prioritize public APIs and onboarding.
+- Code comments vs docs: comments explain 'why', docs explain 'how to use'.
+- Generated docs drift when code changes — keep a review step in CI.
+
 ## References
 Prefer official, versioned, primary sources. Record access date or version when behavior can change. A link is not evidence unless it supports the nearby claim.
 
@@ -50,3 +63,6 @@ Use the repository's terminology, headings, code style, and file conventions. Ke
 ---
 
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*
+
+- https://diataxis.fr/
+- https://www.writethedocs.org/guide/

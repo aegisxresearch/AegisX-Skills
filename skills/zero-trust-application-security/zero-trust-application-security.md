@@ -41,6 +41,19 @@ Design for compromised credentials or services: minimize permissions, isolate te
 - [ ] Detection and revocation runbooks are tested.
 - [ ] Tenant isolation is tested with negative cases.
 
+## Kesalahan Umum / Pitfalls
+
+- Treating the network as trusted — lateral movement is easy.
+- No workload identity — service-to-service calls unauthenticated.
+- Broad IAM grants — least privilege forgotten.
+- No continuous verification — access persists after role change.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Zero-trust is operationally heavy — start with high-value services.
+- mTLS everywhere adds complexity — prioritize critical paths.
+- Identity-based access is powerful but needs strong identity management.
+
 ## References
 - https://www.nist.gov/publications/zero-trust-architecture
 - https://csrc.nist.gov/pubs/sp/800/207/final

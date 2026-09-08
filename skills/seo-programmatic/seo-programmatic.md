@@ -62,6 +62,19 @@ Track crawl errors, index coverage, broken canonical links, sitemap freshness, s
 - [ ] Redirects and 404/410 behavior are tested.
 - [ ] Core Web Vitals are monitored in field data.
 
+## Kesalahan Umum / Pitfalls
+
+- Duplicate meta tags across pages — search engines penalize.
+- No canonical URLs — duplicate content confusion.
+- Blocking robots.txt on pages that should be indexed.
+- No sitemap — slow discovery of new pages.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- SEO is a long game — measure over months, not days.
+- JSON-LD structured data helps rich results but adds maintenance.
+- Client-side rendering hurts SEO — use SSR or prerendering.
+
 ## References
 - https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 - https://developers.google.com/search/docs/crawling-indexing/robots/intro

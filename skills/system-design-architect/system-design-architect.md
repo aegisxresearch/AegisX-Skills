@@ -175,6 +175,19 @@ async function retryWithBackoff<T>(
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Designing for scale before you have users — premature optimization.
+- No circuit breaker — cascading failures.
+- Synchronous calls between services — latency and coupling.
+- Ignoring backpressure — slow consumers overflow queues.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Microservices add operational complexity — start monolith, split when needed.
+- Queues add resilience but latency — use sync for low-latency paths.
+- Caching improves speed but adds staleness — know your tolerance.
+
 ## References
 - https://github.com/donnemartin/system-design-primer
 - https://microservices.io/patterns/

@@ -86,6 +86,12 @@ async def create_user(payload: UserCreate, db: AsyncSession = Depends(get_sessio
 - Menangkap semua exception lalu mengembalikan 200 — mask error.
 - Tanpa pagination; endpoint list memuat seluruh tabel.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- FastAPI is fast to build but async adds complexity — sync endpoints are fine for I/O-bound work.
+- Pydantic v2 is faster but has migration cost — plan it.
+- Starlette's test client is sync — async tests need care.
+
 ## Referensi
 
 - https://fastapi.tiangolo.com/ — dokumentasi resmi

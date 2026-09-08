@@ -200,6 +200,19 @@ GET /users?fields=id,name,email
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Breaking changes on every release — no versioning strategy.
+- Exposing internal database IDs in URLs without considering enumeration.
+- Ignoring pagination — unbounded responses kill mobile clients and DBs.
+- Rate limiting only at the gateway — bypassable by direct service access.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- REST is not the only option — GraphQL or gRPC may fit better for some clients.
+- Strict contracts help stability but slow iteration — version early, not late.
+- Pagination with deep offsets is slow on large tables — consider keyset pagination.
+
 ## References
 - https://restfulapi.net/
 - https://jsonapi.org/

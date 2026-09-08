@@ -56,6 +56,12 @@ function ProductList() {
 - Ignore status bar/notch/safe area — konten terpotong.
 - Build lokal manual tanpa pipeline — "works on my machine" syndrome.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Expo is fast to develop but abstracts native — some features need native code.
+- Offline-first adds sync complexity — consider if users are online.
+- App store release cycles are slow — plan updates carefully.
+
 ## Referensi
 
 - https://docs.expo.dev/ — dokumentasi Expo

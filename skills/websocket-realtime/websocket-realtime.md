@@ -56,6 +56,19 @@ Track active connections, handshake failures, auth failures, subscriptions, mess
 - [ ] Graceful shutdown drains connections.
 - [ ] Metrics and close-code dashboards exist.
 
+## Kesalahan Umum / Pitfalls
+
+- No heartbeat — dead connections linger.
+- No reconnect with backoff — thundering herd on server restart.
+- No backpressure — slow clients buffer unbounded data.
+- Broadcasting to all clients when only some need it.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- WebSockets are stateful — horizontal scaling needs sticky sessions or a pub/sub layer.
+- SSE is simpler for one-way server-to-client — consider it.
+- Long-lived connections cost resources — idle timeout policies matter.
+
 ## References
 - https://www.rfc-editor.org/rfc/rfc6455
 - https://developer.mozilla.org/en-US/docs/Web/API/WebSocket

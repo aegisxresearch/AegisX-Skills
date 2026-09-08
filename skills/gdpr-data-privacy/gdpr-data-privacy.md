@@ -41,6 +41,12 @@ Membangun produk yang memenuhi kewajiban perlindungan data pribadi secara teknis
 - Hapus data utama tapi salinan tetap di backup/cache.
 - Log dengan data pribadi mentah (email, IP penuh) tanpa alasan.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Privacy engineering adds friction — balance with product velocity.
+- Data minimization means collecting less — sometimes you need more for analytics.
+- GDPR compliance is regional — a global policy may be overkill for some markets.
+
 ## Referensi
 
 - https://gdpr-info.eu/ — teks regulasi

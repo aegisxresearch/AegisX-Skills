@@ -243,6 +243,19 @@ REINDEX TABLE;  -- Rebuild indexes
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- No indexes on foreign keys — joins degrade with data growth.
+- SELECT * on wide tables — unnecessary I/O.
+- No EXPLAIN before optimizing — guessing is expensive.
+- Connection pool exhaustion under load.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Indexes speed reads but slow writes — index what you query, not everything.
+- Partitioning helps large tables but adds complexity — only when needed.
+- ORM-generated queries may be suboptimal — profile and hand-tune hot paths.
+
 ## References
 - https://www.postgresql.org/docs/current/
 - https://use-the-index-luke.com/

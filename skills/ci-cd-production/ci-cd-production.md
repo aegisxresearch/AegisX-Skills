@@ -43,6 +43,19 @@ Define whether rollback means artifact rollback, feature disablement, traffic sw
 - [ ] Rollback is documented and tested.
 - [ ] Pipeline logs and artifacts have retention/access policies.
 
+## Kesalahan Umum / Pitfalls
+
+- Building artifacts in the deploy job — non-reproducible builds.
+- Deploying from a branch instead of an immutable artifact.
+- No rollback plan — a bad deploy takes the site down for hours.
+- Secrets in build logs or environment variables visible to all jobs.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Blue/green is safer but doubles infrastructure cost.
+- Canary deploys reduce risk but need good metrics to decide rollback.
+- Faster deploys mean more risk per deploy — balance with automated checks.
+
 ## References
 - https://slsa.dev/spec/v1.0/
 - https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions

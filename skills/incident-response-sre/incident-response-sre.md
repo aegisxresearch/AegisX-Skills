@@ -53,6 +53,19 @@ Include timeline, detection, contributing conditions, what worked, what failed, 
 - [ ] Postmortem is blameless and action-oriented.
 - [ ] Repeated incidents feed reliability priorities.
 
+## Kesalahan Umum / Pitfalls
+
+- No runbooks — every incident is a new investigation.
+- Siloed communication — the incident commander is not clear.
+- No postmortem — the same incident happens twice.
+- Metrics that are not monitored — you find out from users.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Immediate mitigation vs root cause — stabilize first, investigate later.
+- Postmortems take time — but they are the highest-leverage investment.
+- On-call rotation is expensive — balance with alert quality.
+
 ## References
 - https://sre.google/sre-book/managing-incidents/
 - https://sre.google/resources/practices-and-processes/incident-management-guide/

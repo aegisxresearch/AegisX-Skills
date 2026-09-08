@@ -235,6 +235,19 @@ services:
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Running as root inside the container.
+- No healthcheck — orchestrator cannot detect a dead container.
+- Unpinned base images — builds break when upstream changes.
+- Copying secrets into the image at build time.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Multi-stage builds reduce size but add complexity — worth it for large images.
+- Distroless images are smaller but harder to debug — no shell.
+- Image scanning adds CI time — run it on the final image only.
+
 ## References
 - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 - https://docs.docker.com/compose/production/

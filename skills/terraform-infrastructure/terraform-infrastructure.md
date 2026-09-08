@@ -49,6 +49,19 @@ Use deletion protection, `prevent_destroy` only for deliberately protected resou
 - [ ] Backups and restore paths are verified.
 - [ ] Ownership and lifecycle are documented.
 
+## Kesalahan Umum / Pitfalls
+
+- No remote state — concurrent applies corrupt state.
+- Plan review skipped — destructive changes hit production.
+- Hardcoded secrets in .tf files.
+- No drift detection — reality differs from code.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Terraform is powerful but stateful — plan carefully, review plans.
+- Terragrunt/OpenTofu add abstraction — evaluate the cost.
+- IaC is code — version it, review it, test it.
+
 ## References
 - https://developer.hashicorp.com/terraform/docs
 - https://developer.hashicorp.com/terraform/language/state

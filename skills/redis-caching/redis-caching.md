@@ -44,6 +44,19 @@ Track hit ratio, misses, evictions, memory fragmentation, command latency, conne
 - [ ] `Redis` is network-restricted and ACL-protected.
 - [ ] Metrics cover hit rate, evictions, latency, and saturation.
 
+## Kesalahan Umum / Pitfalls
+
+- Cache-aside without TTL — stale data forever.
+- Using Redis as a primary database — it is not durable by default.
+- No connection pooling — connection exhaustion.
+- Cache stampede — all requests miss at once and hit the DB.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Redis is fast but not a replacement for a real database — use it for cache/queue.
+- Distributed locking with Redis is tricky — consider Redlock carefully.
+- Cache invalidation is hard — prefer TTLs over explicit invalidation.
+
 ## References
 - https://redis.io/docs/latest/develop/use/patterns/
 - https://redis.io/docs/latest/develop/data-types/

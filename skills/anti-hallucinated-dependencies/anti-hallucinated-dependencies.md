@@ -52,4 +52,23 @@ Do not replace an uncertain API with invented code that looks plausible. Pause, 
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Adding a package without checking it exists on the registry — a `pip install` typo fails at build time.
+- Trusting a package name from an LLM suggestion without verifying the real API surface.
+- Copying a version pin from a random blog post — the version may not exist or be yanked.
+- Forgetting to commit the lockfile — builds become non-reproducible.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Lockfiles add merge noise; small prototypes may not need them yet.
+- Verifying every transitive dependency is costly — focus on direct deps + known vuln feeds.
+- A monorepo may centralize deps; per-package lockfiles can fight that workflow.
+
+## References
+
+- https://docs.python.org/3/library/importlib.html
+- https://pip.pypa.io/en/stable/cli/pip_install/
+- https://osv.dev/
+
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

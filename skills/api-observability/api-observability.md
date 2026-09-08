@@ -67,6 +67,19 @@ Separate liveness from readiness. Liveness should indicate whether the process c
 - [ ] Alerts have owners and runbooks.
 - [ ] Retention and access controls meet privacy requirements.
 
+## Kesalahan Umum / Pitfalls
+
+- Logging secrets or full payloads — a compliance and security incident waiting.
+- No correlation ID — cannot trace a request across services.
+- Alerting on every metric — alert fatigue kills the on-call rotation.
+- Metrics without SLOs — you cannot know when to page.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- High-cardinality logging is expensive — sample debug logs in production.
+- Tracing every request adds overhead — use sampling at high traffic.
+- Centralized logging is a single point of failure — consider local buffers.
+
 ## References
 - https://opentelemetry.io/docs/concepts/observability-primer/
 - https://sre.google/sre-book/service-level-objectives/

@@ -73,6 +73,12 @@ func main() {
 - Retry tanpa idempotency menghasilkan duplikat efek.
 - Membuat microservice baru untuk setiap fungsi kecil.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Go is fast but verbose for some tasks — match language to team.
+- gRPC is efficient but harder to debug than REST — use HTTP/JSON for public APIs.
+- Concurrency primitives are powerful but easy to misuse — prefer libraries.
+
 ## Referensi
 
 - https://pkg.go.dev/net/http — server HTTP standar

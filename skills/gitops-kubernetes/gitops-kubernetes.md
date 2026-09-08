@@ -64,6 +64,12 @@ spec:
 - Satu repo raksasa tanpa pembatas environment — blast radius besar.
 - Sync failure diabaikan — environment lama diam-diam.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- GitOps is powerful but requires discipline — every change is a PR.
+- Argo CD vs Flux — both are good, pick one and standardize.
+- Automated sync is great but can fight hotfixes — have an escape hatch.
+
 ## Referensi
 
 - https://argo-cd.readthedocs.io/ — `Argo CD`

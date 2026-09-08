@@ -53,4 +53,9 @@ Do not report stylistic preference as a defect. Do not claim a vulnerability wit
 
 ---
 
+## References
+
+- https://google.github.io/eng-practices/review/reviewer/
+- https://martinfowler.com/articles/code-review-security.html
+
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -90,6 +90,12 @@ self.addEventListener("fetch", (event) => {
 - Tanpa `Cache-Control` yang tepat, SW dan HTTP cache konflik.
 - Mengabaikan pengguna yang mematikan JavaScript — SW butuh JS.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Offline-first is great for flaky networks but adds sync complexity — consider if users are online.
+- Service workers are powerful but hard to debug — use Workbox.
+- Push notifications need permission — don't rely on them.
+
 ## Referensi
 
 - https://web.dev/learn/pwa/ — panduan resmi web.dev

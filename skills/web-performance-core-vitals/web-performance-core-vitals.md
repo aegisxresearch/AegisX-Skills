@@ -81,6 +81,19 @@ Do not collect URLs or payloads containing personal data.
 - [ ] Layout shifts are attributable and prevented.
 - [ ] Performance alerts have actionable thresholds.
 
+## Kesalahan Umum / Pitfalls
+
+- Optimizing LCP while INP is the bottleneck — misdirected effort.
+- No performance budget — regressions go unnoticed.
+- Third-party scripts blocking render.
+- Ignoring mobile — desktop-only testing misses real users.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Perf budgets can slow velocity — set them at a sustainable level.
+- RUM is noisy — use it with synthetic tests.
+- Every optimization has a cost — measure before and after.
+
 ## References
 - https://web.dev/articles/vitals
 - https://developer.chrome.com/docs/lighthouse/overview

@@ -78,6 +78,12 @@ export const userRoutes: FastifyPluginAsync = async (app) => {
 - Menyimpan secret di kode/env yang ter-commit.
 - Type cast `as any` untuk menutupi kekurangan tipe.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- TypeScript adds safety but costs boilerplate — worth it for teams.
+- Fastify vs Express — Fastify is faster but less familiar.
+- Async is non-optional in Node — learn it properly.
+
 ## Referensi
 
 - https://fastify.dev/docs/latest/ — Fastify

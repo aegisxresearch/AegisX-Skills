@@ -57,4 +57,17 @@ Line coverage is a diagnostic signal, not proof of quality. Review branch, contr
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Asserting implementation details instead of behavior — tests break on refactors.
+- Mocking everything, including the code under test's own collaborators.
+- Writing tests that pass without ever failing — no assertion strength check.
+- Ignoring flakey tests instead of fixing the root cause.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Heavy integration tests catch more but are slower and flakier — balance with unit tests.
+- Property-based tests find edge cases but need good generators — not always worth it.
+- 100% coverage is a target, not a quality metric — mutation testing is stronger.
+
 *Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

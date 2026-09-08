@@ -253,6 +253,19 @@ p {
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Fixed pixel widths — break on small screens.
+- No fluid typography — text overflows on mobile.
+- Container queries where viewport queries would do — over-engineering.
+- Testing only on one device — browsers differ.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Mobile-first is a mindset, not a rule — desktop-first works for some apps.
+- Container queries are powerful but new — check browser support.
+- Fluid grids can cause layout shifts — use min/max constraints.
+
 ## References
 - https://web.dev/responsive-web-design-basics/
 - https://css-tricks.com/snippets/css/complete-guide-grid/

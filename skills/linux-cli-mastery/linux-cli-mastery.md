@@ -280,6 +280,19 @@ fi
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Parsing `ls` output — filenames with spaces break scripts.
+- No quoting — glob expansion surprises.
+- Piping without error handling — `set -e` is your friend.
+- Running scripts with `sudo` that don't need it.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Shell scripts are fast to write but hard to test — use Python for complex logic.
+- `find -exec` vs `xargs` — both have edge cases, know them.
+- Aliases are convenient but not portable — use functions for reuse.
+
 ## References
 - https://linuxcommand.org/
 - https://ss64.com/bash/

@@ -67,6 +67,12 @@ const Cart = lazy(() => import("cart/Cart"));
 - Tanpa fallback saat remote down — seluruh aplikasi blank.
 - "Satu deploy lagi" tetap dibutuhkan karena shared deps berubah bersamaan.
 
+## Trade-off dan Kapan Tidak Pakai
+
+- Module Federation is powerful but adds runtime complexity — use it for true multi-team scale.
+- Shared deps reduce duplication but create coupling — choose carefully.
+- Version skew between teams is real — agree on a release cadence.
+
 ## Referensi
 
 - https://module-federation.io/ — dokumentasi Module Federation

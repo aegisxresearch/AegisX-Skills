@@ -264,6 +264,19 @@ Small:    1.4 (compact)
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Tokens not used consistently — designers and devs drift apart.
+- Components without accessibility baked in.
+- Versioning breaking changes without a migration path.
+- Documentation that is not kept in sync with the code.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- A design system is a product — it needs investment or it rots.
+- Too strict tokens limit creativity — allow escape hatches with review.
+- Adopting a system-wide refactor is risky — roll out incrementally.
+
 ## References
 - https://carbondesignsystem.com/
 - https://material.io/design

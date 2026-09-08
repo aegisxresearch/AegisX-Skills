@@ -66,6 +66,19 @@ Monitor node pressure, pod restarts, pending pods, scheduling failures, resource
 - [ ] Cluster and application backups have restore tests.
 - [ ] Resource, restart, and scheduling alerts have owners.
 
+## Kesalahan Umum / Pitfalls
+
+- No resource limits — a runaway pod takes down the node.
+- Running as root or with excessive RBAC.
+- No probes — rolling updates kill healthy pods.
+- State in pods — ephemeral storage is lost on restart.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Kubernetes is powerful but operationally heavy — consider managed platforms.
+- Helm charts add abstraction — sometimes plain manifests are clearer.
+- Multi-node clusters need careful networking — start small.
+
 ## References
 - https://kubernetes.io/docs/concepts/configuration/overview/
 - https://kubernetes.io/docs/concepts/security/

@@ -318,6 +318,19 @@ emitter.emit("created", { id: 1, name: "John" })
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Using `any` liberally — defeats the type system.
+- Overly clever generics — unreadable by the team.
+- Type guards that lie — runtime behavior differs from type claims.
+- Discriminated unions without a discriminant — unsafe narrowing.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Strict typing costs boilerplate but prevents whole classes of bugs.
+- Generic utilities are powerful but can obscure intent — name them well.
+- Type-level programming is clever but hard to maintain — use sparingly.
+
 ## References
 - https://www.typescriptlang.org/docs/handbook/
 - https://www.typescriptlang.org/docs/handbook/utility-types.html

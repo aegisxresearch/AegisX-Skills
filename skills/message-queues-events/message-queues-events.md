@@ -63,6 +63,19 @@ Track publish failures, consumer lag, age of oldest message, throughput, retry r
 - [ ] Partition/order guarantees are tested.
 - [ ] Lag, retries, and DLQ metrics have alerts.
 
+## Kesalahan Umum / Pitfalls
+
+- No idempotency — duplicate events cause double-processing.
+- No DLQ — poison messages block the queue forever.
+- No contract versioning — schema changes break consumers.
+- At-least-once semantics assumed as exactly-once.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Queues add latency and complexity — sometimes a simple HTTP call is enough.
+- Exactly-once is impossible in distributed systems — design for at-least-once + idempotency.
+- Outbox pattern is resilient under retry and backpressure but adds a write to the database.
+
 ## References
 - https://microservices.io/patterns/data/transactional-outbox.html
 - https://www.asyncapi.com/docs

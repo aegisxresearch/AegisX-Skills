@@ -244,6 +244,19 @@ session_config = {
 
 ---
 
+## Kesalahan Umum / Pitfalls
+
+- Using outdated dependencies with known CVEs.
+- Storing passwords in plaintext or with weak hashing (MD5/SHA1).
+- Trusting client-side input without server-side validation.
+- Ignoring security headers — X-Frame-Options, CSP, HSTS.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- Security tools (SAST/DAST) catch known patterns, not logic flaws — combine with review.
+- Penetration testing is expensive — prioritize critical assets.
+- Zero-trust is stronger but harder to operate — start with least privilege.
+
 ## References
 - https://owasp.org/www-project-top-ten/
 - https://cheatsheetseries.owasp.org/

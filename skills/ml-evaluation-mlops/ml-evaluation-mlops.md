@@ -51,6 +51,19 @@ Document intended use, out-of-scope use, limitations, evaluation populations, hu
 - [ ] Rollback has been tested.
 - [ ] Model card and data card are maintained.
 
+## Kesalahan Umum / Pitfalls
+
+- Evaluating on the training set — inflated metrics.
+- No data lineage — you cannot reproduce a model.
+- No drift monitoring — the model silently degrades in production.
+- Manual deployment without rollback.
+
+## Trade-off dan Kapan Tidak Pakai
+
+- MLOps tooling is heavy — start with a simple registry and add as needed.
+- Shadow deployment is safer but doubles compute — balance with traffic.
+- Evaluation is subjective — agree on metrics before optimizing.
+
 ## References
 - https://mlflow.org/docs/latest/ml/tracking/
 - https://www.tensorflow.org/tfx/guide
