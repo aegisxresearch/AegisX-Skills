@@ -4,7 +4,7 @@
 
 # AegisX Skills Collection
 
-Kumpulan **60 panduan teknis terstruktur** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer.
+Kumpulan **67 panduan teknis terstruktur** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/aegisxresearch/AegisX-Skills)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aegisxresearch/AegisX-Skills)
@@ -33,7 +33,7 @@ Materi ini adalah referensi engineering, bukan kode siap pakai. Contoh productio
 
 ## Fitur
 
-- **60 panduan** di 10 kategori — tiap skill punya ringkasan, konsep inti, contoh, checklist, dan referensi
+- **67 panduan** di 10 kategori — tiap skill punya ringkasan, konsep inti, contoh, checklist, dan referensi
 - **Katalog dari manifest** — `skills/manifest.json` adalah satu-satunya sumber kebenaran; README dan situs digenerate otomatis
 - **Validasi otomatis di CI** — struktur, metadata, link lokal, dan placeholder diperiksa di setiap PR (`scripts/validate-skills.py`)
 - **Situs dokumentasi** — MkDocs Material, di-deploy ke GitHub Pages dari `main`
@@ -93,9 +93,11 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 | Skill | Level | Deskripsi |
 |-------|-------|-----------|
 | [`data-engineering-pipelines`](./skills/data-engineering-pipelines/) | Intermediate–Advanced | Batch/streaming, contracts, incremental loads, quality, dan lineage. |
+| [`django-orm-advanced`](./skills/django-orm-advanced/) | Intermediate–Advanced | Django ORM: select_related/prefetch_related, F expressions, select_for_update, dan pengukuran query count. |
 | [`elasticsearch-search`](./skills/elasticsearch-search/) | Intermediate–Advanced | Search relevan: mapping, analysis, query DSL, tuning, dan operasional. |
 | [`mongodb-data-modeling`](./skills/mongodb-data-modeling/) | Intermediate–Advanced | Model dokumen MongoDB: embed vs reference, index, dan aggregation. |
 | [`postgresql-master`](./skills/postgresql-master/) | Intermediate–Advanced | Indexing, query optimization, partitioning, dan tuning. |
+| [`postgresql-query-tuning`](./skills/postgresql-query-tuning/) | Intermediate–Advanced | Tuning berbasis bukti: pg_stat_statements, EXPLAIN BUFFERS, composite/partial index, keyset pagination. |
 | [`prisma-orm-playbook`](./skills/prisma-orm-playbook/) | Beginner–Intermediate | Schema, relations, CRUD, transactions, dan migrations. |
 | [`redis-caching`](./skills/redis-caching/) | Intermediate–Advanced | Cache-aside, TTL, rate limiting, locks, memory, dan security. |
 
@@ -112,10 +114,13 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 |-------|-------|-----------|
 | [`ci-cd-production`](./skills/ci-cd-production/) | Intermediate–Advanced | Immutable artifacts, deployment strategy, scanning, dan rollback. |
 | [`docker-production-checklist`](./skills/docker-production-checklist/) | Intermediate | Multi-stage builds, non-root, health checks, dan resource limits. |
+| [`github-actions-workflows`](./skills/github-actions-workflows/) | Intermediate | Workflows yang cepat dan aman: permissions, SHA pinning, caching, matrix, OIDC, reusable workflows. |
 | [`gitops-kubernetes`](./skills/gitops-kubernetes/) | Advanced | GitOps dengan Argo CD/Flux: repo sumber kebenaran, drift, progressive delivery. |
 | [`kubernetes-production`](./skills/kubernetes-production/) | Advanced | Probes, resources, RBAC, rollout, disruption, dan observability. |
 | [`linux-cli-mastery`](./skills/linux-cli-mastery/) | Beginner–Intermediate | File operations, grep/sed/awk, proses, dan Bash scripting. |
 | [`observability-prometheus-grafana`](./skills/observability-prometheus-grafana/) | Intermediate–Advanced | Prometheus + Grafana: metrik RED/USE, PromQL, alerting, dan SLO. |
+| [`opentelemetry-tracing`](./skills/opentelemetry-tracing/) | Intermediate–Advanced | Distributed tracing: OTel SDK, context propagation, sampling, collector, dan korelasi log. |
+| [`prometheus-alerting-slo`](./skills/prometheus-alerting-slo/) | Intermediate–Advanced | Alerting berbasis SLO: multi-window burn rate, error budget, PromQL histogram, dan routing Alertmanager. |
 | [`serverless-edge-computing`](./skills/serverless-edge-computing/) | Intermediate–Advanced | Serverless & edge: function design, cold start, batasan, biaya, observability. |
 | [`terraform-infrastructure`](./skills/terraform-infrastructure/) | Intermediate–Advanced | Modules, remote state, plan review, drift, dan safe changes. |
 
@@ -126,7 +131,9 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 | [`api-security-hardening`](./skills/api-security-hardening/) | Intermediate–Advanced | Hardening API: OWASP API Top 10, BOLA/IDOR, authz, dan rate limiting. |
 | [`cybersecurity-fundamentals`](./skills/cybersecurity-fundamentals/) | Intermediate–Advanced | OWASP Top 10, secure coding, dan penetration testing. |
 | [`gdpr-data-privacy`](./skills/gdpr-data-privacy/) | Intermediate–Advanced | Privacy engineering: data mapping, consent, DSR, minimisasi, dan retention. |
+| [`sast-dependency-scanning`](./skills/sast-dependency-scanning/) | Intermediate | Otomasi SCA + SAST di CI: OSV, Trivy, baseline scan, kebijakan fail per severity, dan SBOM. |
 | [`secrets-management`](./skills/secrets-management/) | Intermediate–Advanced | Secret lifecycle, rotation, vault, access control, dan incident response. |
+| [`security-testing-dast-sast`](./skills/security-testing-dast-sast/) | Intermediate–Advanced | SAST + DAST: Semgrep di CI, OWASP ZAP di staging, triase temuan, dan escape rate. |
 | [`supply-chain-security`](./skills/supply-chain-security/) | Intermediate–Advanced | Dependency, SBOM, provenance, signing, dan artifact verification. |
 | [`threat-modeling-stride`](./skills/threat-modeling-stride/) | Intermediate–Advanced | Assets, trust boundaries, STRIDE, abuse cases, dan mitigasi. |
 | [`zero-trust-application-security`](./skills/zero-trust-application-security/) | Advanced | Workload identity, least privilege, segmentation, dan continuous verification. |

@@ -107,12 +107,16 @@ nav:
   - Database dan Data Engineering:
       - data-engineering-pipelines: skills/data-engineering-pipelines/README.md
       - data-engineering-pipelines -- Panduan Lengkap: skills/data-engineering-pipelines/data-engineering-pipelines.md
+      - django-orm-advanced: skills/django-orm-advanced/README.md
+      - django-orm-advanced -- Panduan Lengkap: skills/django-orm-advanced/django-orm-advanced.md
       - elasticsearch-search: skills/elasticsearch-search/README.md
       - elasticsearch-search -- Panduan Lengkap: skills/elasticsearch-search/elasticsearch-search.md
       - mongodb-data-modeling: skills/mongodb-data-modeling/README.md
       - mongodb-data-modeling -- Panduan Lengkap: skills/mongodb-data-modeling/mongodb-data-modeling.md
       - postgresql-master: skills/postgresql-master/README.md
       - postgresql-master -- Panduan Lengkap: skills/postgresql-master/postgresql-master.md
+      - postgresql-query-tuning: skills/postgresql-query-tuning/README.md
+      - postgresql-query-tuning -- Panduan Lengkap: skills/postgresql-query-tuning/postgresql-query-tuning.md
       - prisma-orm-playbook: skills/prisma-orm-playbook/README.md
       - prisma-orm-playbook -- Panduan Lengkap: skills/prisma-orm-playbook/prisma-orm-playbook.md
       - redis-caching: skills/redis-caching/README.md
@@ -127,6 +131,8 @@ nav:
       - ci-cd-production -- Panduan Lengkap: skills/ci-cd-production/ci-cd-production.md
       - docker-production-checklist: skills/docker-production-checklist/README.md
       - docker-production-checklist -- Panduan Lengkap: skills/docker-production-checklist/docker-production-checklist.md
+      - github-actions-workflows: skills/github-actions-workflows/README.md
+      - github-actions-workflows -- Panduan Lengkap: skills/github-actions-workflows/github-actions-workflows.md
       - gitops-kubernetes: skills/gitops-kubernetes/README.md
       - gitops-kubernetes -- Panduan Lengkap: skills/gitops-kubernetes/gitops-kubernetes.md
       - kubernetes-production: skills/kubernetes-production/README.md
@@ -135,6 +141,10 @@ nav:
       - linux-cli-mastery -- Panduan Lengkap: skills/linux-cli-mastery/linux-cli-mastery.md
       - observability-prometheus-grafana: skills/observability-prometheus-grafana/README.md
       - observability-prometheus-grafana -- Panduan Lengkap: skills/observability-prometheus-grafana/observability-prometheus-grafana.md
+      - opentelemetry-tracing: skills/opentelemetry-tracing/README.md
+      - opentelemetry-tracing -- Panduan Lengkap: skills/opentelemetry-tracing/opentelemetry-tracing.md
+      - prometheus-alerting-slo: skills/prometheus-alerting-slo/README.md
+      - prometheus-alerting-slo -- Panduan Lengkap: skills/prometheus-alerting-slo/prometheus-alerting-slo.md
       - serverless-edge-computing: skills/serverless-edge-computing/README.md
       - serverless-edge-computing -- Panduan Lengkap: skills/serverless-edge-computing/serverless-edge-computing.md
       - terraform-infrastructure: skills/terraform-infrastructure/README.md
@@ -146,8 +156,12 @@ nav:
       - cybersecurity-fundamentals -- Panduan Lengkap: skills/cybersecurity-fundamentals/cybersecurity-fundamentals.md
       - gdpr-data-privacy: skills/gdpr-data-privacy/README.md
       - gdpr-data-privacy -- Panduan Lengkap: skills/gdpr-data-privacy/gdpr-data-privacy.md
+      - sast-dependency-scanning: skills/sast-dependency-scanning/README.md
+      - sast-dependency-scanning -- Panduan Lengkap: skills/sast-dependency-scanning/sast-dependency-scanning.md
       - secrets-management: skills/secrets-management/README.md
       - secrets-management -- Panduan Lengkap: skills/secrets-management/secrets-management.md
+      - security-testing-dast-sast: skills/security-testing-dast-sast/README.md
+      - security-testing-dast-sast -- Panduan Lengkap: skills/security-testing-dast-sast/security-testing-dast-sast.md
       - supply-chain-security: skills/supply-chain-security/README.md
       - supply-chain-security -- Panduan Lengkap: skills/supply-chain-security/supply-chain-security.md
       - threat-modeling-stride: skills/threat-modeling-stride/README.md

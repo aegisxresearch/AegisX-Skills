@@ -1353,6 +1353,176 @@
         "typescript"
       ],
       "difficulty_hours": 2
+    },
+    {
+      "id": "security-testing-dast-sast",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "SAST + DAST: Semgrep di CI, OWASP ZAP di staging, triase temuan, dan escape rate.",
+      "tags": [
+        "sast",
+        "dast",
+        "zap",
+        "semgrep",
+        "security-testing"
+      ],
+      "overview": "skills/security-testing-dast-sast/README.md",
+      "guide": "skills/security-testing-dast-sast/security-testing-dast-sast.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "yaml",
+        "bash"
+      ],
+      "difficulty_hours": 3
+    },
+    {
+      "id": "opentelemetry-tracing",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Distributed tracing: OTel SDK, context propagation, sampling, collector, dan korelasi log.",
+      "tags": [
+        "opentelemetry",
+        "tracing",
+        "otel-collector",
+        "sampling",
+        "w3c-trace-context"
+      ],
+      "overview": "skills/opentelemetry-tracing/README.md",
+      "guide": "skills/opentelemetry-tracing/opentelemetry-tracing.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-observability"
+      ],
+      "languages": [
+        "python",
+        "yaml"
+      ],
+      "difficulty_hours": 3
+    },
+    {
+      "id": "sast-dependency-scanning",
+      "category": "security",
+      "level": "intermediate",
+      "summary": "Otomasi SCA + SAST di CI: OSV, Trivy, baseline scan, kebijakan fail per severity, dan SBOM.",
+      "tags": [
+        "sca",
+        "sbom",
+        "osv-scanner",
+        "trivy",
+        "ci-security"
+      ],
+      "overview": "skills/sast-dependency-scanning/README.md",
+      "guide": "skills/sast-dependency-scanning/sast-dependency-scanning.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "yaml",
+        "bash"
+      ],
+      "difficulty_hours": 2
+    },
+    {
+      "id": "postgresql-query-tuning",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Tuning berbasis bukti: pg_stat_statements, EXPLAIN BUFFERS, composite/partial index, keyset pagination.",
+      "tags": [
+        "postgresql",
+        "explain-analyze",
+        "indexing",
+        "keyset-pagination",
+        "pg-stat-statements"
+      ],
+      "overview": "skills/postgresql-query-tuning/README.md",
+      "guide": "skills/postgresql-query-tuning/postgresql-query-tuning.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "postgresql-master"
+      ],
+      "languages": [
+        "sql"
+      ],
+      "difficulty_hours": 3
+    },
+    {
+      "id": "prometheus-alerting-slo",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Alerting berbasis SLO: multi-window burn rate, error budget, PromQL histogram, dan routing Alertmanager.",
+      "tags": [
+        "prometheus",
+        "slo",
+        "burn-rate",
+        "alertmanager",
+        "error-budget"
+      ],
+      "overview": "skills/prometheus-alerting-slo/README.md",
+      "guide": "skills/prometheus-alerting-slo/prometheus-alerting-slo.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "observability-prometheus-grafana"
+      ],
+      "languages": [
+        "promql",
+        "yaml"
+      ],
+      "difficulty_hours": 3
+    },
+    {
+      "id": "github-actions-workflows",
+      "category": "devops-cloud",
+      "level": "intermediate",
+      "summary": "Workflows yang cepat dan aman: permissions, SHA pinning, caching, matrix, OIDC, reusable workflows.",
+      "tags": [
+        "github-actions",
+        "ci-cd",
+        "oidc",
+        "caching",
+        "reusable-workflows"
+      ],
+      "overview": "skills/github-actions-workflows/README.md",
+      "guide": "skills/github-actions-workflows/github-actions-workflows.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "ci-cd-production"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 2
+    },
+    {
+      "id": "django-orm-advanced",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Django ORM: select_related/prefetch_related, F expressions, select_for_update, dan pengukuran query count.",
+      "tags": [
+        "django",
+        "orm",
+        "n-plus-one",
+        "f-expressions",
+        "transactions"
+      ],
+      "overview": "skills/django-orm-advanced/README.md",
+      "guide": "skills/django-orm-advanced/django-orm-advanced.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "postgresql-master"
+      ],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 3
     }
   ],
   "review_interval_days": 180
