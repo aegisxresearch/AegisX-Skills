@@ -1,9 +1,13 @@
 # 🚀 AegisX Skills Collection
 
-> Kumpulan **42 skills** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer — dibuat sebagai portfolio dan referensi praktis untuk pengembangan software modern.
+> Kumpulan **60 skills** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer — dibuat sebagai portfolio dan referensi praktis untuk pengembangan software modern.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/aegisxresearch/AegisX-Skills)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aegisxresearch/AegisX-Skills)
+[![CI: Skills Validation](https://github.com/aegisxresearch/AegisX-Skills/actions/workflows/skills-validation.yml/badge.svg)](https://github.com/aegisxresearch/AegisX-Skills/actions/workflows/skills-validation.yml)
+[![CI: Docs](https://github.com/aegisxresearch/AegisX-Skills/actions/workflows/docs.yml/badge.svg)](https://github.com/aegisxresearch/AegisX-Skills/actions/workflows/docs.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blueviolet)](https://aegisxresearch.github.io/AegisX-Skills/)
 
 ---
 
@@ -23,6 +27,17 @@ Materi ini bersifat referensi engineering. Contoh production-oriented tetap haru
 
 ---
 
+## ✨ Fitur Utama
+
+- 📚 **60+ panduan terstruktur** — tiap skill punya ringkasan, konsep inti, contoh, checklist, dan referensi
+- 🗂️ **Katalog berbasis manifest** — `skills/manifest.json` sebagai sumber kebenaran; README dan situs digenerate otomatis
+- ✅ **Validasi otomatis** — struktur, metadata, link, dan placeholder diperiksa di CI (`scripts/validate-skills.py`)
+- 🌐 **Situs dokumentasi** — dibangun dengan MkDocs Material dan di-deploy ke GitHub Pages
+- 🛡️ **Guardrail anti-AI-slop** — skill khusus untuk kualitas kode, dokumentasi, test, dan output agent
+- 🤖 **Siap untuk AI coding agent** — metadata, tags, dan format terstruktur memudahkan RAG/agent memanfaatkan konten
+
+---
+
 <!-- CATALOG_START -->
 
 ## 🗂️ Daftar Skills
@@ -37,8 +52,12 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 | [`api-observability`](./skills/api-observability/) | Intermediate–Advanced | Logs, metrics, traces, SLO, dan alerting untuk API. |
 | [`api-testing-strategy`](./skills/api-testing-strategy/) | Intermediate–Advanced | Unit, integration, contract, dan load testing untuk API. |
 | [`auth-implementation-guide`](./skills/auth-implementation-guide/) | Intermediate–Advanced | JWT, OAuth2 + PKCE, session management, dan security checklist. |
+| [`fastapi-python-backend`](./skills/fastapi-python-backend/) | Intermediate–Advanced | REST API Python: FastAPI, Pydantic v2, async SQLAlchemy, testing, dan deployment. |
+| [`golang-microservices`](./skills/golang-microservices/) | Advanced | Microservices Go: boundary, concurrency, gRPC, resilience, dan observability. |
 | [`graphql-api-engineering`](./skills/graphql-api-engineering/) | Intermediate–Advanced | Schema, resolver, authorization, pagination, dan query-cost controls. |
 | [`message-queues-events`](./skills/message-queues-events/) | Advanced | Event contracts, idempotency, retries, DLQ, dan outbox. |
+| [`node-typescript-backend`](./skills/node-typescript-backend/) | Intermediate–Advanced | Backend Node.js strictly typed: modul, validasi, error handling, dan testing. |
+| [`openapi-spec-driven`](./skills/openapi-spec-driven/) | Intermediate | Contract-first API: OpenAPI 3.1, lint, codegen, dan validasi kontrak. |
 | [`websocket-realtime`](./skills/websocket-realtime/) | Intermediate–Advanced | Connection lifecycle, reconnect, backpressure, dan fanout. |
 
 ### Machine Learning dan AI
@@ -58,9 +77,12 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 | [`animation-performance-guide`](./skills/animation-performance-guide/) | Intermediate | GPU animation, will-change, dan reduced motion. |
 | [`design-system-builder`](./skills/design-system-builder/) | Intermediate–Advanced | Design tokens, components, documentation, dan WCAG. |
 | [`frontend-testing-playbook`](./skills/frontend-testing-playbook/) | Intermediate–Advanced | Component, integration, E2E, accessibility, dan visual tests. |
+| [`microfrontends-module-federation`](./skills/microfrontends-module-federation/) | Advanced | Frontend multi-tim: Module Federation, kontrak modul, shared deps. |
+| [`pwa-offline-first`](./skills/pwa-offline-first/) | Intermediate–Advanced | PWA offline-first: service worker, strategi cache, manifest, dan sync. |
 | [`react-nextjs-patterns`](./skills/react-nextjs-patterns/) | Intermediate–Advanced | Server Components, App Router, Server Actions, dan state management. |
 | [`responsive-layout-master`](./skills/responsive-layout-master/) | Beginner–Intermediate | Mobile-first, fluid typography, container queries, dan layout. |
 | [`seo-programmatic`](./skills/seo-programmatic/) | Intermediate–Advanced | Metadata, canonical, sitemap, robots, JSON-LD, dan indexability. |
+| [`web-localization-i18n`](./skills/web-localization-i18n/) | Intermediate | i18n/l10n: pluralization, Intl, RTL, locale routing, dan alur terjemahan. |
 | [`web-performance-core-vitals`](./skills/web-performance-core-vitals/) | Intermediate–Advanced | LCP, INP, CLS, performance budget, dan RUM. |
 
 ### Database dan Data Engineering
@@ -68,6 +90,8 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 | Skill | Level | Deskripsi |
 |-------|-------|-----------|
 | [`data-engineering-pipelines`](./skills/data-engineering-pipelines/) | Intermediate–Advanced | Batch/streaming, contracts, incremental loads, quality, dan lineage. |
+| [`elasticsearch-search`](./skills/elasticsearch-search/) | Intermediate–Advanced | Search relevan: mapping, analysis, query DSL, tuning, dan operasional. |
+| [`mongodb-data-modeling`](./skills/mongodb-data-modeling/) | Intermediate–Advanced | Model dokumen MongoDB: embed vs reference, index, dan aggregation. |
 | [`postgresql-master`](./skills/postgresql-master/) | Intermediate–Advanced | Indexing, query optimization, partitioning, dan tuning. |
 | [`prisma-orm-playbook`](./skills/prisma-orm-playbook/) | Beginner–Intermediate | Schema, relations, CRUD, transactions, dan migrations. |
 | [`redis-caching`](./skills/redis-caching/) | Intermediate–Advanced | Cache-aside, TTL, rate limiting, locks, memory, dan security. |
@@ -85,15 +109,20 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 |-------|-------|-----------|
 | [`ci-cd-production`](./skills/ci-cd-production/) | Intermediate–Advanced | Immutable artifacts, deployment strategy, scanning, dan rollback. |
 | [`docker-production-checklist`](./skills/docker-production-checklist/) | Intermediate | Multi-stage builds, non-root, health checks, dan resource limits. |
+| [`gitops-kubernetes`](./skills/gitops-kubernetes/) | Advanced | GitOps dengan Argo CD/Flux: repo sumber kebenaran, drift, progressive delivery. |
 | [`kubernetes-production`](./skills/kubernetes-production/) | Advanced | Probes, resources, RBAC, rollout, disruption, dan observability. |
 | [`linux-cli-mastery`](./skills/linux-cli-mastery/) | Beginner–Intermediate | File operations, grep/sed/awk, proses, dan Bash scripting. |
+| [`observability-prometheus-grafana`](./skills/observability-prometheus-grafana/) | Intermediate–Advanced | Prometheus + Grafana: metrik RED/USE, PromQL, alerting, dan SLO. |
+| [`serverless-edge-computing`](./skills/serverless-edge-computing/) | Intermediate–Advanced | Serverless & edge: function design, cold start, batasan, biaya, observability. |
 | [`terraform-infrastructure`](./skills/terraform-infrastructure/) | Intermediate–Advanced | Modules, remote state, plan review, drift, dan safe changes. |
 
 ### Security
 
 | Skill | Level | Deskripsi |
 |-------|-------|-----------|
+| [`api-security-hardening`](./skills/api-security-hardening/) | Intermediate–Advanced | Hardening API: OWASP API Top 10, BOLA/IDOR, authz, dan rate limiting. |
 | [`cybersecurity-fundamentals`](./skills/cybersecurity-fundamentals/) | Intermediate–Advanced | OWASP Top 10, secure coding, dan penetration testing. |
+| [`gdpr-data-privacy`](./skills/gdpr-data-privacy/) | Intermediate–Advanced | Privacy engineering: data mapping, consent, DSR, minimisasi, dan retention. |
 | [`secrets-management`](./skills/secrets-management/) | Intermediate–Advanced | Secret lifecycle, rotation, vault, access control, dan incident response. |
 | [`supply-chain-security`](./skills/supply-chain-security/) | Intermediate–Advanced | Dependency, SBOM, provenance, signing, dan artifact verification. |
 | [`threat-modeling-stride`](./skills/threat-modeling-stride/) | Intermediate–Advanced | Assets, trust boundaries, STRIDE, abuse cases, dan mitigasi. |
@@ -113,8 +142,17 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 
 | Skill | Level | Deskripsi |
 |-------|-------|-----------|
+| [`clean-architecture-ddd`](./skills/clean-architecture-ddd/) | Advanced | Clean Architecture & DDD: domain model, bounded context, ports & adapters. |
 | [`git-workflow-master`](./skills/git-workflow-master/) | Beginner–Advanced | Branching, rebase, cherry-pick, bisect, worktree, dan commits. |
+| [`property-based-testing`](./skills/property-based-testing/) | Intermediate–Advanced | Property-based testing: invariant, generator, shrinking, dan boundary. |
 | [`typescript-advanced-patterns`](./skills/typescript-advanced-patterns/) | Intermediate–Advanced | Generics, utility types, type guards, dan design patterns. |
+
+### Mobile Development
+
+| Skill | Level | Deskripsi |
+|-------|-------|-----------|
+| [`flutter-development`](./skills/flutter-development/) | Intermediate–Advanced | Flutter production: widget, state management, platform channel, dan testing. |
+| [`react-native-expo`](./skills/react-native-expo/) | Intermediate–Advanced | Aplikasi mobile RN + Expo: navigasi, state, offline, push, dan rilis. |
 <!-- CATALOG_END -->
 
 ---
@@ -140,6 +178,12 @@ Threat Modeling → Secrets Management → Terraform → Kubernetes
 → CI/CD → Supply-Chain Security → Incident Response/SRE
 ```
 
+### Membangun aplikasi mobile
+```text
+React Native/Expo atau Flutter → Offline & state → Push Notification
+→ API Security → Observability → Store Release (EAS/CI)
+```
+
 ---
 
 ## 🚀 Cara Menggunakan
@@ -157,6 +201,30 @@ Mulai dari `README.md` pada folder skill, kemudian baca panduan utama untuk cont
 - 📋 **Checklist** — verifikasi pekerjaan sebelum deploy
 - 💻 **Code examples** — template yang harus disesuaikan dengan stack
 - ✅ **Best practices** — panduan desain, testing, security, dan operasi
+
+### 4. Baca situs dokumentasi
+```text
+https://aegisxresearch.github.io/AegisX-Skills/
+```
+
+---
+
+## ❓ FAQ
+
+**Bagaimana cara menambahkan skill baru?**
+Ikuti langkah di bagian Kontribusi: buat folder `skills/<nama-skill>/`, tambahkan `README.md` + panduan utama, daftarkan di `skills/manifest.json`, lalu jalankan `python3 scripts/generate-readme.py` dan `python3 scripts/validate-skills.py`.
+
+**Apakah contoh kode siap dipakai produksi?**
+Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`). Semua contoh harus disesuaikan dengan stack, threat model, dan kebutuhan sistem Anda — jangan copy-paste mentah.
+
+**Bagaimana CI memastikan kualitas?**
+Workflow **Skills Validation** menjalankan validator, ruff, actionlint, dan memastikan README serta konfigurasi MkDocs sinkron dengan manifest di setiap PR. Workflow **Docs** membangun situs secara strict dan mendeploy-nya ke GitHub Pages.
+
+**Apa itu kategori Anti-AI-Slop?**
+Kategori berisi skill untuk mencegah kualitas rendah dari AI agent: review kode berbasis bukti, kualitas test, verifikasi dependency, dokumentasi yang jujur, dan pelaporan output agent yang faktual.
+
+**Bagaimana skill direview agar tidak basi?**
+Setiap skill memiliki `last_reviewed` di manifest; workflow bulanan **Skill Review Reminder** membuka issue saat ada skill yang melewati interval review (180 hari).
 
 ---
 

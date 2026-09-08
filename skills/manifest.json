@@ -11,7 +11,8 @@
     "devops-cloud": "DevOps dan Cloud",
     "security": "Security",
     "anti-slop-quality": "Anti-AI-Slop dan Quality",
-    "programming-workflow": "Programming dan Workflow"
+    "programming-workflow": "Programming dan Workflow",
+    "mobile": "Mobile Development"
   },
   "skills": [
     {
@@ -705,6 +706,311 @@
       ],
       "overview": "skills/git-workflow-master/README.md",
       "guide": "skills/git-workflow-master/git-workflow-master.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "fastapi-python-backend",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "REST API Python: FastAPI, Pydantic v2, async SQLAlchemy, testing, dan deployment.",
+      "tags": [
+        "fastapi",
+        "python",
+        "pydantic",
+        "async",
+        "rest"
+      ],
+      "overview": "skills/fastapi-python-backend/README.md",
+      "guide": "skills/fastapi-python-backend/fastapi-python-backend.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "node-typescript-backend",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "Backend Node.js strictly typed: modul, validasi, error handling, dan testing.",
+      "tags": [
+        "nodejs",
+        "typescript",
+        "zod",
+        "fastify",
+        "rest"
+      ],
+      "overview": "skills/node-typescript-backend/README.md",
+      "guide": "skills/node-typescript-backend/node-typescript-backend.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "golang-microservices",
+      "category": "backend-api",
+      "level": "advanced",
+      "summary": "Microservices Go: boundary, concurrency, gRPC, resilience, dan observability.",
+      "tags": [
+        "golang",
+        "microservices",
+        "grpc",
+        "concurrency",
+        "resilience"
+      ],
+      "overview": "skills/golang-microservices/README.md",
+      "guide": "skills/golang-microservices/golang-microservices.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "openapi-spec-driven",
+      "category": "backend-api",
+      "level": "intermediate",
+      "summary": "Contract-first API: OpenAPI 3.1, lint, codegen, dan validasi kontrak.",
+      "tags": [
+        "openapi",
+        "contract-first",
+        "spec",
+        "codegen",
+        "api-design"
+      ],
+      "overview": "skills/openapi-spec-driven/README.md",
+      "guide": "skills/openapi-spec-driven/openapi-spec-driven.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "pwa-offline-first",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "PWA offline-first: service worker, strategi cache, manifest, dan sync.",
+      "tags": [
+        "pwa",
+        "service-worker",
+        "offline",
+        "cache",
+        "workbox"
+      ],
+      "overview": "skills/pwa-offline-first/README.md",
+      "guide": "skills/pwa-offline-first/pwa-offline-first.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "microfrontends-module-federation",
+      "category": "frontend",
+      "level": "advanced",
+      "summary": "Frontend multi-tim: Module Federation, kontrak modul, shared deps.",
+      "tags": [
+        "microfrontends",
+        "module-federation",
+        "webpack",
+        "architecture"
+      ],
+      "overview": "skills/microfrontends-module-federation/README.md",
+      "guide": "skills/microfrontends-module-federation/microfrontends-module-federation.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "web-localization-i18n",
+      "category": "frontend",
+      "level": "intermediate",
+      "summary": "i18n/l10n: pluralization, Intl, RTL, locale routing, dan alur terjemahan.",
+      "tags": [
+        "i18n",
+        "localization",
+        "rtl",
+        "pluralization",
+        "intl"
+      ],
+      "overview": "skills/web-localization-i18n/README.md",
+      "guide": "skills/web-localization-i18n/web-localization-i18n.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "react-native-expo",
+      "category": "mobile",
+      "level": "intermediate-advanced",
+      "summary": "Aplikasi mobile RN + Expo: navigasi, state, offline, push, dan rilis.",
+      "tags": [
+        "react-native",
+        "expo",
+        "mobile",
+        "eas",
+        "push"
+      ],
+      "overview": "skills/react-native-expo/README.md",
+      "guide": "skills/react-native-expo/react-native-expo.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "flutter-development",
+      "category": "mobile",
+      "level": "intermediate-advanced",
+      "summary": "Flutter production: widget, state management, platform channel, dan testing.",
+      "tags": [
+        "flutter",
+        "dart",
+        "mobile",
+        "riverpod",
+        "bloc"
+      ],
+      "overview": "skills/flutter-development/README.md",
+      "guide": "skills/flutter-development/flutter-development.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "mongodb-data-modeling",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Model dokumen MongoDB: embed vs reference, index, dan aggregation.",
+      "tags": [
+        "mongodb",
+        "data-modeling",
+        "document",
+        "indexes",
+        "aggregation"
+      ],
+      "overview": "skills/mongodb-data-modeling/README.md",
+      "guide": "skills/mongodb-data-modeling/mongodb-data-modeling.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "elasticsearch-search",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Search relevan: mapping, analysis, query DSL, tuning, dan operasional.",
+      "tags": [
+        "elasticsearch",
+        "opensearch",
+        "search",
+        "relevance",
+        "query-dsl"
+      ],
+      "overview": "skills/elasticsearch-search/README.md",
+      "guide": "skills/elasticsearch-search/elasticsearch-search.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "serverless-edge-computing",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Serverless & edge: function design, cold start, batasan, biaya, observability.",
+      "tags": [
+        "serverless",
+        "lambda",
+        "edge",
+        "cloudflare-workers",
+        "cold-start"
+      ],
+      "overview": "skills/serverless-edge-computing/README.md",
+      "guide": "skills/serverless-edge-computing/serverless-edge-computing.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "gitops-kubernetes",
+      "category": "devops-cloud",
+      "level": "advanced",
+      "summary": "GitOps dengan Argo CD/Flux: repo sumber kebenaran, drift, progressive delivery.",
+      "tags": [
+        "gitops",
+        "kubernetes",
+        "argocd",
+        "flux",
+        "progressive-delivery"
+      ],
+      "overview": "skills/gitops-kubernetes/README.md",
+      "guide": "skills/gitops-kubernetes/gitops-kubernetes.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "observability-prometheus-grafana",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Prometheus + Grafana: metrik RED/USE, PromQL, alerting, dan SLO.",
+      "tags": [
+        "prometheus",
+        "grafana",
+        "metrics",
+        "promql",
+        "slo"
+      ],
+      "overview": "skills/observability-prometheus-grafana/README.md",
+      "guide": "skills/observability-prometheus-grafana/observability-prometheus-grafana.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "gdpr-data-privacy",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "Privacy engineering: data mapping, consent, DSR, minimisasi, dan retention.",
+      "tags": [
+        "gdpr",
+        "privacy",
+        "consent",
+        "dsr",
+        "data-minimization"
+      ],
+      "overview": "skills/gdpr-data-privacy/README.md",
+      "guide": "skills/gdpr-data-privacy/gdpr-data-privacy.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "api-security-hardening",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "Hardening API: OWASP API Top 10, BOLA/IDOR, authz, dan rate limiting.",
+      "tags": [
+        "api-security",
+        "owasp",
+        "bola",
+        "idor",
+        "rate-limiting"
+      ],
+      "overview": "skills/api-security-hardening/README.md",
+      "guide": "skills/api-security-hardening/api-security-hardening.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "clean-architecture-ddd",
+      "category": "programming-workflow",
+      "level": "advanced",
+      "summary": "Clean Architecture & DDD: domain model, bounded context, ports & adapters.",
+      "tags": [
+        "ddd",
+        "clean-architecture",
+        "domain-model",
+        "ports-adapters",
+        "bounded-context"
+      ],
+      "overview": "skills/clean-architecture-ddd/README.md",
+      "guide": "skills/clean-architecture-ddd/clean-architecture-ddd.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "property-based-testing",
+      "category": "programming-workflow",
+      "level": "intermediate-advanced",
+      "summary": "Property-based testing: invariant, generator, shrinking, dan boundary.",
+      "tags": [
+        "property-testing",
+        "hypothesis",
+        "fast-check",
+        "shrinking",
+        "testing"
+      ],
+      "overview": "skills/property-based-testing/README.md",
+      "guide": "skills/property-based-testing/property-based-testing.md",
       "status": "maintained",
       "last_reviewed": "2026-09-08"
     }

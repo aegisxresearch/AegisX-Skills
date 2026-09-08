@@ -123,14 +123,29 @@ def build_index(manifest: dict) -> str:
     for key in by_category:
         by_category[key].sort(key=lambda s: s.get("id", ""))
 
+    total = len(skills)
     lines = [
         "# 🚀 AegisX Skills Collection",
         "",
-        "Kumpulan panduan engineering terstruktur: Backend API, Frontend, AI/ML, "
-        "Database, DevOps, Cloud, dan Security.",
+        f"Kumpulan **{total} panduan engineering terstruktur** untuk programmer, ",
+        "software engineer, DevOps, security, dan ML engineer.",
         "",
         "> Dokumen ini dihasilkan secara otomatis dari "
         "[`skills/manifest.json`](./skills/manifest.json). Jangan mengedit secara manual.",
+        "",
+        "## 📊 Statistik",
+        "",
+        "| Metrik | Nilai |",
+        "|--------|-------|",
+        f"| Total skill | {total} |",
+        f"| Kategori | {len(categories)} |",
+        f"| Backend API | {len(by_category.get('backend-api', []))} |",
+        f"| Frontend | {len(by_category.get('frontend', []))} |",
+        f"| Mobile | {len(by_category.get('mobile', []))} |",
+        f"| AI/ML | {len(by_category.get('ai-ml', []))} |",
+        f"| Database/Data | {len(by_category.get('database-data', []))} |",
+        f"| DevOps/Cloud | {len(by_category.get('devops-cloud', []))} |",
+        f"| Security | {len(by_category.get('security', []))} |",
         "",
     ]
 
@@ -153,6 +168,36 @@ def build_index(manifest: dict) -> str:
         lines.append("")
 
     lines += [
+        "---",
+        "",
+        "## 🧭 Jalur Belajar",
+        "",
+        "**Aplikasi web:** System Design → API Design → Authentication → "
+        "PostgreSQL/Prisma → React/Next.js → Testing → Observability → CI/CD",
+        "",
+        "**Aplikasi AI:** Data Engineering → RAG/LLM Application → Evaluation/MLOps "
+        "→ API Observability → Security",
+        "",
+        "**Aplikasi mobile:** React Native/Expo atau Flutter → Offline & state → "
+        "Push → API Security → Store Release",
+        "",
+        "---",
+        "",
+        "## ❓ FAQ",
+        "",
+        "**Apakah contoh kode siap dipakai produksi?**\n",
+        "Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`) dan "
+        "harus disesuaikan dengan stack serta threat model Anda.",
+        "",
+        "**Bagaimana menambahkan skill baru?**\n",
+        "Buat folder `skills/<nama-skill>/` (README + panduan), daftarkan di "
+        "`skills/manifest.json`, lalu jalankan `scripts/generate-readme.py` dan "
+        "`scripts/validate-skills.py`.",
+        "",
+        "**Bagaimana CI menjaga kualitas?**\n",
+        "Workflow Skills Validation memeriksa struktur, metadata, link, dan sinkronisasi "
+        "katalog; workflow Docs membangun situs secara strict dan deploy ke GitHub Pages.",
+        "",
         "---",
         "",
         "## Kontribusi",
