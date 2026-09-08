@@ -16,3 +16,7 @@ A repeatable accessibility review process with measurable acceptance criteria.
 
 ## File
 📄 [`accessibility-wcag.md`](./accessibility-wcag.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

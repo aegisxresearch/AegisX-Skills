@@ -3,7 +3,7 @@
 > 🎯 **Kategori:** Machine Learning / AI | **Level:** Advanced
 
 ## Deskripsi
-Panduan membangun Retrieval-Augmented Generation (RAG) system yang production-ready.
+Panduan membangun Retrieval-Augmented Generation (RAG) system yang siap diuji di lingkungan staging.
 
 ## Yang Dipelajari
 - RAG architecture overview
@@ -25,3 +25,7 @@ User Query → Query Processing → Vector Search → Reranking → LLM Generati
 ## References
 - https://docs.smith.langchain.com/evaluation
 - https://docs.pinecone.io/guides/get-started/quick-tour
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

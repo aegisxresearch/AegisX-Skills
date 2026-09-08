@@ -1,6 +1,6 @@
 # Prisma ORM Playbook
 
-> 🎯 **Kategori:** Database / TypeScript | **Level:** Beginner - Intermediate
+> 🎯 **Kategori:** Database / `TypeScript` | **Level:** Beginner - Intermediate
 
 ## Deskripsi
 Panduan Prisma ORM: schema design, queries, relations, migrations, dan best practices.
@@ -26,3 +26,7 @@ npx prisma generate                   # Generate client
 
 ## References
 - https://www.prisma.io/docs
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

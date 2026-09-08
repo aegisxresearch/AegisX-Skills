@@ -23,3 +23,7 @@ CLOSED → (failure threshold) → OPEN → (timeout) → HALF-OPEN → (success
 ## References
 - https://github.com/donnemartin/system-design-primer
 - https://microservices.io/patterns/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

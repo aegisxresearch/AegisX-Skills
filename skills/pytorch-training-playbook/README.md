@@ -25,3 +25,7 @@ Data Loading → Forward Pass → Loss Calc → Backward Pass → Optimizer Step
 ## References
 - https://pytorch.org/tutorials/
 - https://pytorch.org/docs/stable/notes/cuda.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

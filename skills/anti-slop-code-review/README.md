@@ -13,3 +13,7 @@ Panduan menemukan kode yang terlihat meyakinkan tetapi tidak diperlukan, tidak t
 
 ## File
 📄 [`anti-slop-code-review.md`](./anti-slop-code-review.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

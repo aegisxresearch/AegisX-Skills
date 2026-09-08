@@ -20,7 +20,7 @@ Semantic structure → Keyboard interaction → Focus behavior → Assistive tec
     <button type="submit">Save changes</button>
   </form>
 </main>
-```
+```typescript
 
 Prefer native elements before ARIA. Never add a widget role to a non-interactive element when a native `button`, `input`, `dialog`, or `select` is suitable.
 
@@ -45,7 +45,7 @@ openButton?.addEventListener('click', () => {
   dialog?.showModal();
   dialog?.querySelector<HTMLElement>('[autofocus]')?.focus();
 });
-```
+```css
 Use the native dialog where browser support and product requirements permit it. Otherwise implement focus trapping, inert background content, labelled title, and deterministic restoration.
 
 ## Live Regions
@@ -102,3 +102,7 @@ Use `role="status"` for non-urgent updates and `role="alert"` for urgent errors.
 - https://www.w3.org/TR/WCAG22/
 - https://www.w3.org/WAI/ARIA/apg/
 - https://developer.mozilla.org/en-US/docs/Web/Accessibility
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -24,3 +24,7 @@ User → Login → Server validate credentials → Issue JWT → Client store to
 ## References
 - https://auth0.com/docs/secure/tokens
 - https://owasp.org/www-community/attacks/csrf
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -1,4 +1,4 @@
-# MongoDB Data Modeling
+# `MongoDB` Data Modeling
 
 - **Kategori:** Database dan Data Engineering
 - **Level:** Intermediate–Advanced
@@ -6,10 +6,14 @@
 
 ## Ringkasan
 
-Panduan pemodelan data di MongoDB: kapan embed vs reference, pola umum (outlier, extended reference), design untuk query, indexing, dan aggregation pipeline.
+Panduan pemodelan data di `MongoDB`: kapan embed vs reference, pola umum (outlier, extended reference), design untuk query, indexing, dan aggregation pipeline.
 
 ## Referensi
 
-- [MongoDB Documentation](https://www.mongodb.com/docs/)
-- [MongoDB Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
-- [MongoDB University](https://learn.mongodb.com/)
+- [`MongoDB` Documentation](https://www.mongodb.com/docs/)
+- [`MongoDB` Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
+- [`MongoDB` University](https://learn.mongodb.com/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -5,7 +5,7 @@ Panduan training PyTorch dari nol sampai production: setup, training loop, debug
 
 ---
 
-## 🏗️ Project Structure
+## ️ Project Structure
 
 ```
 project/
@@ -26,11 +26,11 @@ project/
 ├── tests/
 ├── requirements.txt
 └── README.md
-```
+```python
 
 ---
 
-## 🚀 Quick Start Template
+## Quick Start Template
 
 ```python
 import torch
@@ -81,11 +81,11 @@ for epoch in range(num_epochs):
         'optimizer_state_dict': optimizer.state_dict(),
         'val_loss': val_loss,
     }, f'checkpoints/epoch_{epoch}.pt')
-```
+```python
 
 ---
 
-## 📊 Data Pipeline
+## Data Pipeline
 
 ### Custom Dataset
 ```python
@@ -121,11 +121,11 @@ train_loader = DataLoader(
     drop_last=True,       # Consistent batch size
     persistent_workers=True  # Keep workers alive
 )
-```
+```python
 
 ---
 
-## 🔧 Common Patterns
+## Common Patterns
 
 ### Mixed Precision Training (FP16)
 ```python
@@ -158,7 +158,7 @@ for i, batch in enumerate(train_loader):
     if (i + 1) % accumulation_steps == 0:
         optimizer.step()
         optimizer.zero_grad()
-```
+```python
 
 ### Early Stopping
 ```python
@@ -180,11 +180,11 @@ class EarlyStopping:
             self.best_loss = val_loss
             self.counter = 0
         return False
-```
+```python
 
 ---
 
-## 🐛 Debugging
+## Debugging
 
 ### Common Issues
 | Symptom | Cause | Solution |
@@ -201,11 +201,11 @@ for name, param in model.named_parameters():
     if param.grad is not None:
         if torch.isnan(param.grad).any():
             print(f"NaN gradient in {name}")
-```
+```python
 
 ---
 
-## ⚡ Performance Optimization
+## Performance Optimization
 
 ### Memory Efficient
 ```python
@@ -229,7 +229,7 @@ train_loader = DataLoader(..., prefetch_factor=2)
 
 ---
 
-## 📋 Training Checklist
+## Training Checklist
 
 ### Before Training
 - [ ] Data properly split (train/val/test)
@@ -252,7 +252,11 @@ train_loader = DataLoader(..., prefetch_factor=2)
 
 ---
 
-## 📚 References
+## References
 - https://pytorch.org/tutorials/
 - https://pytorch.org/docs/stable/notes/cuda.html
 - https://arxiv.org/abs/1706.03762 (Attention Is All You Need)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

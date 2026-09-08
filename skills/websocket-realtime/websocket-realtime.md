@@ -60,3 +60,7 @@ Track active connections, handshake failures, auth failures, subscriptions, mess
 - https://www.rfc-editor.org/rfc/rfc6455
 - https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
 - https://owasp.org/www-community/vulnerabilities/WebSocket_Security
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

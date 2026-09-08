@@ -14,3 +14,7 @@ Panduan pengembangan API berbasis kontrak dengan OpenAPI 3.1: mendesain spec dul
 - [Swagger Editor](https://editor.swagger.io/)
 - [Stoplight](https://stoplight.io/)
 - [Redocly CLI](https://redocly.com/docs/cli/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

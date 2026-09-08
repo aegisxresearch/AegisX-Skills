@@ -13,3 +13,7 @@ Panduan membangun metadata, canonical URLs, structured data, sitemap, robots pol
 
 ## File
 📄 [`seo-programmatic.md`](./seo-programmatic.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

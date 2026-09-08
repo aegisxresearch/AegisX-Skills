@@ -1,4 +1,4 @@
-# Kubernetes Production Operations
+# `Kubernetes` Production Operations
 
 ## Goal
 Run containers predictably under failure, scaling, deployment, and security constraints.
@@ -53,7 +53,7 @@ Keep declarative manifests versioned. Separate config from images, validate conf
 Use max unavailable/surge deliberately, observe readiness and business metrics, and pause or rollback on error/latency regression. Ensure the application supports mixed-version traffic during rolling updates.
 
 ## Operations
-Monitor node pressure, pod restarts, pending pods, scheduling failures, resource throttling, API server health, control-plane capacity, and storage. Test backup restore, not just backup creation.
+Monitor node pressure, pod restarts, pending pods, scheduling failures, resource throttling, API server health, control-plane capacity, and storage. Test backup restore, not backup creation.
 
 ## Checklist
 - [ ] Images are pinned, scanned, and non-root.
@@ -70,3 +70,7 @@ Monitor node pressure, pod restarts, pending pods, scheduling failures, resource
 - https://kubernetes.io/docs/concepts/configuration/overview/
 - https://kubernetes.io/docs/concepts/security/
 - https://kubernetes.io/docs/tasks/run-application/configure-pdb/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -58,3 +58,7 @@ Map every high-risk threat to a test, policy, scanner, monitoring signal, or rev
 - https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
 - https://owasp.org/www-community/Threat_Modeling
 - https://csrc.nist.gov/publications/detail/sp/800-154/final
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -22,7 +22,7 @@ Do not introduce a broker solely to hide slow code. Define the latency, durabili
   "trace_id": "trace_123",
   "data": { "order_id": "ord_123", "customer_id": "cus_456" }
 }
-```
+```sql
 Use stable identifiers, UTC timestamps, schema versions, and an explicit ownership policy. Avoid publishing secrets or mutable snapshots without a reason.
 
 ## Delivery Semantics
@@ -67,3 +67,7 @@ Track publish failures, consumer lag, age of oldest message, throughput, retry r
 - https://microservices.io/patterns/data/transactional-outbox.html
 - https://www.asyncapi.com/docs
 - https://martinfowler.com/articles/201701-event-driven.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

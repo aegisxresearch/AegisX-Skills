@@ -25,3 +25,7 @@ Design Tokens → Primitives (Button, Input) → Compositions (Card, Modal) → 
 ## References
 - https://carbondesignsystem.com/
 - https://material.io/design
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

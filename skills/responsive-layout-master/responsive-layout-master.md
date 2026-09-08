@@ -5,7 +5,7 @@ Panduan responsive design: mobile-first approach, fluid typography, container qu
 
 ---
 
-## 📱 Mobile-First Approach
+## Mobile-First Approach
 
 ### Breakpoint System
 ```css
@@ -34,7 +34,7 @@ Panduan responsive design: mobile-first approach, fluid typography, container qu
     margin: 0 auto;
   }
 }
-```
+```typescript
 
 ### Standard Breakpoints
 | Name | Width | Target |
@@ -46,7 +46,7 @@ Panduan responsive design: mobile-first approach, fluid typography, container qu
 
 ---
 
-## 📏 Fluid Typography
+## Fluid Typography
 
 ### Clamp Function (Modern)
 ```css
@@ -71,11 +71,11 @@ p {
   --space-lg: clamp(1.5rem, 3vw, 3rem);
   --space-xl: clamp(2rem, 4vw, 4rem);
 }
-```
+```css
 
 ---
 
-## 🧩 Layout Patterns
+## Layout Patterns
 
 ### 1. Holy Grail Layout
 ```css
@@ -98,7 +98,7 @@ p {
       "footer footer";
   }
 }
-```
+```css
 
 ### 2. Sidebar + Content
 ```css
@@ -137,7 +137,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
-```
+```css
 
 ### 4. Responsive Table
 ```css
@@ -177,7 +177,7 @@ p {
 
 ---
 
-## 🖼️ Responsive Images
+## ️ Responsive Images
 
 ### Picture Element
 ```html
@@ -205,7 +205,7 @@ p {
 
 ---
 
-## 🎯 Container Queries (Modern)
+## Container Queries (Modern)
 
 ```css
 /* Parent container */
@@ -231,7 +231,7 @@ p {
 
 ---
 
-## 📋 Responsive Checklist
+## Responsive Checklist
 
 ### Mobile (0-640px)
 - [ ] Touch targets ≥ 44px
@@ -253,7 +253,11 @@ p {
 
 ---
 
-## 📚 References
+## References
 - https://web.dev/responsive-web-design-basics/
 - https://css-tricks.com/snippets/css/complete-guide-grid/
 - https://web.dev/learn/css/container-queries/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

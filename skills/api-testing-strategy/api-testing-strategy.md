@@ -5,7 +5,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 
 ---
 
-## 🧪 Testing Pyramid
+## Testing Pyramid
 
 ```
            ╱╲
@@ -18,7 +18,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
     ╱              ╲    Unit Tests
    ╱                ╲   (Many, fast, cheap)
   ╱──────────────────╲
-```
+```python
 
 ### Test Distribution
 | Type | Amount | Speed | Cost |
@@ -29,7 +29,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 
 ---
 
-## 🔬 Unit Tests
+## Unit Tests
 
 ### Python (pytest)
 ```python
@@ -58,7 +58,7 @@ class TestUserService:
     def test_get_user_not_found(self):
         with pytest.raises(UserNotFoundError):
             self.service.get_user(user_id=999)
-```
+```python
 
 ### JavaScript (Jest)
 ```javascript
@@ -87,13 +87,13 @@ describe('UserService', () => {
     ).rejects.toThrow('Invalid email');
   });
 });
-```
+```python
 
 ---
 
-## 🔗 Integration Tests
+## Integration Tests
 
-### API Endpoint Tests (FastAPI)
+### API Endpoint Tests (`FastAPI`)
 ```python
 import pytest
 from fastapi.testclient import TestClient
@@ -144,7 +144,7 @@ class TestUserAPI:
             json={"email": "test@example.com", "name": "Test 2"}
         )
         assert response.status_code == 409
-```
+```python
 
 ### API Endpoint Tests (Express/Supertest)
 ```javascript
@@ -172,11 +172,11 @@ describe('POST /api/v1/users', () => {
     expect(response.status).toBe(400);
   });
 });
-```
+```python
 
 ---
 
-## 📋 Contract Testing
+## Contract Testing
 
 ### Schema Validation
 ```python
@@ -196,7 +196,7 @@ def test_create_user_request_schema():
     # Invalid
     with pytest.raises(ValidationError):
         CreateUserRequest(email="not-email", name="")
-```
+```python
 
 ### Response Schema Test
 ```python
@@ -213,11 +213,11 @@ def test_user_response_schema():
     # Check types
     assert isinstance(data["id"], int)
     assert isinstance(data["email"], str)
-```
+```python
 
 ---
 
-## ⚡ Load Testing
+## Load Testing
 
 ### k6 Script
 ```javascript
@@ -270,7 +270,7 @@ scenarios:
 
 ---
 
-## 📋 Testing Checklist
+## Testing Checklist
 
 ### Unit Tests
 - [ ] Test happy path
@@ -297,7 +297,11 @@ scenarios:
 
 ---
 
-## 📚 References
+## References
 - https://docs.pytest.org/
 - https://k6.io/docs/
 - https://docs.docker.com/compose/testing/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

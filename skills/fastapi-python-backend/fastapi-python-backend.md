@@ -1,8 +1,8 @@
-# FastAPI Python Backend
+# `FastAPI` Python Backend
 
 ## Tujuan
 
-Membangun REST API Python yang aman, teruji, dan siap produksi dengan FastAPI + Pydantic v2 + SQLAlchemy 2.0 async.
+Membangun REST API Python yang aman, teruji, dan siap produksi dengan `FastAPI` + Pydantic v2 + `SQLAlchemy` 2.0 async.
 
 ## Prasyarat
 
@@ -13,7 +13,7 @@ Membangun REST API Python yang aman, teruji, dan siap produksi dengan FastAPI + 
 
 1. **Pydantic v2** — validasi input/output dan serialisasi; gunakan `model_config = ConfigDict(from_attributes=True)` untuk ORM.
 2. **Dependency Injection** — `Depends()` untuk auth, DB session, dan komponen yang bisa di-mock saat testing.
-3. **Async DB** — SQLAlchemy 2.0 `AsyncSession` + `asyncpg`; jangan blokir event loop dengan I/O sinkron.
+3. **Async DB** — `SQLAlchemy` 2.0 `AsyncSession` + `asyncpg`; jangan blokir event loop dengan I/O sinkron.
 4. **Error handling** — exception handler global agar format error konsisten; jangan bocorkan detail internal.
 5. **Pagination** — berbasis cursor untuk dataset besar, offset untuk dataset kecil.
 6. **Background tasks** — gunakan task queue nyata (Celery/ARQ) untuk pekerjaan yang butuh retry; `BackgroundTasks` hanya untuk pekerjaan ringan.
@@ -22,7 +22,7 @@ Membangun REST API Python yang aman, teruji, dan siap produksi dengan FastAPI + 
 
 ```text
 app/
-├── main.py            # FastAPI instance + router mounting
+├── main.py            # `FastAPI` instance + router mounting
 ├── config.py          # Settings (pydantic-settings) dari env
 ├── api/
 │   └── v1/
@@ -32,21 +32,21 @@ app/
 ├── core/
 │   ├── db.py          # Async engine + session factory
 │   └── security.py    # hashing, JWT
-├── models/            # SQLAlchemy models
+├── models/            # `SQLAlchemy` models
 ├── schemas/           # Pydantic schemas
 └── services/          # business logic
-```
+```python
 
 ## Contoh dasar
 
 ```python
 # app/main.py
-from fastapi import FastAPI
+from fastapi import `FastAPI`
 from app.api.v1.router import api_router
 
-app = FastAPI(title="Example API", version="1.0.0")
+app = `FastAPI`(title="Example API", version="1.0.0")
 app.include_router(api_router, prefix="/api/v1")
-```
+```python
 
 ```python
 # app/api/v1/endpoints/users.py
@@ -90,4 +90,8 @@ async def create_user(payload: UserCreate, db: AsyncSession = Depends(get_sessio
 
 - https://fastapi.tiangolo.com/ — dokumentasi resmi
 - https://docs.pydantic.dev/ — Pydantic v2
-- https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html — async SQLAlchemy
+- https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html — async `SQLAlchemy`
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

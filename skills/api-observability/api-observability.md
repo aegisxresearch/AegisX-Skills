@@ -71,3 +71,7 @@ Separate liveness from readiness. Liveness should indicate whether the process c
 - https://opentelemetry.io/docs/concepts/observability-primer/
 - https://sre.google/sre-book/service-level-objectives/
 - https://prometheus.io/docs/practices/naming/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -5,7 +5,7 @@ Panduan animasi web yang performant: GPU-accelerated properties, will-change, re
 
 ---
 
-## ⚡ GPU-Accelerated Properties
+## GPU-Accelerated Properties
 
 ### Safe to Animate (GPU-accelerated)
 ```css
@@ -37,7 +37,7 @@ Width, Height, Top → Layout + Paint (slowest)
 
 ---
 
-## 🎯 CSS Animation Best Practices
+## CSS Animation Best Practices
 
 ### Smooth Transition
 ```css
@@ -58,7 +58,7 @@ Width, Height, Top → Layout + Paint (slowest)
 .card:hover {
   margin-top: -4px; /* Triggers layout! */
 }
-```
+```python
 
 ### Keyframe Animation
 ```css
@@ -81,7 +81,7 @@ Width, Height, Top → Layout + Paint (slowest)
 
 ---
 
-## 🔧 will-change Property
+## will-change Property
 
 ### Usage
 ```css
@@ -113,11 +113,11 @@ Width, Height, Top → Layout + Paint (slowest)
 .animated-element {
   will-change: transform;
 }
-```
+```css
 
 ---
 
-## 🌙 Reduced Motion
+## Reduced Motion
 
 ### Respect User Preference
 ```css
@@ -132,7 +132,7 @@ Width, Height, Top → Layout + Paint (slowest)
     scroll-behavior: auto !important;
   }
 }
-```
+```typescript
 
 ### JavaScript Check
 ```javascript
@@ -148,7 +148,7 @@ if (!prefersReducedMotion) {
 
 ---
 
-## 📊 Performance Monitoring
+## Performance Monitoring
 
 ### Chrome DevTools
 ```
@@ -167,13 +167,13 @@ if (!prefersReducedMotion) {
 
 // INP (Interaction to Next Paint)
 // Target: < 200ms
-```
+```python
 
 ---
 
-## 🧩 Animation Libraries
+## Animation Libraries
 
-### Framer Motion (React)
+### Framer Motion (`React`)
 ```jsx
 import { motion } from 'framer-motion';
 
@@ -195,7 +195,7 @@ gsap.to('.card', {
   duration: 0.3,
   ease: 'power2.out'
 });
-```
+```python
 
 ### CSS Only (Lightest)
 ```css
@@ -212,7 +212,7 @@ gsap.to('.card', {
 
 ---
 
-## 📋 Animation Checklist
+## Animation Checklist
 
 ### Performance
 - [ ] Animate only transform & opacity
@@ -236,7 +236,11 @@ gsap.to('.card', {
 
 ---
 
-## 📚 References
+## References
 - https://web.dev/articles/sticky-headers
 - https://developer.mozilla.org/en-US/docs/Web/Performance
 - https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

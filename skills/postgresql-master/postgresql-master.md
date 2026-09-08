@@ -1,11 +1,11 @@
-# PostgreSQL Master
+# `PostgreSQL` Master
 
 ## Overview
-Panduan lengkap PostgreSQL: indexing, query optimization, partitioning, dan production configuration.
+Panduan lengkap `PostgreSQL`: indexing, query optimization, partitioning, dan production configuration.
 
 ---
 
-## 🏗️ Schema Design
+## ️ Schema Design
 
 ### Table Structure
 ```sql
@@ -33,11 +33,11 @@ CREATE TABLE orders (
     -- Indexes
     CONSTRAINT valid_status CHECK (status IN ('pending', 'processing', 'shipped', 'delivered'))
 );
-```
+```sql
 
 ---
 
-## 🔍 Indexing Strategies
+## Indexing Strategies
 
 ### When to Create Index
 ```sql
@@ -54,7 +54,7 @@ WHERE status = 'pending';
 
 -- ✅ Covering index (includes all needed columns)
 CREATE INDEX idx_users_email_name ON users(email) INCLUDE (name);
-```
+```sql
 
 ### Index Types
 | Type | Use Case | Example |
@@ -76,11 +76,11 @@ ORDER BY pg_relation_size(indexrelid) DESC;
 -- Analyze query performance
 EXPLAIN (ANALYZE, BUFFERS) 
 SELECT * FROM users WHERE email = 'test@example.com';
-```
+```sql
 
 ---
 
-## ⚡ Query Optimization
+## Query Optimization
 
 ### Slow Query Diagnosis
 ```sql
@@ -95,7 +95,7 @@ LEFT JOIN orders o ON o.user_id = u.id
 WHERE u.created_at > NOW() - INTERVAL '30 days'
 GROUP BY u.id
 HAVING COUNT(o.id) > 5;
-```
+```sql
 
 ### Common Optimizations
 ```sql
@@ -127,11 +127,11 @@ SELECT * FROM orders ORDER BY id LIMIT 20 OFFSET 1000;
 
 -- Good
 SELECT * FROM orders WHERE id > 1000 ORDER BY id LIMIT 20;
-```
+```python
 
 ---
 
-## 📊 Pagination Patterns
+## Pagination Patterns
 
 ### Cursor-Based (Recommended)
 ```sql
@@ -145,7 +145,7 @@ SELECT * FROM orders
 WHERE id > 12345  -- last_id from previous page
 ORDER BY id 
 LIMIT 20;
-```
+```sql
 
 ### Keyset Pagination
 ```sql
@@ -154,11 +154,11 @@ SELECT * FROM orders
 WHERE (created_at, id) < ('2024-01-15', 99999)
 ORDER BY created_at DESC, id DESC
 LIMIT 20;
-```
+```sql
 
 ---
 
-## 🔧 Partitioning
+## Partitioning
 
 ### Range Partitioning (Time-series)
 ```sql
@@ -176,7 +176,7 @@ CREATE TABLE events_2024_01 PARTITION OF events
 
 CREATE TABLE events_2024_02 PARTITION OF events
     FOR VALUES FROM ('2024-02-01') TO ('2024-03-01');
-```
+```sql
 
 ### Auto-create Partitions
 ```sql
@@ -189,11 +189,11 @@ SELECT partman.create_parent(
     p_type := 'range',
     p_interval := 'monthly'
 );
-```
+```sql
 
 ---
 
-## 🛡️ Production Checklist
+## ️ Production Checklist
 
 ### Security
 - [ ] Use SSL connections
@@ -226,7 +226,7 @@ SELECT count(*) FROM pg_stat_activity;
 
 ---
 
-## 📋 Quick Reference
+## Quick Reference
 
 ### Common Commands
 ```sql
@@ -243,7 +243,11 @@ REINDEX TABLE;  -- Rebuild indexes
 
 ---
 
-## 📚 References
+## References
 - https://www.postgresql.org/docs/current/
 - https://use-the-index-luke.com/
 - https://pganalyze.com/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

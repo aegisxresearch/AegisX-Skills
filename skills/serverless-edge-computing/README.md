@@ -14,3 +14,7 @@ Panduan membangun di serverless dan edge (AWS Lambda, Cloudflare Workers, Vercel
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Vercel Functions](https://vercel.com/docs/functions)
 - [Serverless Land](https://serverlessland.com/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

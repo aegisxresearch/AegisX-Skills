@@ -5,7 +5,7 @@ Panduan membangun Design System dari nol: design tokens, components, documentati
 
 ---
 
-## 🏗️ Design System Architecture
+## ️ Design System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -34,7 +34,7 @@ Panduan membangun Design System dari nol: design tokens, components, documentati
 
 ---
 
-## 🎨 Design Tokens
+## Design Tokens
 
 ### Token Structure (JSON)
 ```json
@@ -93,7 +93,7 @@ Panduan membangun Design System dari nol: design tokens, components, documentati
 
 ---
 
-## 🧱 Component Checklist
+## Component Checklist
 
 ### Component Documentation
 ```markdown
@@ -129,7 +129,7 @@ Trigger actions or events.
 
 ---
 
-## 📐 Spacing System
+## Spacing System
 
 ### Base Unit (4px grid)
 ```
@@ -157,7 +157,7 @@ p  { margin-bottom: var(--spacing-md); }
 
 ---
 
-## 🎯 Color System
+## Color System
 
 ### Semantic Colors
 ```json
@@ -181,10 +181,10 @@ p  { margin-bottom: var(--spacing-md); }
 
 ---
 
-## 🔤 Typography Scale
+## Typography Scale
 
 ### Modular Scale (1.25 ratio)
-```
+```yaml
 xs:    12px / 16px  (0.75rem)
 sm:    14px / 20px  (0.875rem)
 base:  16px / 24px  (1rem)
@@ -196,7 +196,7 @@ xl:    20px / 28px  (1.25rem)
 ```
 
 ### Line Height Rules
-```
+```yaml
 Headings: 1.2 (tight)
 Body:     1.5 (normal)
 Small:    1.4 (compact)
@@ -204,7 +204,7 @@ Small:    1.4 (compact)
 
 ---
 
-## ♿ Accessibility (WCAG 2.1)
+## Accessibility (WCAG 2.1)
 
 ### Component Requirements
 - [ ] Keyboard navigable (Tab, Enter, Escape)
@@ -235,7 +235,7 @@ Small:    1.4 (compact)
 
 ---
 
-## 📋 Design System Checklist
+## Design System Checklist
 
 ### Foundation
 - [ ] Color palette defined (primary, neutral, semantic)
@@ -264,7 +264,11 @@ Small:    1.4 (compact)
 
 ---
 
-## 📚 References
+## References
 - https://carbondesignsystem.com/
 - https://material.io/design
 - https://www.smashingmagazine.com/2022/01/front-end-architecture-design-systems/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

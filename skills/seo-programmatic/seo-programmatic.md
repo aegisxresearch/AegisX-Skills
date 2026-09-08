@@ -66,3 +66,7 @@ Track crawl errors, index coverage, broken canonical links, sitemap freshness, s
 - https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 - https://developers.google.com/search/docs/crawling-indexing/robots/intro
 - https://schema.org/docs/gs.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

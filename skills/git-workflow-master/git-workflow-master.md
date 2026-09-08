@@ -5,7 +5,7 @@ Panduan Git advanced: branching strategies, rebase, cherry-pick, bisect, dan col
 
 ---
 
-## 🌿 Branching Strategies
+## Branching Strategies
 
 ### GitHub Flow (Recommended for most teams)
 ```
@@ -38,11 +38,11 @@ main ────●────●────●────●────●
             └┐   └┐   └┐   └┐   └┐   └┐
              └┐   └┐   └┐   └┐   └┐   └┐
               Short-lived branches (hours, not days)
-```
+```bash
 
 ---
 
-## 🔀 Git Commands Cheat Sheet
+## Git Commands Cheat Sheet
 
 ### Interactive Rebase (Clean History)
 ```bash
@@ -54,7 +54,7 @@ pick abc1234 feat: add user model
 squash def5678 fix: typo in user model
 squash ghi9012 update tests
 # Result: single clean commit
-```
+```bash
 
 ### Cherry-Pick (Select Specific Commits)
 ```bash
@@ -66,7 +66,7 @@ git cherry-pick abc1234 def5678
 
 # Cherry-pick a range
 git cherry-pick abc1234..ghi9012
-```
+```bash
 
 ### Bisect (Find Bug Introduction)
 ```bash
@@ -81,7 +81,7 @@ git bisect good    # or
 git bisect bad
 
 # Result: finds exact commit that introduced bug
-```
+```bash
 
 ### Worktrees (Multiple Branches Simultaneously)
 ```bash
@@ -96,7 +96,7 @@ git worktree remove ../hotfix-branch
 
 ---
 
-## 📝 Commit Message Convention
+## Commit Message Convention
 
 ### Conventional Commits
 ```
@@ -105,7 +105,7 @@ git worktree remove ../hotfix-branch
 [optional body]
 
 [optional footer]
-```
+```python
 
 ### Types
 | Type | Description | Example |
@@ -135,7 +135,7 @@ git commit -m "refactor(db): optimize user query performance
 
 ---
 
-## 🔧 Useful Aliases
+## Useful Aliases
 
 ```bash
 # Add to ~/.gitconfig
@@ -148,11 +148,11 @@ git commit -m "refactor(db): optimize user query performance
   unstage = reset HEAD --
   last = log -1 HEAD
   visual = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-```
+```bash
 
 ---
 
-## 🛠️ Advanced Operations
+## ️ Advanced Operations
 
 ### Amend Last Commit
 ```bash
@@ -162,7 +162,7 @@ git commit --amend -m "New message"
 # Add forgotten files
 git add forgotten-file.txt
 git commit --amend --no-edit
-```
+```bash
 
 ### Reset (Careful!)
 ```bash
@@ -174,7 +174,7 @@ git reset HEAD~1
 
 # Hard: discard all changes (DANGEROUS)
 git reset --hard HEAD~1
-```
+```bash
 
 ### Stash (Temporary Storage)
 ```bash
@@ -193,7 +193,7 @@ git stash pop
 
 ---
 
-## 📋 Workflow Checklist
+## Workflow Checklist
 
 ### Before Starting Work
 - [ ] Pull latest from main
@@ -218,7 +218,11 @@ git stash pop
 
 ---
 
-## 📚 References
+## References
 - https://git-scm.com/book/en/v2
 - https://conventionalcommits.org/
 - https://trunkbaseddevelopment.com/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -15,7 +15,7 @@ Merancang dan membangun microservices Go yang kecil, cepat, resilien, dan mudah 
 2. **Transport** — REST via `net/http` atau `chi`; gRPC untuk komunikasi internal yang ketat; protobuf untuk kontrak.
 3. **Concurrency** — `errgroup` untuk fan-out terbatas; jangan membuat goroutine tanpa batas (semaphore/worker pool).
 4. **Resilience** — retry dengan backoff + jitter, timeout per request, circuit breaker (mis. `sony/gobreaker`), bulkhead.
-5. **Observability** — OpenTelemetry tracing, structured slog logs, Prometheus metrics.
+5. **Observability** — OpenTelemetry tracing, structured slog logs, `Prometheus` metrics.
 6. **Config** — `envconfig`/`env` + secrets dari vault; tidak ada config di binary.
 
 ## Contoh server HTTP minimal (illustrative)
@@ -79,3 +79,7 @@ func main() {
 - https://grpc.io/docs/languages/go/ — gRPC-Go
 - https://github.com/uber-go/guide — style guide
 - https://opentelemetry.io/docs/languages/go/ — observability
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

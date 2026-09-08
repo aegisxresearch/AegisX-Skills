@@ -13,3 +13,7 @@ Panduan memilih queue, merancang event contract, retries, dead-letter handling, 
 
 ## File
 📄 [`message-queues-events.md`](./message-queues-events.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

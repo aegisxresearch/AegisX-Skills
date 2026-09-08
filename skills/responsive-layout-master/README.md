@@ -17,10 +17,14 @@ Panduan responsive design: mobile-first approach, fluid typography, container qu
 📄 [`responsive-layout-master.md`](./responsive-layout-master.md) — Isi skill lengkap
 
 ## Breakpoints
-```
+```yaml
 Mobile: 0-640px → Tablet: 641-1024px → Desktop: 1025px+
 ```
 
 ## References
 - https://web.dev/responsive-web-design-basics/
 - https://web.dev/learn/css/container-queries/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

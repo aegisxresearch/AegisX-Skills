@@ -14,3 +14,7 @@ Panduan membangun microservices di Go: desain service boundary, HTTP/gRPC, concu
 - [net/http Documentation](https://pkg.go.dev/net/http)
 - [gRPC-Go](https://grpc.io/docs/languages/go/)
 - [Uber Go Style Guide](https://github.com/uber-go/guide)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

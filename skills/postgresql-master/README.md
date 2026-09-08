@@ -1,9 +1,9 @@
-# PostgreSQL Master
+# `PostgreSQL` Master
 
 > 🎯 **Kategori:** Database | **Level:** Intermediate - Advanced
 
 ## Deskripsi
-Panduan lengkap PostgreSQL: indexing, query optimization, partitioning, dan production configuration.
+Panduan lengkap `PostgreSQL`: indexing, query optimization, partitioning, dan production configuration.
 
 ## Yang Dipelajari
 - Schema design dengan constraints
@@ -26,3 +26,7 @@ Panduan lengkap PostgreSQL: indexing, query optimization, partitioning, dan prod
 ## References
 - https://www.postgresql.org/docs/current/
 - https://use-the-index-luke.com/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

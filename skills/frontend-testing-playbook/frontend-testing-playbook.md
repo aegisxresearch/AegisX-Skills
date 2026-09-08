@@ -10,7 +10,7 @@ Component behavior             focused, realistic
 Route and API integration      fewer, high value
 Browser E2E                    critical journeys only
 Visual regression              stable visual contracts
-```
+```python
 
 ## Component Example
 ```typescript
@@ -32,7 +32,7 @@ test('submits valid credentials', async () => {
     password: 'correct-password',
   });
 });
-```
+```python
 Use the test runner already adopted by the application. The example assumes Vitest syntax; do not add a second runner solely for this pattern.
 
 ## Required Negative Cases
@@ -92,3 +92,7 @@ Parallelize independent suites, but preserve artifact collection when a test fai
 - https://testing-library.com/docs/
 - https://playwright.dev/docs/test-intro
 - https://www.w3.org/WAI/test-evaluate/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

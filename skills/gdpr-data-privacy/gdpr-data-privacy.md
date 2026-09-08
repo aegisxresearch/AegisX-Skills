@@ -46,3 +46,7 @@ Membangun produk yang memenuhi kewajiban perlindungan data pribadi secara teknis
 - https://gdpr-info.eu/ — teks regulasi
 - https://www.edpb.europa.eu/ — pedoman EDPB
 - https://iapp.org/ — praktik industri privasi
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

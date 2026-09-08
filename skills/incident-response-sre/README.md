@@ -13,3 +13,7 @@ Panduan menangani incident secara cepat dan aman dengan severity, roles, runbook
 
 ## File
 📄 [`incident-response-sre.md`](./incident-response-sre.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

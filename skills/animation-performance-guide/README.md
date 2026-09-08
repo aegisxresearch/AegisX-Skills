@@ -25,3 +25,7 @@ Width, Height, Top → Layout + Paint (slowest ❌)
 ## References
 - https://web.dev/articles/sticky-headers
 - https://developer.mozilla.org/en-US/docs/Web/Performance
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

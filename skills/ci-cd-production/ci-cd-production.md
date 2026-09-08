@@ -47,3 +47,7 @@ Define whether rollback means artifact rollback, feature disablement, traffic sw
 - https://slsa.dev/spec/v1.0/
 - https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions
 - https://martinfowler.com/bliki/BlueGreenDeployment.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

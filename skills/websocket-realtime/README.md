@@ -13,3 +13,7 @@ Panduan membangun koneksi realtime yang autentik, resilient, observable, dan ama
 
 ## File
 📄 [`websocket-realtime.md`](./websocket-realtime.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

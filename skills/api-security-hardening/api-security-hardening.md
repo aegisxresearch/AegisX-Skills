@@ -65,3 +65,7 @@ async def get_contract(user, contract_id, db):
 - https://owasp.org/API-Security/editions/2023/en/0x11-t10/ — API Top 10
 - https://cheatsheetseries.owasp.org/ — cheat sheets
 - https://owasp.org/www-project-application-security-verification-standard/ — ASVS
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

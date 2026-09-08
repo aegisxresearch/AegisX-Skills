@@ -17,7 +17,7 @@ Read the surrounding code before judging an isolated snippet. Preserve existing 
 - Broad catches that discard errors or return fake success.
 - `any`, unsafe casts, magic values, and hidden global state.
 - New dependency for functionality already available in the project.
-- “Production-ready” claims without tests, limits, or operational behavior.
+- “siap diuji di lingkungan staging” claims without tests, limits, or operational behavior.
 
 ## Evidence Questions
 For every non-trivial change, ask:
@@ -50,3 +50,7 @@ Do not report stylistic preference as a defect. Do not claim a vulnerability wit
 - [ ] Logs and comments add useful information.
 - [ ] Complexity is proportional to the problem.
 - [ ] Findings are evidence-based and prioritized.
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

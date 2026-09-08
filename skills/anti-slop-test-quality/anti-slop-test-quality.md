@@ -7,7 +7,7 @@ Write tests that fail when user-visible or contract-level behavior regresses, no
 Weak:
 ```typescript
 expect(response).toBeDefined();
-```
+```yaml
 
 Stronger:
 ```typescript
@@ -25,7 +25,7 @@ For a meaningful behavior, cover:
 - invalid or boundary input;
 - dependency failure, authorization failure, conflict, timeout, or duplicate operation as relevant.
 
-Do not invent irrelevant edge cases just to increase test count.
+Do not invent irrelevant edge cases to increase test count.
 
 ## Mock Boundaries
 Mock external systems at their boundary. Do not mock the function under test, its validators, or every internal collaborator. A mock should model success, failure, latency, malformed data, and retry behavior where those affect the contract.
@@ -54,3 +54,7 @@ Line coverage is a diagnostic signal, not proof of quality. Review branch, contr
 - [ ] Error, timeout, retry, and duplicate behavior is covered where relevant.
 - [ ] Flaky tests have an owner and removal deadline.
 - [ ] Coverage reports are interpreted with risk context.
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

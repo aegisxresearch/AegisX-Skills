@@ -7,7 +7,7 @@ Ensure credentials are discoverable, short-lived where possible, least-privilege
 Examples include database credentials, signing keys, API tokens, encryption keys, certificates, and personal data. Assign owner, environment, scope, expiry, rotation method, and incident contact.
 
 ## Storage and Injection
-Use a dedicated secret manager or cloud KMS-backed store. Applications should retrieve secrets at runtime through workload identity or a tightly scoped bootstrap credential. Do not bake secrets into images, source maps, client bundles, or Terraform state unnecessarily.
+Use a dedicated secret manager or cloud KMS-backed store. Applications should retrieve secrets at runtime through workload identity or a tightly scoped bootstrap credential. Do not bake secrets into images, source maps, client bundles, or `Terraform` state unnecessarily.
 
 ```text
 workload identity → secret manager → short-lived credential → application memory
@@ -44,3 +44,7 @@ Use pre-commit and CI secret scanners, repository push protection, log redaction
 - https://owasp.org/www-project-application-security-verification-standard/
 - https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final
 - https://slsa.dev/spec/v1.0/threats
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

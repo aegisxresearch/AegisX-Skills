@@ -14,3 +14,7 @@ Panduan membangun aplikasi Flutter production-grade: arsitektur widget, state ma
 - [Riverpod](https://riverpod.dev/)
 - [Bloc Library](https://bloclibrary.dev/)
 - [Dart Documentation](https://dart.dev/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

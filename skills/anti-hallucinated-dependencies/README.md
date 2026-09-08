@@ -13,3 +13,7 @@ Panduan mencegah coding agent mengarang package, API, import, versi, konfigurasi
 
 ## File
 📄 [`anti-hallucinated-dependencies.md`](./anti-hallucinated-dependencies.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -5,7 +5,7 @@ Panduan Prisma ORM: schema design, queries, relations, migrations, dan best prac
 
 ---
 
-## 🏗️ Schema Design
+## ️ Schema Design
 
 ### Basic Schema
 ```prisma
@@ -99,11 +99,11 @@ model PostCategory {
   @@id([postId, categoryId])
   @@map("post_categories")
 }
-```
+```python
 
 ---
 
-## 🔍 Query Patterns
+## Query Patterns
 
 ### Basic CRUD
 ```typescript
@@ -134,7 +134,7 @@ const user = await prisma.user.update({
 await prisma.user.delete({
   where: { id: 1 }
 })
-```
+```typescript
 
 ### Relations Query
 ```typescript
@@ -161,7 +161,7 @@ const users = await prisma.user.findMany({
     }
   }
 })
-```
+```typescript
 
 ### Filtering
 ```typescript
@@ -184,7 +184,7 @@ const posts = await prisma.post.findMany({
     }
   }
 })
-```
+```typescript
 
 ### Pagination
 ```typescript
@@ -202,11 +202,11 @@ const posts = await prisma.post.findMany({
   take: limit,
   orderBy: { createdAt: 'desc' }
 })
-```
+```python
 
 ---
 
-## 🔧 Transactions
+## Transactions
 
 ### Interactive Transactions
 ```typescript
@@ -224,7 +224,7 @@ const result = await prisma.$transaction(async (tx) => {
   
   return { user, profile }
 })
-```
+```python
 
 ### Batch Operations
 ```typescript
@@ -242,11 +242,11 @@ await prisma.post.updateMany({
   where: { published: false },
   data: { published: true }
 })
-```
+```typescript
 
 ---
 
-## 📊 Raw Queries
+## Raw Queries
 
 ```typescript
 // Raw query
@@ -269,7 +269,7 @@ await prisma.$executeRaw`
 
 ---
 
-## 🔄 Migrations
+## Migrations
 
 ```bash
 # Create migration
@@ -290,7 +290,7 @@ npx prisma studio
 
 ---
 
-## 📋 Best Practices
+## Best Practices
 
 ### Schema
 - [ ] Use `@@map` for snake_case table names
@@ -313,7 +313,11 @@ npx prisma studio
 
 ---
 
-## 📚 References
+## References
 - https://www.prisma.io/docs
 - https://www.prisma.io/docs/concepts/components/prisma-client
 - https://www.prisma.io/docs/concepts/components/prisma-migrate
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

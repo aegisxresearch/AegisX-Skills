@@ -32,7 +32,7 @@ export function NotificationCount({ count }: { count: number }) {
     </p>
   );
 }
-```
+```typescript
 
 ```tsx
 // Format angka lokal
@@ -64,3 +64,7 @@ const formatter = new Intl.NumberFormat(locale, { style: "currency", currency })
 - https://www.w3.org/International/ — panduan W3C i18n
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl — Intl API
 - https://unicode-org.github.io/icu/userguide/format_parse/messages/ — ICU MessageFormat
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

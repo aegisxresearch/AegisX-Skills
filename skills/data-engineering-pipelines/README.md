@@ -13,3 +13,7 @@ Panduan pipeline batch dan streaming yang idempotent, observable, schema-aware, 
 
 ## File
 📄 [`data-engineering-pipelines.md`](./data-engineering-pipelines.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

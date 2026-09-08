@@ -6,7 +6,7 @@ Memecah frontend monolith menjadi modul yang dimiliki tim berbeda, dikembangkan 
 
 ## Prasyarat
 
-- Pengalaman membangun SPA (React/Vue/Svelte)
+- Pengalaman membangun SPA (`React`/Vue/Svelte)
 - Paham bundler (webpack/vite) dan CI/CD
 
 ## Konsep inti
@@ -39,7 +39,7 @@ module.exports = {
     }),
   ],
 };
-```
+```python
 
 ```javascript
 // Host / shell — memuat remote secara dinamis
@@ -51,7 +51,7 @@ const Cart = lazy(() => import("cart/Cart"));
 ## Checklist produksi
 
 - [ ] Kontrak antar-modul didokumentasikan dan di-versioned
-- [ ] `shared` singleton untuk React dan library state; versi kompatibel diverifikasi di CI
+- [ ] `shared` singleton untuk `React` dan library state; versi kompatibel diverifikasi di CI
 - [ ] Remote punya fallback UI + error boundary saat gagal dimuat
 - [ ] Duplikasi bundle dicek (bundle analyzer); shared deps tidak membengkak
 - [ ] Versi remote dipin; cache busting `remoteEntry` saat deploy
@@ -63,7 +63,7 @@ const Cart = lazy(() => import("cart/Cart"));
 
 - Memecah frontend untuk masalah yang sebenarnya organisasi/tim.
 - Remote memanggil API internal modul lain secara langsung (keterikatan).
-- Dua instance React akibat shared yang gagal singleton — hooks error.
+- Dua instance `React` akibat shared yang gagal singleton — hooks error.
 - Tanpa fallback saat remote down — seluruh aplikasi blank.
 - "Satu deploy lagi" tetap dibutuhkan karena shared deps berubah bersamaan.
 
@@ -72,3 +72,7 @@ const Cart = lazy(() => import("cart/Cart"));
 - https://module-federation.io/ — dokumentasi Module Federation
 - https://martinfowler.com/articles/micro-frontends.html — analisis mendalam
 - https://micro-frontends.org/ — pola dan contoh
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

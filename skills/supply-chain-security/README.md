@@ -13,3 +13,7 @@ Panduan melindungi dependency, source, build pipeline, container image, artifact
 
 ## File
 📄 [`supply-chain-security.md`](./supply-chain-security.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

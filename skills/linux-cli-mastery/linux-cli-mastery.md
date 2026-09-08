@@ -5,7 +5,7 @@ Panduan Linux CLI: file operations, text processing, scripting, dan server manag
 
 ---
 
-## 📁 File Operations
+## File Operations
 
 ### Essential Commands
 ```bash
@@ -51,7 +51,7 @@ chown -R user:group directory/
 
 ---
 
-## 📝 Text Processing
+## Text Processing
 
 ### grep (Search)
 ```bash
@@ -112,7 +112,7 @@ awk 'END {print NR}' file.txt
 
 ---
 
-## 🔄 Piping & Redirection
+## Piping & Redirection
 
 ### Pipes
 ```bash
@@ -149,7 +149,7 @@ command 2>&1 | grep "error"
 
 ---
 
-## 🖥️ Process Management
+## ️ Process Management
 
 ```bash
 # List processes
@@ -173,11 +173,11 @@ htop                  # Better top (if installed)
 df -h                 # Disk usage
 free -h               # Memory usage
 uptime                # System uptime
-```
+```bash
 
 ---
 
-## 🌐 Network Commands
+## Network Commands
 
 ```bash
 # DNS lookup
@@ -205,7 +205,7 @@ scp file.txt user@hostname:/path/
 
 ---
 
-## 📝 Bash Scripting
+## Bash Scripting
 
 ### Script Template
 ```bash
@@ -264,7 +264,7 @@ fi
 
 ---
 
-## 📋 CLI Checklist
+## CLI Checklist
 
 ### Daily Workflow
 - [ ] Use aliases for common commands
@@ -280,7 +280,11 @@ fi
 
 ---
 
-## 📚 References
+## References
 - https://linuxcommand.org/
 - https://ss64.com/bash/
 - https://shellcheck.net/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

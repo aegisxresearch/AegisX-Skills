@@ -13,3 +13,7 @@ Panduan merancang GraphQL schema, resolvers, authorization, caching, pagination,
 
 ## File
 📄 [`graphql-api-engineering.md`](./graphql-api-engineering.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

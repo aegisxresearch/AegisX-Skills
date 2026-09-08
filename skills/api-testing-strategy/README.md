@@ -8,7 +8,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 ## Yang Dipelajari
 - Testing pyramid (unit 70%, integration 25%, e2e 5%)
 - Unit tests (pytest & Jest)
-- Integration tests (FastAPI TestClient & Supertest)
+- Integration tests (`FastAPI` TestClient & Supertest)
 - Contract testing dengan schema validation
 - Load testing (k6 & Artillery)
 - Performance thresholds
@@ -26,3 +26,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 ## References
 - https://docs.pytest.org/
 - https://k6.io/docs/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

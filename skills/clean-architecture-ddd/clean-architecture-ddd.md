@@ -70,3 +70,7 @@ class SqlOrderRepository(OrderRepository):
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html — Clean Architecture
 - https://martinfowler.com/tags/domain%20driven%20design.html — DDD (Fowler)
 - https://www.dddcommunity.org/ — komunitas DDD
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

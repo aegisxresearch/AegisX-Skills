@@ -1,11 +1,11 @@
-# TypeScript Advanced Patterns
+# `TypeScript` Advanced Patterns
 
 ## Overview
-Panduan TypeScript lanjutan: generics, utility types, type guards, dan design patterns.
+Panduan `TypeScript` lanjutan: generics, utility types, type guards, dan design patterns.
 
 ---
 
-## 🎯 Generics
+## Generics
 
 ### Basic Generics
 ```typescript
@@ -26,7 +26,7 @@ interface ApiResponse<T> {
 
 type UserResponse = ApiResponse<User>
 type PostResponse = ApiResponse<Post[]>
-```
+```typescript
 
 ### Generic Constraints
 ```typescript
@@ -43,7 +43,7 @@ const age = getProperty(user, "age") // number
 function merge<T extends object, U extends object>(a: T, b: U): T & U {
   return { ...a, ...b }
 }
-```
+```python
 
 ### Generic Classes
 ```typescript
@@ -66,11 +66,11 @@ class Repository<T extends { id: number }> {
 // Usage
 const userRepo = new Repository<User>()
 userRepo.add({ id: 1, name: "John", email: "john@example.com" })
-```
+```typescript
 
 ---
 
-## 🛠️ Utility Types
+## ️ Utility Types
 
 ### Built-in Utility Types
 ```typescript
@@ -133,11 +133,11 @@ type NullableKeys<T> = {
 
 // Usage
 type UserWithRequiredEmail = RequireField<User, "email">
-```
+```typescript
 
 ---
 
-## 🔍 Type Guards
+## Type Guards
 
 ### Built-in Type Guards
 ```typescript
@@ -162,7 +162,7 @@ function makeSound(animal: Dog | Cat) {
     animal.meow() // Cat
   }
 }
-```
+```typescript
 
 ### Custom Type Guards
 ```typescript
@@ -178,16 +178,16 @@ function isSuccess<T>(result: Result<T>): result is { success: true; data: T } {
 // Usage
 function handleResult(result: Result<User>) {
   if (isSuccess(result)) {
-    console.log(result.data.name) // TypeScript knows data exists
+    console.log(result.data.name) // `TypeScript` knows data exists
   } else {
     console.log(result.error)
   }
 }
-```
+```python
 
 ---
 
-## 🏗️ Design Patterns
+## ️ Design Patterns
 
 ### Builder Pattern
 ```typescript
@@ -233,7 +233,7 @@ const query = new QueryBuilder()
   .orderBy("name")
   .limit(10)
   .build()
-```
+```python
 
 ### Factory Pattern
 ```typescript
@@ -267,7 +267,7 @@ class PaymentFactory {
 // Usage
 const processor = PaymentFactory.create("stripe")
 await processor.process(100)
-```
+```python
 
 ### Observer Pattern
 ```typescript
@@ -301,7 +301,7 @@ emitter.emit("created", { id: 1, name: "John" })
 
 ---
 
-## 📋 TypeScript Checklist
+## `TypeScript` Checklist
 
 ### Types
 - [ ] Use `interface` for object shapes
@@ -318,7 +318,11 @@ emitter.emit("created", { id: 1, name: "John" })
 
 ---
 
-## 📚 References
+## References
 - https://www.typescriptlang.org/docs/handbook/
 - https://www.typescriptlang.org/docs/handbook/utility-types.html
 - https://github.com/type-challenges/type-challenges
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

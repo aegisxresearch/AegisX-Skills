@@ -1,4 +1,4 @@
-# FastAPI Python Backend
+# `FastAPI` Python Backend
 
 - **Kategori:** Backend API dan Realtime
 - **Level:** Intermediate–Advanced
@@ -6,11 +6,15 @@
 
 ## Ringkasan
 
-Panduan membangun REST API production-grade dengan FastAPI: struktur proyek, model Pydantic, dependency injection, async SQLAlchemy, background tasks, testing, dan deployment.
+Panduan membangun REST API production-grade dengan `FastAPI`: struktur proyek, model Pydantic, dependency injection, async `SQLAlchemy`, background tasks, testing, dan deployment.
 
 ## Referensi
 
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [`FastAPI` Documentation](https://fastapi.tiangolo.com/)
 - [Pydantic Documentation](https://docs.pydantic.dev/)
-- [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
+- [`SQLAlchemy` Documentation](https://docs.sqlalchemy.org/)
 - [Starlette Documentation](https://starlette.dev/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

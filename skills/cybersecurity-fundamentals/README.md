@@ -27,3 +27,7 @@ Panduan keamanan siber: OWASP Top 10, secure coding, penetration testing, dan de
 ## References
 - https://owasp.org/www-project-top-ten/
 - https://portswigger.net/web-security
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

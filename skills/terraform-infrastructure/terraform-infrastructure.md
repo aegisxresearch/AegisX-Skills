@@ -1,4 +1,4 @@
-# Terraform Infrastructure Engineering
+# `Terraform` Infrastructure Engineering
 
 ## Goal
 Manage infrastructure changes as reviewed, reproducible plans without exposing secrets or losing state.
@@ -53,3 +53,7 @@ Use deletion protection, `prevent_destroy` only for deliberately protected resou
 - https://developer.hashicorp.com/terraform/docs
 - https://developer.hashicorp.com/terraform/language/state
 - https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -28,3 +28,7 @@ set -euo pipefail
 ## References
 - https://linuxcommand.org/
 - https://shellcheck.net/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

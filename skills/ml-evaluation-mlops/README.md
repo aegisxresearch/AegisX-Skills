@@ -13,3 +13,7 @@ Panduan mengelola dataset, eksperimen, evaluasi, model registry, deployment, dri
 
 ## File
 📄 [`ml-evaluation-mlops.md`](./ml-evaluation-mlops.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

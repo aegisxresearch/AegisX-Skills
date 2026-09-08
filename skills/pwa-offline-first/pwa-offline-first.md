@@ -95,3 +95,7 @@ self.addEventListener("fetch", (event) => {
 - https://web.dev/learn/pwa/ — panduan resmi web.dev
 - https://developer.chrome.com/docs/workbox/ — Workbox (produksi siap)
 - https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps — MDN
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

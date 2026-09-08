@@ -1,8 +1,8 @@
-# MongoDB Data Modeling
+# `MongoDB` Data Modeling
 
 ## Tujuan
 
-Merancang schema MongoDB yang cepat dan scalable: model dokumen yang cocok dengan pola akses aplikasi, bukan meniru schema relasional, dengan index dan aggregation yang tepat.
+Merancang schema `MongoDB` yang cepat dan didesain untuk skala yang dibutuhkan: model dokumen yang cocok dengan pola akses aplikasi, bukan meniru schema relasional, dengan index dan aggregation yang tepat.
 
 ## Prasyarat
 
@@ -67,3 +67,7 @@ db.orders.createIndex({ userId: 1, createdAt: -1 });
 - https://www.mongodb.com/docs/manual/data-modeling/ — panduan resmi
 - https://www.mongodb.com/docs/manual/core/indexes/ — indexing
 - https://www.mongodb.com/docs/manual/aggregation/ — aggregation
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

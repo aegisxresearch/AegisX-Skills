@@ -13,3 +13,7 @@ Panduan menerapkan verify explicitly, least privilege, assume breach, service id
 
 ## File
 📄 [`zero-trust-application-security.md`](./zero-trust-application-security.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

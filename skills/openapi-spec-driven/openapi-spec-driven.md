@@ -102,3 +102,7 @@ components:
 - https://spec.openapis.org/oas/v3.1.0 — spesifikasi resmi
 - https://redocly.com/docs/cli/ — lint dan bundle
 - https://openapi-generator.tech/ — code generation
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

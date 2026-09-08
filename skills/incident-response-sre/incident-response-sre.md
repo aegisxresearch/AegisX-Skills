@@ -1,7 +1,7 @@
 # Incident Response & SRE
 
 ## Goal
-Reduce user impact first, preserve evidence, communicate clearly, and improve the system without blame.
+Reduce user impact first, preserve evidence, communicate , and improve the system without blame.
 
 ## Severity
 Define severity by user impact, scope, data/security risk, and recovery urgency. Preassign escalation paths and response targets. Security incidents may require a separate restricted process.
@@ -57,3 +57,7 @@ Include timeline, detection, contributing conditions, what worked, what failed, 
 - https://sre.google/sre-book/managing-incidents/
 - https://sre.google/resources/practices-and-processes/incident-management-guide/
 - https://www.usenix.org/conference/srecon
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

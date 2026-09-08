@@ -59,3 +59,7 @@ export default {
 - https://developers.cloudflare.com/workers/ — Workers
 - https://vercel.com/docs/functions — Vercel Functions
 - https://serverlessland.com/ — pola serverless
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

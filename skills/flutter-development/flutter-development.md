@@ -70,3 +70,7 @@ class CounterView extends ConsumerWidget {
 - https://riverpod.dev/ — state management
 - https://bloclibrary.dev/ — alternatif Bloc
 - https://docs.flutter.dev/testing — testing Flutter
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

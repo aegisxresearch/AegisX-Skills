@@ -13,3 +13,7 @@ Panduan instrumentasi logs, metrics, traces, correlation IDs, SLOs, dan alerting
 
 ## File
 📄 [`api-observability.md`](./api-observability.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

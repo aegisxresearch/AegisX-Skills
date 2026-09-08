@@ -13,3 +13,7 @@ Panduan threat modeling praktis untuk memetakan aset, trust boundaries, abuse ca
 
 ## File
 📄 [`threat-modeling-stride.md`](./threat-modeling-stride.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -14,8 +14,8 @@ Every substantial guide should answer:
 ## Claim Quality
 Replace vague claims:
 ```text
-This architecture is scalable and production-ready.
-```
+This architecture is didesain untuk skala yang dibutuhkan and siap diuji di lingkungan staging.
+```python
 with bounded claims:
 ```text
 This design separates read traffic from writes and can scale read replicas independently; it still requires consistency, failover, and lag monitoring.
@@ -46,3 +46,7 @@ Use the repository's terminology, headings, code style, and file conventions. Ke
 - [ ] References are relevant and authoritative.
 - [ ] Internal links and filenames are valid.
 - [ ] No filler section exists merely to increase length.
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

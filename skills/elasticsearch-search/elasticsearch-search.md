@@ -1,8 +1,8 @@
-# Elasticsearch & Search Engines
+# `Elasticsearch` & Search Engines
 
 ## Tujuan
 
-Membangun fitur pencarian yang cepat dan relevan dengan Elasticsearch/OpenSearch: mapping yang benar, analysis yang sesuai bahasa, query yang efisien, tuning relevansi, dan cluster yang terpelihara.
+Membangun fitur pencarian yang cepat dan relevan dengan `Elasticsearch`/OpenSearch: mapping yang benar, analysis yang sesuai bahasa, query yang efisien, tuning relevansi, dan cluster yang terpelihara.
 
 ## Prasyarat
 
@@ -69,3 +69,7 @@ Membangun fitur pencarian yang cepat dan relevan dengan Elasticsearch/OpenSearch
 - https://www.elastic.co/docs/ — dokumentasi resmi
 - https://opensearch.org/docs/latest/ — OpenSearch
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html — Query DSL
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

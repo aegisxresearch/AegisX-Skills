@@ -13,3 +13,7 @@ Panduan membangun frontend dari beberapa tim/modul independen dengan Module Fede
 - [Module Federation (webpack)](https://module-federation.io/)
 - [Micro-frontends.org](https://micro-frontends.org/)
 - [Cam Jackson: Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

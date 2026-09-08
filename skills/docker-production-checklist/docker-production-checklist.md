@@ -1,11 +1,11 @@
-# Docker Production Checklist
+# `Docker` Production Checklist
 
 ## Overview
-Panduan Docker untuk production: multi-stage builds, security, health checks, dan best practices.
+Panduan `Docker` untuk production: multi-stage builds, security, health checks, dan best practices.
 
 ---
 
-## 🏗️ Multi-Stage Build
+## ️ Multi-Stage Build
 
 ### Python App
 ```dockerfile
@@ -43,7 +43,7 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=3 \
   CMD curl -f http://localhost:8000/health || exit 1
 
 CMD ["python", "main.py"]
-```
+```bash
 
 ### Node.js App
 ```dockerfile
@@ -76,33 +76,33 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 
 CMD ["node", "dist/main.js"]
-```
+```bash
 
 ---
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 ### Dockerfile Security
 ```dockerfile
-# ✅ Use specific version tags
+# Use specific version tags
 FROM python:3.11.7-slim
 
-# ✅ Run as non-root user
+# Run as non-root user
 RUN groupadd -r appuser && useradd -r -g appuser appuser
 USER appuser
 
-# ✅ Don't store secrets in image
-# Use environment variables or Docker secrets
+# Don't store secrets in image
+# Use environment variables or `Docker` secrets
 
-# ✅ Scan for vulnerabilities
+# Scan for vulnerabilities
 # Run: docker scout cves <image>
 
-# ❌ Don't use latest tag
+# Don't use latest tag
 # FROM python:latest  ← BAD
 
-# ❌ Don't run as root
+# Don't run as root
 # USER root  ← BAD
-```
+```yaml
 
 ### Environment Variables
 ```yaml
@@ -118,19 +118,19 @@ services:
 secrets:
   db_password:
     file: ./secrets/db_password.txt
-```
+```python
 
 ---
 
-## 📊 Health Checks
+## Health Checks
 
 ### Application Health Endpoint
 ```python
-# FastAPI example
-from fastapi import FastAPI
+# `FastAPI` example
+from fastapi import `FastAPI`
 import psutil
 
-app = FastAPI()
+app = `FastAPI`()
 
 @app.get("/health")
 async def health():
@@ -153,17 +153,17 @@ async def readiness():
             "redis": "ok" if redis_ok else "failed"
         }
     }
-```
+```bash
 
-### Docker Health Check
+### `Docker` Health Check
 ```dockerfile
 HEALTHCHECK --interval=30s --timeout=3s --retries=3 --start-period=10s \
   CMD curl -f http://localhost:8000/health || exit 1
-```
+```yaml
 
 ---
 
-## 🚀 Docker Compose Production
+## `Docker` Compose Production
 
 ```yaml
 version: '3.8'
@@ -206,7 +206,7 @@ services:
 
 ---
 
-## 📋 Production Checklist
+## Production Checklist
 
 ### Security
 - [ ] Running as non-root user
@@ -235,7 +235,11 @@ services:
 
 ---
 
-## 📚 References
+## References
 - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 - https://docs.docker.com/compose/production/
 - https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

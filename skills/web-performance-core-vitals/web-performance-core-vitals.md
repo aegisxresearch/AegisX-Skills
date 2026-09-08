@@ -38,7 +38,7 @@ performance:
   fetchpriority="high"
   alt="Product dashboard"
 >
-```
+```typescript
 
 ## Main Thread and INP
 Break long work into smaller tasks, virtualize large lists, debounce expensive input handling, and keep event handlers short. Prefer CSS transitions and transforms for visual movement.
@@ -85,3 +85,7 @@ Do not collect URLs or payloads containing personal data.
 - https://web.dev/articles/vitals
 - https://developer.chrome.com/docs/lighthouse/overview
 - https://developer.mozilla.org/en-US/docs/Web/Performance
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -1,4 +1,4 @@
-# Observability: Prometheus & Grafana
+# Observability: `Prometheus` & `Grafana`
 
 - **Kategori:** DevOps dan Cloud
 - **Level:** Intermediate–Advanced
@@ -6,10 +6,14 @@
 
 ## Ringkasan
 
-Panduan observability dengan Prometheus + Grafana: metrik aplikasi, ekspor, alerting rules, dashboards, SLO, dan integrasi tracing/logging.
+Panduan observability dengan `Prometheus` + `Grafana`: metrik aplikasi, ekspor, alerting rules, dashboards, SLO, dan integrasi tracing/logging.
 
 ## Referensi
 
-- [Prometheus Documentation](https://prometheus.io/docs/)
-- [Grafana Documentation](https://grafana.com/docs/)
+- [`Prometheus` Documentation](https://prometheus.io/docs/)
+- [`Grafana` Documentation](https://grafana.com/docs/)
 - [PromQL Cheat Sheet](https://promlabs.com/promql-cheat-sheet/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

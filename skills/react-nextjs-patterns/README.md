@@ -1,9 +1,9 @@
-# React & Next.js Patterns
+# `React` & `Next.js` Patterns
 
 > 🎯 **Kategori:** Frontend | **Level:** Intermediate - Advanced
 
 ## Deskripsi
-Panduan React & Next.js: hooks, Server Components, App Router, state management, dan performance.
+Panduan `React` & `Next.js`: hooks, Server Components, App Router, state management, dan performance.
 
 ## Yang Dipelajari
 - Custom hooks (useLocalStorage, useDebounce, useFetch)
@@ -25,3 +25,7 @@ Server Component = default (database access OK)
 ## References
 - https://nextjs.org/docs/app
 - https://react.dev/learn
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

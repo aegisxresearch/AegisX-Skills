@@ -45,3 +45,7 @@ Design for compromised credentials or services: minimize permissions, isolate te
 - https://www.nist.gov/publications/zero-trust-architecture
 - https://csrc.nist.gov/pubs/sp/800/207/final
 - https://owasp.org/www-project-top-ten/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

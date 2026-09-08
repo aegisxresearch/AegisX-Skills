@@ -3,7 +3,7 @@
 > 🎯 **Kategori:** Backend API | **Level:** Intermediate - Advanced
 
 ## Deskripsi
-Panduan lengkap merancang RESTful API yang konsisten, scalable, dan mudah dipelajari developer lain.
+Panduan lengkap merancang RESTful API yang konsisten, didesain untuk skala yang dibutuhkan, dan mudah dipelajari developer lain.
 
 ## Yang Dipelajari
 - Naming conventions & resource-oriented URLs
@@ -26,3 +26,7 @@ GET /api/v1/users/123/orders?status=pending&sort=-created_at&limit=20
 - https://restfulapi.net/
 - https://jsonapi.org/
 - https://github.com/microsoft/api-guidelines
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

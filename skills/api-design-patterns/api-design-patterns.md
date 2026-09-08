@@ -1,14 +1,14 @@
 # API Design Patterns
 
 ## Overview
-Panduan lengkap merancang RESTful API yang konsisten, scalable, dan mudah dipelajari developer lain.
+Panduan lengkap merancang RESTful API yang konsisten, didesain untuk skala yang dibutuhkan, dan mudah dipelajari developer lain.
 
 ---
 
-## 🎯 Core Principles
+## Core Principles
 
 ### 1. Naming Conventions
-```
+```sql
 ✅ GOOD                          ❌ BAD
 GET /users                        GET /getUsers
 POST /users                       POST /createUser
@@ -29,7 +29,7 @@ GET /users/123/orders/456         ← Specific order
 
 ---
 
-## 📐 Standard Response Format
+## Standard Response Format
 
 ### Success Response
 ```json
@@ -69,7 +69,7 @@ GET /users/123/orders/456         ← Specific order
 
 ---
 
-## 🔄 HTTP Methods
+## HTTP Methods
 
 | Method | Purpose | Idempotent | Body |
 |--------|---------|------------|------|
@@ -81,7 +81,7 @@ GET /users/123/orders/456         ← Specific order
 
 ---
 
-## 📊 Pagination
+## Pagination
 
 ### Cursor-Based (Recommended)
 ```json
@@ -110,7 +110,7 @@ GET /users/123/orders/456         ← Specific order
 
 ---
 
-## 🏷️ Versioning Strategies
+## ️ Versioning Strategies
 
 ### 1. URL Path (Recommended for public API)
 ```
@@ -119,7 +119,7 @@ GET /users/123/orders/456         ← Specific order
 ```
 
 ### 2. Header
-```
+```yaml
 Accept: application/vnd.myapi.v2+json
 ```
 
@@ -130,7 +130,7 @@ Accept: application/vnd.myapi.v2+json
 
 ---
 
-## 🛡️ Security Headers
+## ️ Security Headers
 
 ```yaml
 # Essential security headers
@@ -143,10 +143,10 @@ Content-Security-Policy: default-src 'self'
 
 ---
 
-## ⚡ Rate Limiting
+## Rate Limiting
 
 ### Headers to Include
-```
+```yaml
 X-RateLimit-Limit: 100
 X-RateLimit-Remaining: 95
 X-RateLimit-Reset: 1642252800
@@ -167,7 +167,7 @@ Retry-After: 60  ← When rate limited
 
 ---
 
-## 🔍 Filtering & Sorting
+## Filtering & Sorting
 
 ```
 # Filtering
@@ -186,7 +186,7 @@ GET /users?fields=id,name,email
 
 ---
 
-## 📝 Quick Checklist
+## Quick Checklist
 
 - [ ] Use plural nouns for resources
 - [ ] Use HTTP methods correctly (GET=read, POST=create, etc.)
@@ -200,7 +200,11 @@ GET /users?fields=id,name,email
 
 ---
 
-## 📚 References
+## References
 - https://restfulapi.net/
 - https://jsonapi.org/
 - https://github.com/microsoft/api-guidelines
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

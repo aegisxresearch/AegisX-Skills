@@ -5,9 +5,9 @@ Panduan implementasi autentikasi yang aman: JWT, OAuth2, session management, dan
 
 ---
 
-## 🔐 Authentication Methods Comparison
+## Authentication Methods Comparison
 
-| Method | Stateless | Scalable | Secure | Use Case |
+| Method | Stateless | didesain untuk skala yang dibutuhkan | Secure | Use Case |
 |--------|-----------|----------|--------|----------|
 | Session + Cookie | ❌ | ⚠️ | ✅ | Traditional web apps |
 | JWT (JSON Web Token) | ✅ | ✅ | ✅ | APIs, SPAs |
@@ -16,7 +16,7 @@ Panduan implementasi autentikasi yang aman: JWT, OAuth2, session management, dan
 
 ---
 
-## 🎫 JWT Implementation
+## JWT Implementation
 
 ### Token Structure
 ```
@@ -47,7 +47,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.abc123signature
 
 ---
 
-## 🔄 OAuth2 Flow (Authorization Code + PKCE)
+## OAuth2 Flow (Authorization Code + PKCE)
 
 ```
 ┌─────────┐     ┌─────────┐     ┌─────────┐
@@ -74,7 +74,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.abc123signature
      │               │               │
      │  6. Tokens    │               │
      │◀──────────────│◀──────────────│
-```
+```typescript
 
 ### PKCE Implementation
 ```javascript
@@ -96,22 +96,22 @@ const tokens = await fetch(tokenUrl, {
     code_verifier: codeVerifier,
   })
 });
-```
+```python
 
 ---
 
-## 🛡️ Security Checklist
+## ️ Security Checklist
 
 ### Password Hashing
 ```python
-# ✅ USE bcrypt, argon2, or scrypt
+# USE bcrypt, argon2, or scrypt
 from argon2 import PasswordHasher
 ph = PasswordHasher()
 hashed = ph.hash(password)
 is_valid = ph.verify(hashed, password)
 
-# ❌ NEVER use MD5, SHA1, SHA256 for passwords
-# ❌ NEVER store plaintext passwords
+# NEVER use MD5, SHA1, SHA256 for passwords
+# NEVER store plaintext passwords
 ```
 
 ### Rate Limiting Auth Endpoints
@@ -132,15 +132,15 @@ is_valid = ph.verify(hashed, password)
 
 ---
 
-## 🔑 Common Vulnerabilities to Prevent
+## Common Vulnerabilities to Prevent
 
 ### 1. JWT None Algorithm Attack
 ```python
-# ✅ ALWAYS validate algorithm
+# ALWAYS validate algorithm
 if header['alg'] == 'none':
     raise InvalidTokenError("Algorithm 'none' not allowed")
 
-# ✅ Explicitly set allowed algorithms
+# Explicitly set allowed algorithms
 decode(token, key, algorithms=['HS256'])
 ```
 
@@ -164,7 +164,7 @@ X-CSRF-Token: random-token-here
 
 ---
 
-## 📋 Auth Flow Checklist
+## Auth Flow Checklist
 
 - [ ] Passwords hashed with argon2/bcrypt
 - [ ] JWT uses RS256 (asymmetric) for public APIs
@@ -179,7 +179,11 @@ X-CSRF-Token: random-token-here
 
 ---
 
-## 📚 References
+## References
 - https://auth0.com/docs/secure/tokens
 - https://owasp.org/www-community/attacks/csrf
 - https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

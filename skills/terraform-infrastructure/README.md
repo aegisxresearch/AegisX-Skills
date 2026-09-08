@@ -1,8 +1,8 @@
-# Terraform Infrastructure Engineering
+# `Terraform` Infrastructure Engineering
 
 > **Kategori:** DevOps / Cloud | **Level:** Intermediate–Advanced
 
-Panduan Infrastructure as Code dengan Terraform: modules, state, environments, drift, policy, dan safe changes.
+Panduan Infrastructure as Code dengan `Terraform`: modules, state, environments, drift, policy, dan safe changes.
 
 ## Yang Dipelajari
 - Module and provider design
@@ -13,3 +13,7 @@ Panduan Infrastructure as Code dengan Terraform: modules, state, environments, d
 
 ## File
 📄 [`terraform-infrastructure.md`](./terraform-infrastructure.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

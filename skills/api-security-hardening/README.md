@@ -13,3 +13,7 @@ Panduan mengamankan API berdasarkan OWASP API Security Top 10: otentikasi dan ot
 - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
 - [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
 - [OWASP Cheat Sheets](https://cheatsheetseries.owasp.org/)
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -7,7 +7,7 @@ Treat model output as untrusted, probabilistic input that must be constrained, v
 ```text
 User input → policy checks → prompt assembly → model → schema validation → business rules → response
                                       ↘ tool authorization and execution ↗
-```
+```typescript
 Do not let the model directly mutate databases, send messages, or access arbitrary URLs. Place deterministic application code between intent and side effect.
 
 ## Structured Output
@@ -33,7 +33,7 @@ function parseClassification(value: unknown): Classification {
 Use a schema library already present in the application when available. Validate length, enums, URLs, IDs, and authorization context.
 
 ## Prompt Contracts
-Version prompts with code, define input/output contracts, include explicit refusal and uncertainty behavior, and keep user-provided content clearly delimited. Never place secrets in prompts.
+Version prompts with code, define input/output contracts, include explicit refusal and uncertainty behavior, and keep user-provided content delimited. Never place secrets in prompts.
 
 ## Tool Use
 Each tool should have a narrow schema, permission check, timeout, retry policy, audit event, and idempotency strategy. Require confirmation for irreversible or high-impact actions.
@@ -65,3 +65,7 @@ Return a safe partial response, ask for clarification, route to a human, or use 
 - https://platform.openai.com/docs/guides/structured-outputs
 - https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - https://www.nist.gov/itl/ai-risk-management-framework
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

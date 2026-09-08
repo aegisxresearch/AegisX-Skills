@@ -67,3 +67,7 @@ def test_json_round_trip(text):
 - https://fast-check.dev/ — fast-check (JS/TS)
 - https://proptest-rs.github.io/proptest/ — Proptest (Rust)
 - https://fsharpforfunandprofit.com/posts/property-based-testing/ — pengantar yang jelas
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

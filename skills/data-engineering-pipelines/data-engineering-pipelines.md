@@ -57,3 +57,7 @@ Track run status, duration, input/output row counts, freshness, lag, rejected re
 - https://www.dataengineeringweekly.com/
 - https://opentelemetry.io/docs/concepts/observability-primer/
 - https://docs.getdbt.com/docs/build/data-tests
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

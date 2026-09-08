@@ -1,8 +1,8 @@
-# Redis Caching & Data Structures
+# `Redis` Caching & Data Structures
 
 > **Kategori:** Database / Performance | **Level:** Intermediate–Advanced
 
-Panduan memakai Redis untuk cache, rate limiting, locks, counters, dan ephemeral state tanpa mengorbankan correctness.
+Panduan memakai `Redis` untuk cache, rate limiting, locks, counters, dan ephemeral state tanpa mengorbankan correctness.
 
 ## Yang Dipelajari
 - Cache-aside and invalidation
@@ -13,3 +13,7 @@ Panduan memakai Redis untuk cache, rate limiting, locks, counters, dan ephemeral
 
 ## File
 📄 [`redis-caching.md`](./redis-caching.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

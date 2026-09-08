@@ -44,3 +44,7 @@ Classify severity, exploitability, exposure, and available mitigation. Patch rea
 - https://slsa.dev/spec/v1.0/
 - https://www.cisa.gov/topics/cyber-threats-and-advisories/software-supply-chain-security
 - https://cyclonedx.org/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

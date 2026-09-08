@@ -1,11 +1,11 @@
 # RAG Pipeline Architect
 
 ## Overview
-Panduan membangun Retrieval-Augmented Generation (RAG) system yang production-ready: dari chunking, embedding, vector DB, sampai retrieval.
+Panduan membangun Retrieval-Augmented Generation (RAG) system yang siap diuji di lingkungan staging: dari chunking, embedding, vector DB, sampai retrieval.
 
 ---
 
-## 🏗️ RAG Architecture
+## ️ RAG Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -43,11 +43,11 @@ Panduan membangun Retrieval-Augmented Generation (RAG) system yang production-re
 │  • LLM inference                                        │
 │  • Citation extraction                                  │
 └─────────────────────────────────────────────────────────┘
-```
+```python
 
 ---
 
-## 📦 Chunking Strategies
+## Chunking Strategies
 
 ### 1. Fixed-Size Chunking
 ```python
@@ -56,7 +56,7 @@ def fixed_size_chunk(text, chunk_size=512, overlap=50):
     for i in range(0, len(text), chunk_size - overlap):
         chunks.append(text[i:i + chunk_size])
     return chunks
-```
+```python
 
 ### 2. Recursive Character Splitting
 ```python
@@ -74,7 +74,7 @@ chunks = splitter.split_documents(documents)
 ```python
 # Split based on embedding similarity
 # When semantic similarity drops, create new chunk
-```
+```python
 
 ### Chunk Size Guidelines
 | Content Type | Recommended Size | Overlap |
@@ -86,7 +86,7 @@ chunks = splitter.split_documents(documents)
 
 ---
 
-## 🧮 Embedding Models
+## Embedding Models
 
 ### Model Selection
 | Model | Dimensions | Speed | Quality | Cost |
@@ -111,7 +111,7 @@ def get_embedding(text, model="text-embedding-3-small"):
 
 ---
 
-## 🗄️ Vector Database Selection
+## ️ Vector Database Selection
 
 | DB | Use Case | Hosting |
 |----|----------|---------|
@@ -119,11 +119,11 @@ def get_embedding(text, model="text-embedding-3-small"):
 | **Qdrant** | Self-hosted, feature-rich | Self/Cloud |
 | **Weaviate** | GraphQL API, hybrid search | Self/Cloud |
 | **Chroma** | Development, simple | Local |
-| **pgvector** | PostgreSQL ecosystem | Self/Cloud |
+| **pgvector** | `PostgreSQL` ecosystem | Self/Cloud |
 
 ---
 
-## 🔍 Search Strategies
+## Search Strategies
 
 ### Vector Search (Semantic)
 ```python
@@ -146,7 +146,7 @@ final_results = rrf_merge(vector_results, bm25_results, k=60)
 
 ---
 
-## ⚡ Optimization Tips
+## Optimization Tips
 
 ### Query Processing
 ```python
@@ -156,7 +156,7 @@ rewritten_query = llm(f"Rewrite this query: {query}")
 # 2. Query Expansion (HyDE)
 hyde_response = llm(f"Write a hypothetical answer: {query}")
 results = search(hyde_response)
-```
+```python
 
 ### Context Window Management
 ```python
@@ -177,7 +177,7 @@ def assemble_context(retrieved_chunks, max_tokens):
 
 ---
 
-## 📋 RAG Pipeline Checklist
+## RAG Pipeline Checklist
 
 - [ ] Chunking strategy chosen (recursive recommended)
 - [ ] Chunk size tested (512-1024 tokens)
@@ -193,7 +193,7 @@ def assemble_context(retrieved_chunks, max_tokens):
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 | Metric | What it Measures |
 |--------|------------------|
@@ -204,7 +204,11 @@ def assemble_context(retrieved_chunks, max_tokens):
 
 ---
 
-## 📚 References
+## References
 - https://docs.smith.langchain.com/evaluation
 - https://docs.pinecone.io/guides/get-started/quick-tour
 - https://python.langchain.com/docs/modules/data_connection/retrievers/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

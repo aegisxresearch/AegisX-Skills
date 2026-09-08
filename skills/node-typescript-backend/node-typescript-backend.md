@@ -1,4 +1,4 @@
-# Node.js TypeScript Backend
+# Node.js `TypeScript` Backend
 
 ## Tujuan
 
@@ -7,18 +7,18 @@ Membangun backend Node.js yang strictly typed, modular, teruji, dan mudah dirawa
 ## Prasyarat
 
 - JavaScript/Node.js dasar
-- TypeScript dasar
+- `TypeScript` dasar
 
 ## Konsep inti
 
-1. **Zod (atau skema sejenis)** — validasi runtime untuk input eksternal; TypeScript types hanya compile-time.
+1. **Zod (atau skema sejenis)** — validasi runtime untuk input eksternal; `TypeScript` types hanya compile-time.
 2. **Struktur modular** — pisahkan `routes`, `services`, `repositories`, `middleware`, `schemas`.
 3. **Error handling terpusat** — satu error boundary; error domain vs error internal dipisah.
 4. **Logging terstruktur** — JSON logs dengan request id; `pino` adalah pilihan umum.
 5. **Typed API** — infer tipe request/response dari schema agar frontend dan backend sinkron.
-6. **Process management** — jalankan dengan orchestrator (Docker) dan graceful shutdown; jangan `process.exit` sembarangan.
+6. **Process management** — jalankan dengan orchestrator (`Docker`) dan graceful shutdown; jangan `process.exit` sembarangan.
 
-## Konfigurasi TypeScript (contoh)
+## Konfigurasi `TypeScript` (contoh)
 
 ```json
 {
@@ -33,7 +33,7 @@ Membangun backend Node.js yang strictly typed, modular, teruji, dan mudah dirawa
     "sourceMap": true
   }
 }
-```
+```python
 
 ## Contoh Fastify + Zod
 
@@ -83,3 +83,7 @@ export const userRoutes: FastifyPluginAsync = async (app) => {
 - https://fastify.dev/docs/latest/ — Fastify
 - https://zod.dev/ — Zod schema validation
 - https://www.typescriptlang.org/tsconfig/ — opsi tsconfig
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

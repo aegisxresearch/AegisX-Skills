@@ -55,3 +55,7 @@ Document intended use, out-of-scope use, limitations, evaluation populations, hu
 - https://mlflow.org/docs/latest/ml/tracking/
 - https://www.tensorflow.org/tfx/guide
 - https://www.nist.gov/itl/ai-risk-management-framework
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

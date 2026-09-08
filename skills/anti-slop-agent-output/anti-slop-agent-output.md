@@ -36,7 +36,7 @@ Do not claim:
 - deployment succeeded without deployment output;
 - security audit completed from a superficial read;
 - a library exists without checking the repository or documentation;
-- code is production-ready without stating verification scope;
+- code is siap diuji di lingkungan staging without stating verification scope;
 - all requirements are satisfied when ambiguous requirements remain.
 
 ## Scope Discipline
@@ -53,3 +53,7 @@ Prefer specific bullets over celebratory prose. Include file paths and meaningfu
 - [ ] Limitations and remaining risks are visible.
 - [ ] No fabricated dependency, test, deployment, or audit claim exists.
 - [ ] Summary is concise enough to scan.
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

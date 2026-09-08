@@ -1,11 +1,11 @@
-# React & Next.js Patterns
+# `React` & `Next.js` Patterns
 
 ## Overview
-Panduan React & Next.js: hooks, Server Components, App Router, state management, dan performance.
+Panduan `React` & `Next.js`: hooks, Server Components, App Router, state management, dan performance.
 
 ---
 
-## ⚛️ React Hooks Patterns
+## ️ `React` Hooks Patterns
 
 ### Custom Hooks
 ```typescript
@@ -61,11 +61,11 @@ function useFetch<T>(url: string) {
 
   return { data, loading, error }
 }
-```
+```python
 
 ---
 
-## 🚀 Next.js App Router
+## `Next.js` App Router
 
 ### Server Components (Default)
 ```typescript
@@ -85,7 +85,7 @@ async function HomePage() {
 }
 
 export default HomePage
-```
+```python
 
 ### Client Components
 ```typescript
@@ -103,7 +103,7 @@ export function InteractiveButton() {
     </button>
   )
 }
-```
+```python
 
 ### Server Actions
 ```typescript
@@ -131,7 +131,7 @@ export async function createUser(formData: FormData) {
   <input name="email" type="email" required />
   <button type="submit">Create</button>
 </form>
-```
+```python
 
 ### Data Fetching
 ```typescript
@@ -158,11 +158,11 @@ export default function Page() {
     </Suspense>
   )
 }
-```
+```python
 
 ---
 
-## 📦 State Management
+## State Management
 
 ### Zustand (Recommended)
 ```typescript
@@ -193,9 +193,9 @@ function Counter() {
   const { count, increment } = useStore()
   return <button onClick={increment}>Count: {count}</button>
 }
-```
+```python
 
-### React Query / TanStack Query
+### `React` Query / TanStack Query
 ```typescript
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 
@@ -222,11 +222,11 @@ function useCreateUser() {
     },
   })
 }
-```
+```python
 
 ---
 
-## ⚡ Performance Patterns
+## Performance Patterns
 
 ### Code Splitting
 ```typescript
@@ -236,7 +236,7 @@ const HeavyComponent = dynamic(() => import('./HeavyComponent'), {
   loading: () => <p>Loading...</p>,
   ssr: false
 })
-```
+```python
 
 ### Memoization
 ```typescript
@@ -256,7 +256,7 @@ const handleClick = useCallback(() => {
 const ExpensiveComponent = memo(function ExpensiveComponent({ data }) {
   return <div>{/* complex rendering */}</div>
 })
-```
+```python
 
 ### Image Optimization
 ```typescript
@@ -275,7 +275,7 @@ import Image from 'next/image'
 
 ---
 
-## 📋 Next.js Checklist
+## `Next.js` Checklist
 
 ### App Router
 - [ ] Use Server Components by default
@@ -287,7 +287,7 @@ import Image from 'next/image'
 ### Performance
 - [ ] Use next/image for images
 - [ ] Implement code splitting
-- [ ] Use React Query for data fetching
+- [ ] Use `React` Query for data fetching
 - [ ] Memoize expensive computations
 
 ### SEO
@@ -297,7 +297,11 @@ import Image from 'next/image'
 
 ---
 
-## 📚 References
+## References
 - https://nextjs.org/docs/app
 - https://react.dev/learn
 - https://tanstack.com/query
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

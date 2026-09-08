@@ -13,3 +13,7 @@ Panduan menguji komponen, user flow, accessibility, network states, dan visual r
 
 ## File
 📄 [`frontend-testing-playbook.md`](./frontend-testing-playbook.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

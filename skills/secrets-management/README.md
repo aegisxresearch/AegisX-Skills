@@ -13,3 +13,7 @@ Panduan lifecycle secret: discovery, storage, injection, rotation, access contro
 
 ## File
 📄 [`secrets-management.md`](./secrets-management.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

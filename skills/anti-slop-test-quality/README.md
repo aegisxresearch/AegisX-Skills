@@ -13,3 +13,7 @@ Panduan membedakan test yang benar-benar memverifikasi behavior dari test kosmet
 
 ## File
 📄 [`anti-slop-test-quality.md`](./anti-slop-test-quality.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

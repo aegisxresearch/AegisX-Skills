@@ -1,9 +1,9 @@
-# TypeScript Advanced Patterns
+# `TypeScript` Advanced Patterns
 
-> 🎯 **Kategori:** Programming / TypeScript | **Level:** Intermediate - Advanced
+> 🎯 **Kategori:** Programming / `TypeScript` | **Level:** Intermediate - Advanced
 
 ## Deskripsi
-Panduan TypeScript lanjutan: generics, utility types, type guards, dan design patterns.
+Panduan `TypeScript` lanjutan: generics, utility types, type guards, dan design patterns.
 
 ## Yang Dipelajari
 - Generics (functions, interfaces, classes, constraints)
@@ -26,3 +26,7 @@ type Result<T> =
 ## References
 - https://www.typescriptlang.org/docs/handbook/
 - https://github.com/type-challenges/type-challenges
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

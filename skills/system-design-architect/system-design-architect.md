@@ -5,7 +5,7 @@ Panduan system design: architecture patterns, scalability, microservices, dan di
 
 ---
 
-## 🏗️ Architecture Patterns
+## ️ Architecture Patterns
 
 ### Monolith
 ```
@@ -40,11 +40,11 @@ Panduan system design: architecture patterns, scalability, microservices, dan di
             │   API       │
             │   Gateway   │
             └─────────────┘
-```
+```yaml
 
 ---
 
-## 📊 Scalability Patterns
+## Scalability Patterns
 
 ### Horizontal Scaling
 ```yaml
@@ -62,7 +62,7 @@ services:
 ### Caching Strategy
 ```
 ┌─────────┐     ┌─────────┐     ┌─────────┐
-│  Client  │────▶│  Redis  │────▶│Database │
+│  Client  │────▶│  `Redis`  │────▶│Database │
 └─────────┘     │ (Cache) │     └─────────┘
                 └─────────┘
                    │
@@ -89,7 +89,7 @@ services:
 
 ---
 
-## 🔄 Message Queue Patterns
+## Message Queue Patterns
 
 ### Event-Driven Architecture
 ```
@@ -114,7 +114,7 @@ services:
 
 ---
 
-## 🛡️ Resilience Patterns
+## ️ Resilience Patterns
 
 ### Circuit Breaker
 ```
@@ -124,7 +124,7 @@ CLOSED ──(failure threshold)──▶ OPEN
   │                         (timeout)
   │                              │
   └──(success)──── HALF-OPEN ◀──┘
-```
+```python
 
 ### Retry with Backoff
 ```typescript
@@ -147,7 +147,7 @@ async function retryWithBackoff<T>(
 
 ---
 
-## 📋 System Design Checklist
+## System Design Checklist
 
 ### Requirements
 - [ ] Functional requirements defined
@@ -175,7 +175,11 @@ async function retryWithBackoff<T>(
 
 ---
 
-## 📚 References
+## References
 - https://github.com/donnemartin/system-design-primer
 - https://microservices.io/patterns/
 - https://aws.amazon.com/architecture/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -6,7 +6,7 @@ Never introduce an unverified dependency or API based on model memory alone.
 ## Discovery Protocol
 ```text
 Inspect manifests → inspect lockfile → search existing imports → inspect installed package/docs → verify version API → implement minimal change
-```
+```python
 Check `package.json`, `pyproject.toml`, lockfiles, build files, and existing usage before adding a package. Follow the repository's package manager; do not substitute npm, yarn, pnpm, bun, pip, or another tool without evidence.
 
 ## Verification Requirements
@@ -49,3 +49,7 @@ Do not replace an uncertain API with invented code that looks plausible. Pause, 
 - [ ] No package or API is invented from memory.
 - [ ] Build and tests use the actual installed dependency.
 - [ ] Uncertainty is reported instead of hidden.
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

@@ -13,3 +13,7 @@ Panduan membangun pipeline CI/CD cepat, aman, reproducible, dan memiliki approva
 
 ## File
 📄 [`ci-cd-production.md`](./ci-cd-production.md) — Panduan lengkap
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

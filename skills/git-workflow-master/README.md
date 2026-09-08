@@ -25,3 +25,7 @@ Trunk-Based: short-lived branches → merge frequently
 ## References
 - https://git-scm.com/book/en/v2
 - https://conventionalcommits.org/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*

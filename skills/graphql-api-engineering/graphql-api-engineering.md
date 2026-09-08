@@ -21,7 +21,7 @@ type OrderConnection {
   pageInfo: PageInfo!
   edges: [OrderEdge!]!
 }
-```
+```typescript
 
 ## Resolver Boundaries
 Keep resolvers thin. Put authorization and domain rules in application services. Use a request-scoped DataLoader or equivalent batching mechanism to prevent N+1 queries, and never share request-specific cache data across users.
@@ -67,3 +67,7 @@ Give each subgraph clear ownership and avoid cross-subgraph joins in hot paths. 
 - https://graphql.org/learn/
 - https://spec.graphql.org/
 - https://www.apollographql.com/docs/graphos/schema-design/guides/handling-n-plus-one/
+
+---
+
+*Dokumentasi ini bagian dari [AegisX Skills Collection](https://aegisxresearch.github.io/AegisX-Skills/). Dikelola oleh AegisX Research.*
