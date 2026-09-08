@@ -30,7 +30,12 @@
       "overview": "skills/api-design-patterns/README.md",
       "guide": "skills/api-design-patterns/api-design-patterns.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "http"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "auth-implementation-guide",
@@ -47,7 +52,15 @@
       "overview": "skills/auth-implementation-guide/README.md",
       "guide": "skills/auth-implementation-guide/auth-implementation-guide.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "api-testing-strategy",
@@ -63,7 +76,15 @@
       "overview": "skills/api-testing-strategy/README.md",
       "guide": "skills/api-testing-strategy/api-testing-strategy.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "graphql-api-engineering",
@@ -80,7 +101,15 @@
       "overview": "skills/graphql-api-engineering/README.md",
       "guide": "skills/graphql-api-engineering/graphql-api-engineering.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "websocket-realtime",
@@ -96,7 +125,15 @@
       "overview": "skills/websocket-realtime/README.md",
       "guide": "skills/websocket-realtime/websocket-realtime.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "message-queues-events",
@@ -113,7 +150,15 @@
       "overview": "skills/message-queues-events/README.md",
       "guide": "skills/message-queues-events/message-queues-events.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "javascript",
+        "go"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "api-observability",
@@ -130,7 +175,14 @@
       "overview": "skills/api-observability/README.md",
       "guide": "skills/api-observability/api-observability.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "promql"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "rag-pipeline-architect",
@@ -147,7 +199,14 @@
       "overview": "skills/rag-pipeline-architect/README.md",
       "guide": "skills/rag-pipeline-architect/rag-pipeline-architect.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "llm-application-engineering"
+      ],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "pytorch-training-playbook",
@@ -163,7 +222,12 @@
       "overview": "skills/pytorch-training-playbook/README.md",
       "guide": "skills/pytorch-training-playbook/pytorch-training-playbook.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "llm-application-engineering",
@@ -180,7 +244,13 @@
       "overview": "skills/llm-application-engineering/README.md",
       "guide": "skills/llm-application-engineering/llm-application-engineering.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "ml-evaluation-mlops",
@@ -197,7 +267,14 @@
       "overview": "skills/ml-evaluation-mlops/README.md",
       "guide": "skills/ml-evaluation-mlops/ml-evaluation-mlops.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "llm-application-engineering"
+      ],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "react-nextjs-patterns",
@@ -213,7 +290,12 @@
       "overview": "skills/react-nextjs-patterns/README.md",
       "guide": "skills/react-nextjs-patterns/react-nextjs-patterns.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "design-system-builder",
@@ -229,7 +311,13 @@
       "overview": "skills/design-system-builder/README.md",
       "guide": "skills/design-system-builder/design-system-builder.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "css",
+        "javascript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "responsive-layout-master",
@@ -245,7 +333,13 @@
       "overview": "skills/responsive-layout-master/README.md",
       "guide": "skills/responsive-layout-master/responsive-layout-master.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "css",
+        "html"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "animation-performance-guide",
@@ -261,7 +355,13 @@
       "overview": "skills/animation-performance-guide/README.md",
       "guide": "skills/animation-performance-guide/animation-performance-guide.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "javascript",
+        "css"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "accessibility-wcag",
@@ -278,7 +378,13 @@
       "overview": "skills/accessibility-wcag/README.md",
       "guide": "skills/accessibility-wcag/accessibility-wcag.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "html",
+        "css"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "frontend-testing-playbook",
@@ -294,7 +400,12 @@
       "overview": "skills/frontend-testing-playbook/README.md",
       "guide": "skills/frontend-testing-playbook/frontend-testing-playbook.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "web-performance-core-vitals",
@@ -311,7 +422,12 @@
       "overview": "skills/web-performance-core-vitals/README.md",
       "guide": "skills/web-performance-core-vitals/web-performance-core-vitals.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "javascript"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "seo-programmatic",
@@ -328,7 +444,12 @@
       "overview": "skills/seo-programmatic/README.md",
       "guide": "skills/seo-programmatic/seo-programmatic.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "html"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "postgresql-master",
@@ -344,7 +465,12 @@
       "overview": "skills/postgresql-master/README.md",
       "guide": "skills/postgresql-master/postgresql-master.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "sql"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "prisma-orm-playbook",
@@ -361,7 +487,14 @@
       "overview": "skills/prisma-orm-playbook/README.md",
       "guide": "skills/prisma-orm-playbook/prisma-orm-playbook.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "postgresql-master"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "redis-caching",
@@ -378,7 +511,13 @@
       "overview": "skills/redis-caching/README.md",
       "guide": "skills/redis-caching/redis-caching.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "data-engineering-pipelines",
@@ -395,7 +534,13 @@
       "overview": "skills/data-engineering-pipelines/README.md",
       "guide": "skills/data-engineering-pipelines/data-engineering-pipelines.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "python",
+        "sql"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "system-design-architect",
@@ -412,7 +557,10 @@
       "overview": "skills/system-design-architect/README.md",
       "guide": "skills/system-design-architect/system-design-architect.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 4
     },
     {
       "id": "incident-response-sre",
@@ -429,7 +577,10 @@
       "overview": "skills/incident-response-sre/README.md",
       "guide": "skills/incident-response-sre/incident-response-sre.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 2
     },
     {
       "id": "docker-production-checklist",
@@ -445,7 +596,13 @@
       "overview": "skills/docker-production-checklist/README.md",
       "guide": "skills/docker-production-checklist/docker-production-checklist.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "dockerfile",
+        "yaml"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "linux-cli-mastery",
@@ -462,7 +619,12 @@
       "overview": "skills/linux-cli-mastery/README.md",
       "guide": "skills/linux-cli-mastery/linux-cli-mastery.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "bash"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "ci-cd-production",
@@ -479,7 +641,12 @@
       "overview": "skills/ci-cd-production/README.md",
       "guide": "skills/ci-cd-production/ci-cd-production.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "kubernetes-production",
@@ -496,7 +663,14 @@
       "overview": "skills/kubernetes-production/README.md",
       "guide": "skills/kubernetes-production/kubernetes-production.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "docker-production-checklist"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "terraform-infrastructure",
@@ -513,7 +687,12 @@
       "overview": "skills/terraform-infrastructure/README.md",
       "guide": "skills/terraform-infrastructure/terraform-infrastructure.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "hcl"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "cybersecurity-fundamentals",
@@ -529,7 +708,10 @@
       "overview": "skills/cybersecurity-fundamentals/README.md",
       "guide": "skills/cybersecurity-fundamentals/cybersecurity-fundamentals.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 3
     },
     {
       "id": "threat-modeling-stride",
@@ -545,7 +727,10 @@
       "overview": "skills/threat-modeling-stride/README.md",
       "guide": "skills/threat-modeling-stride/threat-modeling-stride.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 3
     },
     {
       "id": "secrets-management",
@@ -561,7 +746,12 @@
       "overview": "skills/secrets-management/README.md",
       "guide": "skills/secrets-management/secrets-management.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "zero-trust-application-security",
@@ -577,7 +767,12 @@
       "overview": "skills/zero-trust-application-security/README.md",
       "guide": "skills/zero-trust-application-security/zero-trust-application-security.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "secrets-management"
+      ],
+      "languages": [],
+      "difficulty_hours": 3
     },
     {
       "id": "supply-chain-security",
@@ -594,7 +789,12 @@
       "overview": "skills/supply-chain-security/README.md",
       "guide": "skills/supply-chain-security/supply-chain-security.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "anti-slop-code-review",
@@ -610,7 +810,10 @@
       "overview": "skills/anti-slop-code-review/README.md",
       "guide": "skills/anti-slop-code-review/anti-slop-code-review.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 2
     },
     {
       "id": "anti-slop-test-quality",
@@ -626,7 +829,10 @@
       "overview": "skills/anti-slop-test-quality/README.md",
       "guide": "skills/anti-slop-test-quality/anti-slop-test-quality.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 2
     },
     {
       "id": "anti-hallucinated-dependencies",
@@ -642,7 +848,13 @@
       "overview": "skills/anti-hallucinated-dependencies/README.md",
       "guide": "skills/anti-hallucinated-dependencies/anti-hallucinated-dependencies.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "anti-slop-documentation",
@@ -658,7 +870,10 @@
       "overview": "skills/anti-slop-documentation/README.md",
       "guide": "skills/anti-slop-documentation/anti-slop-documentation.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 2
     },
     {
       "id": "anti-slop-agent-output",
@@ -674,7 +889,10 @@
       "overview": "skills/anti-slop-agent-output/README.md",
       "guide": "skills/anti-slop-agent-output/anti-slop-agent-output.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 1
     },
     {
       "id": "typescript-advanced-patterns",
@@ -690,7 +908,12 @@
       "overview": "skills/typescript-advanced-patterns/README.md",
       "guide": "skills/typescript-advanced-patterns/typescript-advanced-patterns.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "git-workflow-master",
@@ -707,7 +930,12 @@
       "overview": "skills/git-workflow-master/README.md",
       "guide": "skills/git-workflow-master/git-workflow-master.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "bash"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "fastapi-python-backend",
@@ -724,7 +952,14 @@
       "overview": "skills/fastapi-python-backend/README.md",
       "guide": "skills/fastapi-python-backend/fastapi-python-backend.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "node-typescript-backend",
@@ -741,7 +976,14 @@
       "overview": "skills/node-typescript-backend/README.md",
       "guide": "skills/node-typescript-backend/node-typescript-backend.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "golang-microservices",
@@ -758,7 +1000,14 @@
       "overview": "skills/golang-microservices/README.md",
       "guide": "skills/golang-microservices/golang-microservices.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "go"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "openapi-spec-driven",
@@ -775,7 +1024,14 @@
       "overview": "skills/openapi-spec-driven/README.md",
       "guide": "skills/openapi-spec-driven/openapi-spec-driven.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "pwa-offline-first",
@@ -792,7 +1048,12 @@
       "overview": "skills/pwa-offline-first/README.md",
       "guide": "skills/pwa-offline-first/pwa-offline-first.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "javascript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "microfrontends-module-federation",
@@ -808,7 +1069,14 @@
       "overview": "skills/microfrontends-module-federation/README.md",
       "guide": "skills/microfrontends-module-federation/microfrontends-module-federation.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "react-nextjs-patterns"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "web-localization-i18n",
@@ -825,7 +1093,12 @@
       "overview": "skills/web-localization-i18n/README.md",
       "guide": "skills/web-localization-i18n/web-localization-i18n.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "react-native-expo",
@@ -842,7 +1115,12 @@
       "overview": "skills/react-native-expo/README.md",
       "guide": "skills/react-native-expo/react-native-expo.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "typescript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "flutter-development",
@@ -859,7 +1137,12 @@
       "overview": "skills/flutter-development/README.md",
       "guide": "skills/flutter-development/flutter-development.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "dart"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "mongodb-data-modeling",
@@ -876,7 +1159,12 @@
       "overview": "skills/mongodb-data-modeling/README.md",
       "guide": "skills/mongodb-data-modeling/mongodb-data-modeling.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "javascript"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "elasticsearch-search",
@@ -893,7 +1181,12 @@
       "overview": "skills/elasticsearch-search/README.md",
       "guide": "skills/elasticsearch-search/elasticsearch-search.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "json"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "serverless-edge-computing",
@@ -910,7 +1203,13 @@
       "overview": "skills/serverless-edge-computing/README.md",
       "guide": "skills/serverless-edge-computing/serverless-edge-computing.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "difficulty_hours": 2
     },
     {
       "id": "gitops-kubernetes",
@@ -927,7 +1226,15 @@
       "overview": "skills/gitops-kubernetes/README.md",
       "guide": "skills/gitops-kubernetes/gitops-kubernetes.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "kubernetes-production",
+        "docker-production-checklist"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "observability-prometheus-grafana",
@@ -944,7 +1251,15 @@
       "overview": "skills/observability-prometheus-grafana/README.md",
       "guide": "skills/observability-prometheus-grafana/observability-prometheus-grafana.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-observability"
+      ],
+      "languages": [
+        "promql",
+        "yaml"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "gdpr-data-privacy",
@@ -961,7 +1276,10 @@
       "overview": "skills/gdpr-data-privacy/README.md",
       "guide": "skills/gdpr-data-privacy/gdpr-data-privacy.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [],
+      "difficulty_hours": 2
     },
     {
       "id": "api-security-hardening",
@@ -978,7 +1296,15 @@
       "overview": "skills/api-security-hardening/README.md",
       "guide": "skills/api-security-hardening/api-security-hardening.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "api-design-patterns",
+        "auth-implementation-guide"
+      ],
+      "languages": [
+        "python"
+      ],
+      "difficulty_hours": 3
     },
     {
       "id": "clean-architecture-ddd",
@@ -995,7 +1321,13 @@
       "overview": "skills/clean-architecture-ddd/README.md",
       "guide": "skills/clean-architecture-ddd/clean-architecture-ddd.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [],
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "difficulty_hours": 4
     },
     {
       "id": "property-based-testing",
@@ -1012,7 +1344,15 @@
       "overview": "skills/property-based-testing/README.md",
       "guide": "skills/property-based-testing/property-based-testing.md",
       "status": "maintained",
-      "last_reviewed": "2026-09-08"
+      "last_reviewed": "2026-09-08",
+      "prerequisites": [
+        "anti-slop-test-quality"
+      ],
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "difficulty_hours": 2
     }
   ],
   "review_interval_days": 180

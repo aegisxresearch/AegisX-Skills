@@ -141,6 +141,23 @@ def main() -> int:
                     f"(YYYY-MM-DD): {last_reviewed}"
                 )
 
+        # prerequisites, languages, difficulty_hours
+        prereqs = entry.get("prerequisites", [])
+        if not isinstance(prereqs, list) or not all(isinstance(p, str) for p in prereqs):
+            errors.append(f"[manifest] {sid}: prerequisites harus list of strings")
+        else:
+            for p in prereqs:
+                if p not in manifest_ids:
+                    errors.append(f"[manifest] {sid}: prerequisite '{p}' tidak ada di manifest")
+
+        langs = entry.get("languages", [])
+        if not isinstance(langs, list) or not all(isinstance(ln, str) for ln in langs):
+            errors.append(f"[manifest] {sid}: languages harus list of strings")
+
+        hours = entry.get("difficulty_hours")
+        if hours is not None and (not isinstance(hours, int) or hours < 1):
+            errors.append(f"[manifest] {sid}: difficulty_hours harus integer >= 1, got {hours!r}")
+
     # --- 4. Placeholder dan karakter kontrol di file skill ------------------
     md_files = sorted(SKILLS_DIR.rglob("*.md"))
     for f in md_files:

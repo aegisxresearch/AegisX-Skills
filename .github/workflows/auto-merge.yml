@@ -1,0 +1,26 @@
+name: Auto-merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    if: >-
+      !github.event.pull_request.draft &&
+      github.event.pull_request.base.ref == 'main' &&
+      github.event.pull_request.user.login == 'FerzDevZ'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approve PR and enable auto-merge (squash)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR="${{ github.event.pull_request.number }}"
+          gh pr review "$PR" --approve || true
+          gh pr merge "$PR" --auto --squash
+          echo "Auto-merge enabled for PR #$PR"
