@@ -184,7 +184,8 @@ def build_index(manifest: dict) -> str:
         "# AegisX Skills Collection",
         "",
         "<div class=\"hero\">",
-        "<h1>🚀 AegisX Skills Collection</h1>",
+        "<img class=\"hero-logo\" src=\"./assets/logo.png\" alt=\"AegisX\">",
+        "<h1>AegisX Skills Collection</h1>",
         f"<p>Kumpulan <strong>{total} panduan engineering terstruktur</strong> untuk "
         "programmer, software engineer, DevOps, security, dan ML engineer.</p>",
         "<p class=\"hero-cta\">",
@@ -196,7 +197,7 @@ def build_index(manifest: dict) -> str:
         "> Dokumen ini dihasilkan secara otomatis dari "
         "[`skills/manifest.json`](./skills/manifest.json). Jangan mengedit secara manual.",
         "",
-        "## 📊 Statistik",
+        "## Statistik",
         "",
         "| Metrik | Nilai |",
         "|--------|-------|",
@@ -210,7 +211,7 @@ def build_index(manifest: dict) -> str:
         f"| DevOps/Cloud | {len(by_category.get('devops-cloud', []))} |",
         f"| Security | {len(by_category.get('security', []))} |",
         "",
-        "## 🗂️ Daftar Skill per Kategori",
+        "## Daftar Skill per Kategori",
         "",
         '<h2 id="daftar-skill" hidden></h2>',
         "<div class=\"cat-grid\">",
@@ -242,7 +243,7 @@ def build_index(manifest: dict) -> str:
     lines += [
         "---",
         "",
-        '<h2 id="jalur-belajar">🧭 Jalur Belajar</h2>',
+        '<h2 id="jalur-belajar">Jalur Belajar</h2>',
         "",
         "**Aplikasi web:** System Design → API Design → Authentication → "
         "PostgreSQL/Prisma → React/Next.js → Testing → Observability → CI/CD",
@@ -255,7 +256,7 @@ def build_index(manifest: dict) -> str:
         "",
         "---",
         "",
-        "## ❓ FAQ",
+        "## FAQ",
         "",
         "**Apakah contoh kode siap dipakai produksi?**\\n",
         "Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`) dan "

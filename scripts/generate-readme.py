@@ -42,7 +42,7 @@ def build_catalog(manifest: dict) -> str:
         by_category[key].sort(key=lambda s: s.get("id", ""))
 
     lines = [
-        "## 🗂️ Daftar Skills",
+        "## Daftar Skills",
         "",
         "Katalog ini dihasilkan secara otomatis dari "
         "[`skills/manifest.json`](./skills/manifest.json) oleh "

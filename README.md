@@ -1,6 +1,10 @@
-# 🚀 AegisX Skills Collection
+<p align="center">
+  <img src="assets/brand-reference.jpeg" alt="AegisX Research" width="140">
+</p>
 
-> Kumpulan **60 skills** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer — dibuat sebagai portfolio dan referensi praktis untuk pengembangan software modern.
+# AegisX Skills Collection
+
+> Kumpulan **60 panduan teknis terstruktur** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/aegisxresearch/AegisX-Skills)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aegisxresearch/AegisX-Skills)
@@ -11,36 +15,35 @@
 
 ---
 
-## 📖 Tentang
+## Tentang
 
-Repository ini berisi kumpulan panduan teknis terstruktur yang mencakup **Backend API, Frontend, Web Design, Machine Learning, AI Engineering, Database, Data Engineering, DevOps, Cloud, Security, Architecture, dan Programming**.
+Koleksi panduan engineering yang ditulis dengan struktur konsisten: konsep inti, contoh kode, checklist yang dapat diverifikasi, dan referensi resmi. Cakupan: Backend API, Frontend, Mobile, Machine Learning, AI Engineering, Database, Data Engineering, DevOps, Cloud, Security, dan Programming.
 
-Setiap skill berada di folder sendiri dengan struktur:
+Setiap skill berada di folder sendiri:
 
 ```text
 skills/<nama-skill>/
-├── README.md          ← Ringkasan kategori, level, dan topik
-└── <nama-skill>.md    ← Panduan lengkap, contoh, checklist, dan references
+├── README.md          Ringkasan: kategori, level, topik
+└── <nama-skill>.md    Panduan: konsep, contoh, checklist, referensi
 ```
 
-Materi ini bersifat referensi engineering. Contoh production-oriented tetap harus disesuaikan dengan stack, threat model, regulasi, dan kebutuhan sistem yang digunakan.
+Materi ini adalah referensi engineering, bukan kode siap pakai. Contoh production-oriented harus disesuaikan dengan stack, threat model, dan kebutuhan sistem Anda.
 
 ---
 
-## ✨ Fitur Utama
+## Fitur
 
-- 📚 **60+ panduan terstruktur** — tiap skill punya ringkasan, konsep inti, contoh, checklist, dan referensi
-- 🗂️ **Katalog berbasis manifest** — `skills/manifest.json` sebagai sumber kebenaran; README dan situs digenerate otomatis
-- ✅ **Validasi otomatis** — struktur, metadata, link, dan placeholder diperiksa di CI (`scripts/validate-skills.py`)
-- 🌐 **Situs dokumentasi** — dibangun dengan MkDocs Material dan di-deploy ke GitHub Pages
-- 🛡️ **Guardrail anti-AI-slop** — skill khusus untuk kualitas kode, dokumentasi, test, dan output agent
-- 🤖 **Siap untuk AI coding agent** — metadata, tags, dan format terstruktur memudahkan RAG/agent memanfaatkan konten
+- **60 panduan** di 10 kategori — tiap skill punya ringkasan, konsep inti, contoh, checklist, dan referensi
+- **Katalog dari manifest** — `skills/manifest.json` adalah satu-satunya sumber kebenaran; README dan situs digenerate otomatis
+- **Validasi otomatis di CI** — struktur, metadata, link lokal, dan placeholder diperiksa di setiap PR (`scripts/validate-skills.py`)
+- **Situs dokumentasi** — MkDocs Material, di-deploy ke GitHub Pages dari `main`
+- **Kategori anti-AI-slop** — skill untuk kualitas kode, dokumentasi, test, dependency, dan output agent
 
 ---
 
 <!-- CATALOG_START -->
 
-## 🗂️ Daftar Skills
+## Daftar Skills
 
 Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/manifest.json) oleh [`scripts/generate-readme.py`](./scripts/generate-readme.py). Jangan mengedit bagian ini secara manual.
 
@@ -209,7 +212,7 @@ https://aegisxresearch.github.io/AegisX-Skills/
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Bagaimana cara menambahkan skill baru?**
 Ikuti langkah di bagian Kontribusi: buat folder `skills/<nama-skill>/`, tambahkan `README.md` + panduan utama, daftarkan di `skills/manifest.json`, lalu jalankan `python3 scripts/generate-readme.py` dan `python3 scripts/validate-skills.py`.
@@ -248,6 +251,6 @@ MIT License — bebas digunakan untuk belajar dan pengembangan.
 
 <div align="center">
 
-**Dibuat dengan ❤️ oleh [AegisX Research](https://github.com/aegisxresearch)**
+**Dikelola oleh [AegisX Research](https://github.com/aegisxresearch)**
 
 </div>
