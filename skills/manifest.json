@@ -1,0 +1,713 @@
+{
+  "version": 1,
+  "repository": "AegisX-Skills",
+  "last_reviewed": "2026-09-08",
+  "categories": {
+    "backend-api": "Backend API dan Realtime",
+    "ai-ml": "Machine Learning dan AI",
+    "frontend": "Frontend dan Web Design",
+    "database-data": "Database dan Data Engineering",
+    "architecture-reliability": "Architecture dan Reliability",
+    "devops-cloud": "DevOps dan Cloud",
+    "security": "Security",
+    "anti-slop-quality": "Anti-AI-Slop dan Quality",
+    "programming-workflow": "Programming dan Workflow"
+  },
+  "skills": [
+    {
+      "id": "api-design-patterns",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "RESTful API design, pagination, versioning, rate limiting, filtering, dan sorting.",
+      "tags": [
+        "rest",
+        "http",
+        "pagination",
+        "versioning",
+        "rate-limiting"
+      ],
+      "overview": "skills/api-design-patterns/README.md",
+      "guide": "skills/api-design-patterns/api-design-patterns.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "auth-implementation-guide",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "JWT, OAuth2 + PKCE, session management, dan security checklist.",
+      "tags": [
+        "jwt",
+        "oauth2",
+        "pkce",
+        "session",
+        "security"
+      ],
+      "overview": "skills/auth-implementation-guide/README.md",
+      "guide": "skills/auth-implementation-guide/auth-implementation-guide.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "api-testing-strategy",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "Unit, integration, contract, dan load testing untuk API.",
+      "tags": [
+        "testing",
+        "contract-testing",
+        "e2e",
+        "load-testing"
+      ],
+      "overview": "skills/api-testing-strategy/README.md",
+      "guide": "skills/api-testing-strategy/api-testing-strategy.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "graphql-api-engineering",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "Schema, resolver, authorization, pagination, dan query-cost controls.",
+      "tags": [
+        "graphql",
+        "schema",
+        "resolver",
+        "authorization",
+        "pagination"
+      ],
+      "overview": "skills/graphql-api-engineering/README.md",
+      "guide": "skills/graphql-api-engineering/graphql-api-engineering.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "websocket-realtime",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "Connection lifecycle, reconnect, backpressure, dan fanout.",
+      "tags": [
+        "websocket",
+        "realtime",
+        "backpressure",
+        "fanout"
+      ],
+      "overview": "skills/websocket-realtime/README.md",
+      "guide": "skills/websocket-realtime/websocket-realtime.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "message-queues-events",
+      "category": "backend-api",
+      "level": "advanced",
+      "summary": "Event contracts, idempotency, retries, DLQ, dan outbox.",
+      "tags": [
+        "events",
+        "queues",
+        "idempotency",
+        "dlq",
+        "outbox"
+      ],
+      "overview": "skills/message-queues-events/README.md",
+      "guide": "skills/message-queues-events/message-queues-events.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "api-observability",
+      "category": "backend-api",
+      "level": "intermediate-advanced",
+      "summary": "Logs, metrics, traces, SLO, dan alerting untuk API.",
+      "tags": [
+        "logging",
+        "metrics",
+        "tracing",
+        "slo",
+        "alerting"
+      ],
+      "overview": "skills/api-observability/README.md",
+      "guide": "skills/api-observability/api-observability.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "rag-pipeline-architect",
+      "category": "ai-ml",
+      "level": "advanced",
+      "summary": "Chunking, embeddings, vector DB, hybrid search, dan evaluation.",
+      "tags": [
+        "rag",
+        "embeddings",
+        "vector-db",
+        "hybrid-search",
+        "evaluation"
+      ],
+      "overview": "skills/rag-pipeline-architect/README.md",
+      "guide": "skills/rag-pipeline-architect/rag-pipeline-architect.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "pytorch-training-playbook",
+      "category": "ai-ml",
+      "level": "intermediate-advanced",
+      "summary": "Training loop, mixed precision, gradient accumulation, dan debugging.",
+      "tags": [
+        "pytorch",
+        "training",
+        "mixed-precision",
+        "gradient-accumulation"
+      ],
+      "overview": "skills/pytorch-training-playbook/README.md",
+      "guide": "skills/pytorch-training-playbook/pytorch-training-playbook.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "llm-application-engineering",
+      "category": "ai-ml",
+      "level": "intermediate-advanced",
+      "summary": "Structured output, tool use, safety, cost, dan fallback.",
+      "tags": [
+        "llm",
+        "structured-output",
+        "tool-use",
+        "safety",
+        "cost"
+      ],
+      "overview": "skills/llm-application-engineering/README.md",
+      "guide": "skills/llm-application-engineering/llm-application-engineering.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "ml-evaluation-mlops",
+      "category": "ai-ml",
+      "level": "advanced",
+      "summary": "Dataset lineage, model registry, deployment, drift, dan rollback.",
+      "tags": [
+        "mlops",
+        "evaluation",
+        "model-registry",
+        "drift",
+        "rollback"
+      ],
+      "overview": "skills/ml-evaluation-mlops/README.md",
+      "guide": "skills/ml-evaluation-mlops/ml-evaluation-mlops.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "react-nextjs-patterns",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "Server Components, App Router, Server Actions, dan state management.",
+      "tags": [
+        "react",
+        "nextjs",
+        "server-components",
+        "state-management"
+      ],
+      "overview": "skills/react-nextjs-patterns/README.md",
+      "guide": "skills/react-nextjs-patterns/react-nextjs-patterns.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "design-system-builder",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "Design tokens, components, documentation, dan WCAG.",
+      "tags": [
+        "design-tokens",
+        "components",
+        "documentation",
+        "wcag"
+      ],
+      "overview": "skills/design-system-builder/README.md",
+      "guide": "skills/design-system-builder/design-system-builder.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "responsive-layout-master",
+      "category": "frontend",
+      "level": "beginner-intermediate",
+      "summary": "Mobile-first, fluid typography, container queries, dan layout.",
+      "tags": [
+        "responsive",
+        "mobile-first",
+        "css-grid",
+        "container-queries"
+      ],
+      "overview": "skills/responsive-layout-master/README.md",
+      "guide": "skills/responsive-layout-master/responsive-layout-master.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "animation-performance-guide",
+      "category": "frontend",
+      "level": "intermediate",
+      "summary": "GPU animation, will-change, dan reduced motion.",
+      "tags": [
+        "animation",
+        "gpu",
+        "will-change",
+        "reduced-motion"
+      ],
+      "overview": "skills/animation-performance-guide/README.md",
+      "guide": "skills/animation-performance-guide/animation-performance-guide.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "accessibility-wcag",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "Semantic HTML, keyboard UX, ARIA, WCAG, dan testing.",
+      "tags": [
+        "a11y",
+        "wcag",
+        "aria",
+        "keyboard",
+        "semantic-html"
+      ],
+      "overview": "skills/accessibility-wcag/README.md",
+      "guide": "skills/accessibility-wcag/accessibility-wcag.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "frontend-testing-playbook",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "Component, integration, E2E, accessibility, dan visual tests.",
+      "tags": [
+        "testing",
+        "e2e",
+        "component-testing",
+        "visual-testing"
+      ],
+      "overview": "skills/frontend-testing-playbook/README.md",
+      "guide": "skills/frontend-testing-playbook/frontend-testing-playbook.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "web-performance-core-vitals",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "LCP, INP, CLS, performance budget, dan RUM.",
+      "tags": [
+        "performance",
+        "core-web-vitals",
+        "lcp",
+        "inp",
+        "cls"
+      ],
+      "overview": "skills/web-performance-core-vitals/README.md",
+      "guide": "skills/web-performance-core-vitals/web-performance-core-vitals.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "seo-programmatic",
+      "category": "frontend",
+      "level": "intermediate-advanced",
+      "summary": "Metadata, canonical, sitemap, robots, JSON-LD, dan indexability.",
+      "tags": [
+        "seo",
+        "metadata",
+        "sitemap",
+        "json-ld",
+        "canonical"
+      ],
+      "overview": "skills/seo-programmatic/README.md",
+      "guide": "skills/seo-programmatic/seo-programmatic.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "postgresql-master",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Indexing, query optimization, partitioning, dan tuning.",
+      "tags": [
+        "postgresql",
+        "indexing",
+        "query-optimization",
+        "partitioning"
+      ],
+      "overview": "skills/postgresql-master/README.md",
+      "guide": "skills/postgresql-master/postgresql-master.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "prisma-orm-playbook",
+      "category": "database-data",
+      "level": "beginner-intermediate",
+      "summary": "Schema, relations, CRUD, transactions, dan migrations.",
+      "tags": [
+        "prisma",
+        "orm",
+        "schema",
+        "transactions",
+        "migrations"
+      ],
+      "overview": "skills/prisma-orm-playbook/README.md",
+      "guide": "skills/prisma-orm-playbook/prisma-orm-playbook.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "redis-caching",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Cache-aside, TTL, rate limiting, locks, memory, dan security.",
+      "tags": [
+        "redis",
+        "caching",
+        "ttl",
+        "rate-limiting",
+        "locks"
+      ],
+      "overview": "skills/redis-caching/README.md",
+      "guide": "skills/redis-caching/redis-caching.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "data-engineering-pipelines",
+      "category": "database-data",
+      "level": "intermediate-advanced",
+      "summary": "Batch/streaming, contracts, incremental loads, quality, dan lineage.",
+      "tags": [
+        "data-engineering",
+        "batch",
+        "streaming",
+        "data-quality",
+        "lineage"
+      ],
+      "overview": "skills/data-engineering-pipelines/README.md",
+      "guide": "skills/data-engineering-pipelines/data-engineering-pipelines.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "system-design-architect",
+      "category": "architecture-reliability",
+      "level": "advanced",
+      "summary": "Scalability, microservices, queues, circuit breaker, dan resilience.",
+      "tags": [
+        "system-design",
+        "microservices",
+        "queues",
+        "circuit-breaker",
+        "resilience"
+      ],
+      "overview": "skills/system-design-architect/README.md",
+      "guide": "skills/system-design-architect/system-design-architect.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "incident-response-sre",
+      "category": "architecture-reliability",
+      "level": "intermediate-advanced",
+      "summary": "Incident command, mitigation, runbooks, SLO, dan postmortems.",
+      "tags": [
+        "incident-response",
+        "sre",
+        "runbooks",
+        "slo",
+        "postmortem"
+      ],
+      "overview": "skills/incident-response-sre/README.md",
+      "guide": "skills/incident-response-sre/incident-response-sre.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "docker-production-checklist",
+      "category": "devops-cloud",
+      "level": "intermediate",
+      "summary": "Multi-stage builds, non-root, health checks, dan resource limits.",
+      "tags": [
+        "docker",
+        "multi-stage-build",
+        "non-root",
+        "health-check"
+      ],
+      "overview": "skills/docker-production-checklist/README.md",
+      "guide": "skills/docker-production-checklist/docker-production-checklist.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "linux-cli-mastery",
+      "category": "devops-cloud",
+      "level": "beginner-intermediate",
+      "summary": "File operations, grep/sed/awk, proses, dan Bash scripting.",
+      "tags": [
+        "linux",
+        "bash",
+        "cli",
+        "grep",
+        "awk"
+      ],
+      "overview": "skills/linux-cli-mastery/README.md",
+      "guide": "skills/linux-cli-mastery/linux-cli-mastery.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "ci-cd-production",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Immutable artifacts, deployment strategy, scanning, dan rollback.",
+      "tags": [
+        "ci-cd",
+        "artifacts",
+        "deployment",
+        "scanning",
+        "rollback"
+      ],
+      "overview": "skills/ci-cd-production/README.md",
+      "guide": "skills/ci-cd-production/ci-cd-production.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "kubernetes-production",
+      "category": "devops-cloud",
+      "level": "advanced",
+      "summary": "Probes, resources, RBAC, rollout, disruption, dan observability.",
+      "tags": [
+        "kubernetes",
+        "probes",
+        "rbac",
+        "rollout",
+        "observability"
+      ],
+      "overview": "skills/kubernetes-production/README.md",
+      "guide": "skills/kubernetes-production/kubernetes-production.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "terraform-infrastructure",
+      "category": "devops-cloud",
+      "level": "intermediate-advanced",
+      "summary": "Modules, remote state, plan review, drift, dan safe changes.",
+      "tags": [
+        "terraform",
+        "iac",
+        "modules",
+        "remote-state",
+        "drift"
+      ],
+      "overview": "skills/terraform-infrastructure/README.md",
+      "guide": "skills/terraform-infrastructure/terraform-infrastructure.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "cybersecurity-fundamentals",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "OWASP Top 10, secure coding, dan penetration testing.",
+      "tags": [
+        "security",
+        "owasp",
+        "secure-coding",
+        "pentesting"
+      ],
+      "overview": "skills/cybersecurity-fundamentals/README.md",
+      "guide": "skills/cybersecurity-fundamentals/cybersecurity-fundamentals.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "threat-modeling-stride",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "Assets, trust boundaries, STRIDE, abuse cases, dan mitigasi.",
+      "tags": [
+        "threat-modeling",
+        "stride",
+        "trust-boundaries",
+        "mitigation"
+      ],
+      "overview": "skills/threat-modeling-stride/README.md",
+      "guide": "skills/threat-modeling-stride/threat-modeling-stride.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "secrets-management",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "Secret lifecycle, rotation, vault, access control, dan incident response.",
+      "tags": [
+        "secrets",
+        "rotation",
+        "vault",
+        "access-control"
+      ],
+      "overview": "skills/secrets-management/README.md",
+      "guide": "skills/secrets-management/secrets-management.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "zero-trust-application-security",
+      "category": "security",
+      "level": "advanced",
+      "summary": "Workload identity, least privilege, segmentation, dan continuous verification.",
+      "tags": [
+        "zero-trust",
+        "identity",
+        "least-privilege",
+        "segmentation"
+      ],
+      "overview": "skills/zero-trust-application-security/README.md",
+      "guide": "skills/zero-trust-application-security/zero-trust-application-security.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "supply-chain-security",
+      "category": "security",
+      "level": "intermediate-advanced",
+      "summary": "Dependency, SBOM, provenance, signing, dan artifact verification.",
+      "tags": [
+        "supply-chain",
+        "sbom",
+        "provenance",
+        "signing",
+        "dependency"
+      ],
+      "overview": "skills/supply-chain-security/README.md",
+      "guide": "skills/supply-chain-security/supply-chain-security.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "anti-slop-code-review",
+      "category": "anti-slop-quality",
+      "level": "intermediate-advanced",
+      "summary": "Review berbasis behavior, complexity, error handling, dan evidence.",
+      "tags": [
+        "code-review",
+        "complexity",
+        "error-handling",
+        "evidence"
+      ],
+      "overview": "skills/anti-slop-code-review/README.md",
+      "guide": "skills/anti-slop-code-review/anti-slop-code-review.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "anti-slop-test-quality",
+      "category": "anti-slop-quality",
+      "level": "intermediate-advanced",
+      "summary": "Assertion kuat, failure cases, mock boundaries, dan flake prevention.",
+      "tags": [
+        "testing",
+        "assertions",
+        "mocks",
+        "flake-prevention"
+      ],
+      "overview": "skills/anti-slop-test-quality/README.md",
+      "guide": "skills/anti-slop-test-quality/anti-slop-test-quality.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "anti-hallucinated-dependencies",
+      "category": "anti-slop-quality",
+      "level": "intermediate-advanced",
+      "summary": "Verifikasi package, API, versi, lockfile, dan dependency necessity.",
+      "tags": [
+        "dependencies",
+        "verification",
+        "lockfile",
+        "hallucination"
+      ],
+      "overview": "skills/anti-hallucinated-dependencies/README.md",
+      "guide": "skills/anti-hallucinated-dependencies/anti-hallucinated-dependencies.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "anti-slop-documentation",
+      "category": "anti-slop-quality",
+      "level": "intermediate-advanced",
+      "summary": "Klaim berbukti, contoh jujur, trade-off, dan dokumentasi terawat.",
+      "tags": [
+        "documentation",
+        "evidence",
+        "trade-offs",
+        "maintainability"
+      ],
+      "overview": "skills/anti-slop-documentation/README.md",
+      "guide": "skills/anti-slop-documentation/anti-slop-documentation.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "anti-slop-agent-output",
+      "category": "anti-slop-quality",
+      "level": "intermediate-advanced",
+      "summary": "Pelaporan perubahan, test, asumsi, risiko, dan keterbatasan secara faktual.",
+      "tags": [
+        "agent-output",
+        "reporting",
+        "assumptions",
+        "risk"
+      ],
+      "overview": "skills/anti-slop-agent-output/README.md",
+      "guide": "skills/anti-slop-agent-output/anti-slop-agent-output.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "typescript-advanced-patterns",
+      "category": "programming-workflow",
+      "level": "intermediate-advanced",
+      "summary": "Generics, utility types, type guards, dan design patterns.",
+      "tags": [
+        "typescript",
+        "generics",
+        "utility-types",
+        "type-guards"
+      ],
+      "overview": "skills/typescript-advanced-patterns/README.md",
+      "guide": "skills/typescript-advanced-patterns/typescript-advanced-patterns.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    },
+    {
+      "id": "git-workflow-master",
+      "category": "programming-workflow",
+      "level": "beginner-advanced",
+      "summary": "Branching, rebase, cherry-pick, bisect, worktree, dan commits.",
+      "tags": [
+        "git",
+        "branching",
+        "rebase",
+        "bisect",
+        "worktree"
+      ],
+      "overview": "skills/git-workflow-master/README.md",
+      "guide": "skills/git-workflow-master/git-workflow-master.md",
+      "status": "maintained",
+      "last_reviewed": "2026-09-08"
+    }
+  ],
+  "review_interval_days": 180
+}

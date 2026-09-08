@@ -1,0 +1,4 @@
+# Konfigurasi actionlint untuk memvalidasi workflow GitHub Actions.
+# Lihat: https://github.com/rhysd/actionlint/blob/main/docs/config.md
+self-hosted-runner:
+  labels: []

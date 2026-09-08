@@ -1,0 +1,9 @@
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = []
+
+[lint.per-file-ignores]
+# Script entry points may keep module-level code without if __name__ guards.

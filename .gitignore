@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+
+# Build / docs output
+site/
+build/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

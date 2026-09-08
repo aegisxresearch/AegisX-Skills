@@ -1,0 +1,77 @@
+name: Skills Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint workflows & scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Lint GitHub Actions workflows
+        uses: rhysd/actionlint@v1
+        with:
+          config_file: .github/actionlint.yml
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run ruff on scripts
+        uses: astral-sh/ruff-action@v3
+        with:
+          src: scripts
+          args: check --config ruff.toml
+
+  validate:
+    name: Validate skills & catalog
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run skills validator
+        run: python3 scripts/validate-skills.py
+
+      - name: Regenerate README catalog from manifest
+        run: python3 scripts/generate-readme.py
+
+      - name: Fail if catalog is out of sync
+        run: |
+          if ! git diff --exit-code -- README.md; then
+            echo "::error::README.md katalog tidak sinkron dengan skills/manifest.json."
+            echo "Jalankan 'python3 scripts/generate-readme.py' dan commit hasilnya."
+            exit 1
+          fi
+          echo "✅ Katalog README sinkron dengan manifest."
+
+      - name: Regenerate MkDocs config and home page
+        run: python3 scripts/generate-mkdocs.py
+
+      - name: Fail if MkDocs files are out of sync
+        run: |
+          if ! git diff --exit-code -- mkdocs.yml docs_index.md; then
+            echo "::error::mkdocs.yml / docs_index.md tidak sinkron dengan skills/manifest.json."
+            echo "Jalankan 'python3 scripts/generate-mkdocs.py' dan commit hasilnya."
+            exit 1
+          fi
+          echo "✅ Konfigurasi MkDocs sinkron dengan manifest."

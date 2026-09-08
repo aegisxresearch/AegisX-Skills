@@ -1,0 +1,50 @@
+name: Skill Review Reminder
+
+on:
+  schedule:
+    # Setiap tanggal 1 bulan, jam 00:00 UTC
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  reminder:
+    name: File review reminder issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check for due skill reviews
+        id: reviews
+        continue-on-error: true
+        run: python3 scripts/check-reviews.py --output due_skills.md
+
+      - name: Create or update reminder issue
+        if: steps.reviews.outputs.due == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="$(cat due_skills.md)"
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" \
+            --search "in:title \"Skill review due\"" --state open --json number \
+            -q '.[0].number')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+            echo "Updated issue #$existing"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "Skill review due" --body "$body"
+          fi
+
+      - name: No skills due
+        if: steps.reviews.outputs.due == 'false'
+        run: echo "Semua skill masih dalam interval review."

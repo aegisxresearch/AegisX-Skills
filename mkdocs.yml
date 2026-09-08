@@ -1,0 +1,129 @@
+site_name: AegisX Skills Collection
+site_description: "Kumpulan panduan engineering terstruktur: backend, frontend, AI/ML, database, DevOps, dan security."
+site_url: https://aegisxresearch.github.io/AegisX-Skills/
+repo_url: https://github.com/aegisxresearch/AegisX-Skills
+docs_dir: .
+site_dir: site
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - toc.integrate
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+exclude_docs: |
+  /.github/
+  /.freebuff/
+  /.venv/
+  /scripts/
+  /site/
+  /AGENTS.md
+  /LICENSE
+  /requirements-docs.txt
+  /ruff.toml
+  /mkdocs.yml
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+nav:
+  - Home: docs_index.md
+  - Backend API dan Realtime:
+      - api-design-patterns: skills/api-design-patterns/README.md
+      - api-design-patterns — Panduan Lengkap: skills/api-design-patterns/api-design-patterns.md
+      - api-observability: skills/api-observability/README.md
+      - api-observability — Panduan Lengkap: skills/api-observability/api-observability.md
+      - api-testing-strategy: skills/api-testing-strategy/README.md
+      - api-testing-strategy — Panduan Lengkap: skills/api-testing-strategy/api-testing-strategy.md
+      - auth-implementation-guide: skills/auth-implementation-guide/README.md
+      - auth-implementation-guide — Panduan Lengkap: skills/auth-implementation-guide/auth-implementation-guide.md
+      - graphql-api-engineering: skills/graphql-api-engineering/README.md
+      - graphql-api-engineering — Panduan Lengkap: skills/graphql-api-engineering/graphql-api-engineering.md
+      - message-queues-events: skills/message-queues-events/README.md
+      - message-queues-events — Panduan Lengkap: skills/message-queues-events/message-queues-events.md
+      - websocket-realtime: skills/websocket-realtime/README.md
+      - websocket-realtime — Panduan Lengkap: skills/websocket-realtime/websocket-realtime.md
+  - Machine Learning dan AI:
+      - llm-application-engineering: skills/llm-application-engineering/README.md
+      - llm-application-engineering — Panduan Lengkap: skills/llm-application-engineering/llm-application-engineering.md
+      - ml-evaluation-mlops: skills/ml-evaluation-mlops/README.md
+      - ml-evaluation-mlops — Panduan Lengkap: skills/ml-evaluation-mlops/ml-evaluation-mlops.md
+      - pytorch-training-playbook: skills/pytorch-training-playbook/README.md
+      - pytorch-training-playbook — Panduan Lengkap: skills/pytorch-training-playbook/pytorch-training-playbook.md
+      - rag-pipeline-architect: skills/rag-pipeline-architect/README.md
+      - rag-pipeline-architect — Panduan Lengkap: skills/rag-pipeline-architect/rag-pipeline-architect.md
+  - Frontend dan Web Design:
+      - accessibility-wcag: skills/accessibility-wcag/README.md
+      - accessibility-wcag — Panduan Lengkap: skills/accessibility-wcag/accessibility-wcag.md
+      - animation-performance-guide: skills/animation-performance-guide/README.md
+      - animation-performance-guide — Panduan Lengkap: skills/animation-performance-guide/animation-performance-guide.md
+      - design-system-builder: skills/design-system-builder/README.md
+      - design-system-builder — Panduan Lengkap: skills/design-system-builder/design-system-builder.md
+      - frontend-testing-playbook: skills/frontend-testing-playbook/README.md
+      - frontend-testing-playbook — Panduan Lengkap: skills/frontend-testing-playbook/frontend-testing-playbook.md
+      - react-nextjs-patterns: skills/react-nextjs-patterns/README.md
+      - react-nextjs-patterns — Panduan Lengkap: skills/react-nextjs-patterns/react-nextjs-patterns.md
+      - responsive-layout-master: skills/responsive-layout-master/README.md
+      - responsive-layout-master — Panduan Lengkap: skills/responsive-layout-master/responsive-layout-master.md
+      - seo-programmatic: skills/seo-programmatic/README.md
+      - seo-programmatic — Panduan Lengkap: skills/seo-programmatic/seo-programmatic.md
+      - web-performance-core-vitals: skills/web-performance-core-vitals/README.md
+      - web-performance-core-vitals — Panduan Lengkap: skills/web-performance-core-vitals/web-performance-core-vitals.md
+  - Database dan Data Engineering:
+      - data-engineering-pipelines: skills/data-engineering-pipelines/README.md
+      - data-engineering-pipelines — Panduan Lengkap: skills/data-engineering-pipelines/data-engineering-pipelines.md
+      - postgresql-master: skills/postgresql-master/README.md
+      - postgresql-master — Panduan Lengkap: skills/postgresql-master/postgresql-master.md
+      - prisma-orm-playbook: skills/prisma-orm-playbook/README.md
+      - prisma-orm-playbook — Panduan Lengkap: skills/prisma-orm-playbook/prisma-orm-playbook.md
+      - redis-caching: skills/redis-caching/README.md
+      - redis-caching — Panduan Lengkap: skills/redis-caching/redis-caching.md
+  - Architecture dan Reliability:
+      - incident-response-sre: skills/incident-response-sre/README.md
+      - incident-response-sre — Panduan Lengkap: skills/incident-response-sre/incident-response-sre.md
+      - system-design-architect: skills/system-design-architect/README.md
+      - system-design-architect — Panduan Lengkap: skills/system-design-architect/system-design-architect.md
+  - DevOps dan Cloud:
+      - ci-cd-production: skills/ci-cd-production/README.md
+      - ci-cd-production — Panduan Lengkap: skills/ci-cd-production/ci-cd-production.md
+      - docker-production-checklist: skills/docker-production-checklist/README.md
+      - docker-production-checklist — Panduan Lengkap: skills/docker-production-checklist/docker-production-checklist.md
+      - kubernetes-production: skills/kubernetes-production/README.md
+      - kubernetes-production — Panduan Lengkap: skills/kubernetes-production/kubernetes-production.md
+      - linux-cli-mastery: skills/linux-cli-mastery/README.md
+      - linux-cli-mastery — Panduan Lengkap: skills/linux-cli-mastery/linux-cli-mastery.md
+      - terraform-infrastructure: skills/terraform-infrastructure/README.md
+      - terraform-infrastructure — Panduan Lengkap: skills/terraform-infrastructure/terraform-infrastructure.md
+  - Security:
+      - cybersecurity-fundamentals: skills/cybersecurity-fundamentals/README.md
+      - cybersecurity-fundamentals — Panduan Lengkap: skills/cybersecurity-fundamentals/cybersecurity-fundamentals.md
+      - secrets-management: skills/secrets-management/README.md
+      - secrets-management — Panduan Lengkap: skills/secrets-management/secrets-management.md
+      - supply-chain-security: skills/supply-chain-security/README.md
+      - supply-chain-security — Panduan Lengkap: skills/supply-chain-security/supply-chain-security.md
+      - threat-modeling-stride: skills/threat-modeling-stride/README.md
+      - threat-modeling-stride — Panduan Lengkap: skills/threat-modeling-stride/threat-modeling-stride.md
+      - zero-trust-application-security: skills/zero-trust-application-security/README.md
+      - zero-trust-application-security — Panduan Lengkap: skills/zero-trust-application-security/zero-trust-application-security.md
+  - Anti-AI-Slop dan Quality:
+      - anti-hallucinated-dependencies: skills/anti-hallucinated-dependencies/README.md
+      - anti-hallucinated-dependencies — Panduan Lengkap: skills/anti-hallucinated-dependencies/anti-hallucinated-dependencies.md
+      - anti-slop-agent-output: skills/anti-slop-agent-output/README.md
+      - anti-slop-agent-output — Panduan Lengkap: skills/anti-slop-agent-output/anti-slop-agent-output.md
+      - anti-slop-code-review: skills/anti-slop-code-review/README.md
+      - anti-slop-code-review — Panduan Lengkap: skills/anti-slop-code-review/anti-slop-code-review.md
+      - anti-slop-documentation: skills/anti-slop-documentation/README.md
+      - anti-slop-documentation — Panduan Lengkap: skills/anti-slop-documentation/anti-slop-documentation.md
+      - anti-slop-test-quality: skills/anti-slop-test-quality/README.md
+      - anti-slop-test-quality — Panduan Lengkap: skills/anti-slop-test-quality/anti-slop-test-quality.md
+  - Programming dan Workflow:
+      - git-workflow-master: skills/git-workflow-master/README.md
+      - git-workflow-master — Panduan Lengkap: skills/git-workflow-master/git-workflow-master.md
+      - typescript-advanced-patterns: skills/typescript-advanced-patterns/README.md
+      - typescript-advanced-patterns — Panduan Lengkap: skills/typescript-advanced-patterns/typescript-advanced-patterns.md
+  - Kontribusi: CONTRIBUTING.md
