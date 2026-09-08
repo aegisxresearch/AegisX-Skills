@@ -8,7 +8,7 @@ Panduan system design: architecture patterns, scalability, microservices, dan di
 ## ️ Architecture Patterns
 
 ### Monolith
-```
+```text
 ┌─────────────────────────────────────────┐
 │              MONOLITH                   │
 │  ┌─────────┐  ┌─────────┐  ┌─────────┐ │
@@ -24,7 +24,7 @@ Panduan system design: architecture patterns, scalability, microservices, dan di
 ```
 
 ### Microservices
-```
+```text
 ┌──────────┐  ┌──────────┐  ┌──────────┐
 │   User   │  │  Order   │  │ Product  │
 │ Service  │  │ Service  │  │ Service  │
@@ -60,7 +60,7 @@ services:
 ```
 
 ### Caching Strategy
-```
+```text
 ┌─────────┐     ┌─────────┐     ┌─────────┐
 │  Client  │────▶│  `Redis`  │────▶│Database │
 └─────────┘     │ (Cache) │     └─────────┘
@@ -72,7 +72,7 @@ services:
 ```
 
 ### Database Scaling
-```
+```text
 ┌─────────────────────────────────────────┐
 │              PRIMARY                    │
 │           (Write Operations)            │
@@ -92,7 +92,7 @@ services:
 ## Message Queue Patterns
 
 ### Event-Driven Architecture
-```
+```text
 ┌─────────┐    ┌─────────┐    ┌─────────┐
 │ Service │───▶│  Kafka  │───▶│ Service │
 │   A     │    │ (Queue) │    │   B     │
@@ -117,7 +117,7 @@ services:
 ## ️ Resilience Patterns
 
 ### Circuit Breaker
-```
+```text
 State Machine:
 CLOSED ──(failure threshold)──▶ OPEN
   ▲                              │

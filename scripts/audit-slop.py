@@ -135,12 +135,19 @@ def audit_guide(sid: str, text: str) -> list[Issue]:
         if not re.search(pattern, full_text_lower):
             issues.append(Issue("warning", 0, "missing-section", f"Section tidak ditemukan: {label}"))
 
-    # --- 2. Code fence language tags ---
-    for m in CODE_FENCE_RE.finditer(text):
-        lang = m.group(1)
-        line_no = text[: m.start()].count("\n") + 1
-        if not lang:
-            issues.append(Issue("warning", line_no, "code-no-lang", "Code fence tanpa bahasa (```)"))
+    # --- 2. Code fence language tags (opening fences only) ---
+    in_code_block = False
+    for i, line in enumerate(lines, 1):
+        if line.startswith("```"):
+            if not in_code_block:
+                # Opening fence
+                lang = line[3:].strip()
+                if not lang:
+                    issues.append(Issue("warning", i, "code-no-lang", "Code fence tanpa bahasa (```)"))
+                in_code_block = True
+            else:
+                # Closing fence
+                in_code_block = False
 
     # --- 3. Empty checklist items ---
     for m in CHECKLIST_EMPTY_RE.finditer(text):

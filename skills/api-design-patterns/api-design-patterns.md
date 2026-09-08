@@ -17,7 +17,7 @@ DELETE /users/123                 POST /deleteUser
 ```
 
 ### 2. Resource-Oriented URLs
-```
+```text
 # Nested resources (max 2 levels)
 GET /users/123/orders             ← User's orders
 GET /users/123/orders/456         ← Specific order
@@ -113,7 +113,7 @@ GET /users/123/orders/456         ← Specific order
 ## ️ Versioning Strategies
 
 ### 1. URL Path (Recommended for public API)
-```
+```http
 /api/v1/users
 /api/v2/users
 ```
@@ -124,7 +124,7 @@ Accept: application/vnd.myapi.v2+json
 ```
 
 ### 3. Query Parameter
-```
+```http
 /users?version=2
 ```
 
@@ -169,7 +169,7 @@ Retry-After: 60  ← When rate limited
 
 ## Filtering & Sorting
 
-```
+```text
 # Filtering
 GET /users?status=active&role=admin
 

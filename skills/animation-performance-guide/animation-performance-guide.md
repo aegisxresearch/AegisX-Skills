@@ -30,7 +30,7 @@ border-width: 5px;
 ```
 
 ### Why?
-```
+```text
 Transform & Opacity → Composite only (fastest)
 Width, Height, Top → Layout + Paint (slowest)
 ```
@@ -151,7 +151,7 @@ if (!prefersReducedMotion) {
 ## Performance Monitoring
 
 ### Chrome DevTools
-```
+```text
 1. Open DevTools → Performance tab
 2. Record animation
 3. Look for:

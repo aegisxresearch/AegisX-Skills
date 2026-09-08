@@ -19,7 +19,7 @@ Panduan implementasi autentikasi yang aman: JWT, OAuth2, session management, dan
 ## JWT Implementation
 
 ### Token Structure
-```
+```text
 Header.Payload.Signature
 eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.abc123signature
 ```
@@ -38,7 +38,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.abc123signature
 ```
 
 ### Token Storage
-```
+```text
 ✅ ACCESS TOKEN  → Memory (JavaScript variable)
 ✅ REFRESH TOKEN → httpOnly cookie (not accessible by JS)
 ❌ NEVER         → localStorage (XSS vulnerable)
@@ -49,7 +49,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.abc123signature
 
 ## OAuth2 Flow (Authorization Code + PKCE)
 
-```
+```text
 ┌─────────┐     ┌─────────┐     ┌─────────┐
 │  User   │────▶│  Your   │────▶│ Provider│
 │ Browser │     │  App    │     │(Google) │
@@ -122,7 +122,7 @@ is_valid = ph.verify(hashed, password)
 ```
 
 ### Session Management
-```
+```text
 ✅ Regenerate session ID after login
 ✅ Set session timeout (15-30 min idle)
 ✅ Invalidate session on logout
@@ -145,7 +145,7 @@ decode(token, key, algorithms=['HS256'])
 ```
 
 ### 2. Token Leakage
-```
+```text
 ❌ Don't put sensitive data in JWT payload (it's readable!)
 ❌ Don't log tokens
 ❌ Don't include tokens in URLs

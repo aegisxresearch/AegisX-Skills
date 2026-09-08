@@ -17,7 +17,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 📄 [`api-testing-strategy.md`](./api-testing-strategy.md) — Isi skill lengkap
 
 ## Testing Pyramid
-```
+```text
         E2E (5%)
    Integration (25%)
       Unit (70%)

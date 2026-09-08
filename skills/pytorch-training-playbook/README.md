@@ -18,7 +18,7 @@ Panduan training PyTorch dari nol sampai production: setup, training loop, debug
 📄 [`pytorch-training-playbook.md`](./pytorch-training-playbook.md) — Isi skill lengkap
 
 ## Training Flow
-```
+```text
 Data Loading → Forward Pass → Loss Calc → Backward Pass → Optimizer Step → Repeat
 ```
 

@@ -18,7 +18,7 @@ Panduan membangun Retrieval-Augmented Generation (RAG) system yang siap diuji di
 📄 [`rag-pipeline-architect.md`](./rag-pipeline-architect.md) — Isi skill lengkap
 
 ## Architecture
-```
+```text
 User Query → Query Processing → Vector Search → Reranking → LLM Generation → Response
 ```
 

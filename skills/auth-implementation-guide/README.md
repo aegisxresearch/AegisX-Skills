@@ -17,7 +17,7 @@ Panduan implementasi autentikasi yang aman: JWT, OAuth2, session management, dan
 📄 [`auth-implementation-guide.md`](./auth-implementation-guide.md) — Isi skill lengkap
 
 ## Flow Diagram
-```
+```text
 User → Login → Server validate credentials → Issue JWT → Client store token → API call with token
 ```
 

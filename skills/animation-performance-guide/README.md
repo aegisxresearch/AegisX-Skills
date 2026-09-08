@@ -17,7 +17,7 @@ Panduan animasi web yang performant: GPU-accelerated properties, will-change, re
 📄 [`animation-performance-guide.md`](./animation-performance-guide.md) — Isi skill lengkap
 
 ## Golden Rule
-```
+```text
 Transform & Opacity → Composite only (fastest ✅)
 Width, Height, Top → Layout + Paint (slowest ❌)
 ```

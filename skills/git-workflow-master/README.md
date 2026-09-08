@@ -17,7 +17,7 @@ Panduan Git advanced: branching strategies, rebase, cherry-pick, bisect, dan col
 📄 [`git-workflow-master.md`](./git-workflow-master.md) — Isi skill lengkap
 
 ## Branching Strategies
-```
+```text
 GitHub Flow: feature branch → PR → merge to main
 Trunk-Based: short-lived branches → merge frequently
 ```

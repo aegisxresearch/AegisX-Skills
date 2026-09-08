@@ -18,7 +18,7 @@ Panduan lengkap merancang RESTful API yang konsisten, didesain untuk skala yang 
 📄 [`api-design-patterns.md`](./api-design-patterns.md) — Isi skill lengkap dengan code examples
 
 ## Contoh Penggunaan
-```
+```http
 GET /api/v1/users/123/orders?status=pending&sort=-created_at&limit=20
 ```
 

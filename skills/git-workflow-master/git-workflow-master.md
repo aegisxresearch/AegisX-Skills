@@ -8,7 +8,7 @@ Panduan Git advanced: branching strategies, rebase, cherry-pick, bisect, dan col
 ## Branching Strategies
 
 ### GitHub Flow (Recommended for most teams)
-```
+```text
 main ─────────────────────────────────────────▶
   │                                        ▲
   │                                        │
@@ -17,7 +17,7 @@ main ─────────────────────────
 ```
 
 ### GitFlow (For release-based projects)
-```
+```text
 main ─────────────────────────────────────────▶
   │                                        ▲
   ├──▶ develop ────────────────────────────┤
@@ -30,7 +30,7 @@ main ─────────────────────────
 ```
 
 ### Trunk-Based Development
-```
+```text
 main ────●────●────●────●────●────●────▶
          │    │    │    │    │    │
          └─┐  └─┐  └─┐  └─┐  └─┐  └─┐
@@ -99,7 +99,7 @@ git worktree remove ../hotfix-branch
 ## Commit Message Convention
 
 ### Conventional Commits
-```
+```text
 <type>(<scope>): <description>
 
 [optional body]

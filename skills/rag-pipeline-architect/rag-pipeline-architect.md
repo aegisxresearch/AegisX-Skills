@@ -7,7 +7,7 @@ Panduan membangun Retrieval-Augmented Generation (RAG) system yang siap diuji di
 
 ## ️ RAG Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                     USER QUERY                          │
 └─────────────────────┬───────────────────────────────────┘

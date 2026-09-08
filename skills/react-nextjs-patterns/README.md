@@ -17,7 +17,7 @@ Panduan `React` & `Next.js`: hooks, Server Components, App Router, state managem
 📄 [`react-nextjs-patterns.md`](./react-nextjs-patterns.md) — Isi skill lengkap
 
 ## App Router Rule
-```
+```text
 Server Component = default (database access OK)
 'use client' = hanya jika butuh interactivity
 ```

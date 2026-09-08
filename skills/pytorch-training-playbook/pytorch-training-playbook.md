@@ -7,7 +7,7 @@ Panduan training PyTorch dari nol sampai production: setup, training loop, debug
 
 ## ️ Project Structure
 
-```
+```text
 project/
 ├── data/
 │   ├── raw/

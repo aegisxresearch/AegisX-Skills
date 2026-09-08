@@ -7,7 +7,7 @@ Panduan testing API: unit tests, integration tests, contract testing, dan load t
 
 ## Testing Pyramid
 
-```
+```text
            ╱╲
           ╱  ╲         E2E Tests
          ╱    ╲        (Few, slow, expensive)

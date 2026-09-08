@@ -18,7 +18,7 @@ Panduan membangun Design System dari nol: design tokens, components, documentati
 📄 [`design-system-builder.md`](./design-system-builder.md) — Isi skill lengkap
 
 ## Structure
-```
+```text
 Design Tokens → Primitives (Button, Input) → Compositions (Card, Modal) → Patterns (Auth, DataTable)
 ```
 

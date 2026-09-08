@@ -16,7 +16,7 @@ Panduan system design: architecture patterns, scalability, microservices, dan di
 📄 [`system-design-architect.md`](./system-design-architect.md) — Isi skill lengkap
 
 ## Circuit Breaker States
-```
+```text
 CLOSED → (failure threshold) → OPEN → (timeout) → HALF-OPEN → (success) → CLOSED
 ```
 

@@ -17,7 +17,7 @@ Panduan `Docker` untuk production: multi-stage builds, security, health checks.
 📄 [`docker-production-checklist.md`](./docker-production-checklist.md) — Isi skill lengkap
 
 ## Multi-Stage Pattern
-```
+```text
 Builder Stage (install deps) → Runtime Stage (copy only needed files) → Run as non-root
 ```
 

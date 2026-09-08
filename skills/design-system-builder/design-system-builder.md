@@ -7,7 +7,7 @@ Panduan membangun Design System dari nol: design tokens, components, documentati
 
 ## ️ Design System Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                   DESIGN TOKENS                         │
 │  (Colors, Typography, Spacing, Shadows)                 │
@@ -132,7 +132,7 @@ Trigger actions or events.
 ## Spacing System
 
 ### Base Unit (4px grid)
-```
+```text
 4px   = 1 unit  (xs)
 8px   = 2 units (sm)
 16px  = 4 units (md)
@@ -172,7 +172,7 @@ p  { margin-bottom: var(--spacing-md); }
 ```
 
 ### Color Usage
-```
+```text
 ✅ Use semantic tokens (success, error)
 ✅ Ensure 4.5:1 contrast ratio minimum
 ✅ Test with color blindness simulators
