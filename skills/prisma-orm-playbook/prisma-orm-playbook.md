@@ -210,7 +210,7 @@ const posts = await prisma.post.findMany({
 
 ### Interactive Transactions
 ```typescript
-const result = await prisma.$transaction(async (tx) => {
+const transferOutcome = await prisma.$transaction(async (tx) => {
   const user = await tx.user.create({
     data: { email: 'john@example.com' }
   })

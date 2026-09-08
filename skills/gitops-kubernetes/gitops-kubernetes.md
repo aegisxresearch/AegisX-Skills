@@ -67,7 +67,7 @@ spec:
 ## Trade-off dan Kapan Tidak Pakai
 
 - GitOps is powerful but requires discipline — every change is a PR.
-- Argo CD vs Flux — both are good, pick one and standardize.
+- `Argo CD` vs Flux — both are good, pick one and standardize.
 - Automated sync is great but can fight hotfixes — have an escape hatch.
 
 ## Referensi

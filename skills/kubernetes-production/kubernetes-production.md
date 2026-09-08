@@ -75,7 +75,7 @@ Monitor node pressure, pod restarts, pending pods, scheduling failures, resource
 
 ## Trade-off dan Kapan Tidak Pakai
 
-- Kubernetes is powerful but operationally heavy — consider managed platforms.
+- `Kubernetes` is powerful but operationally heavy — consider managed platforms.
 - Helm charts add abstraction — sometimes plain manifests are clearer.
 - Multi-node clusters need careful networking — start small.
 

@@ -20,7 +20,7 @@ Implemented:
 
 Verification:
 - exact commands or checks run
-- result of each check
+- outcome of each check
 
 Risks/limitations:
 - unverified environment behavior

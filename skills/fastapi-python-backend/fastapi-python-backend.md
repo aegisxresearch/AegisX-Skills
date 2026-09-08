@@ -88,7 +88,7 @@ async def create_user(payload: UserCreate, db: AsyncSession = Depends(get_sessio
 
 ## Trade-off dan Kapan Tidak Pakai
 
-- FastAPI is fast to build but async adds complexity — sync endpoints are fine for I/O-bound work.
+- `FastAPI` is fast to build but async adds complexity — sync endpoints are fine for I/O-bound work.
 - Pydantic v2 is faster but has migration cost — plan it.
 - Starlette's test client is sync — async tests need care.
 

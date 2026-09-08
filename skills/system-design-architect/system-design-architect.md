@@ -68,7 +68,7 @@ services:
                    │
               Cache Hit? 
               Yes → Return cached
-              No → Query DB, cache result
+              No → Query DB, cache response
 ```
 
 ### Database Scaling

@@ -51,8 +51,8 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 
 ## Trade-off dan Kapan Tidak Pakai
 
-- Prometheus is great for metrics but not logs — use Loki or ELK for logs.
-- Grafana is powerful but has a learning curve — start with templates.
+- `Prometheus` is great for metrics but not logs — use Loki or ELK for logs.
+- `Grafana` is powerful but has a learning curve — start with templates.
 - High-cardinality metrics are expensive — aggregate where possible.
 
 ## Referensi

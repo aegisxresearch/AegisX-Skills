@@ -31,10 +31,10 @@ from hypothesis import given, strategies as st
 
 @given(st.lists(st.integers()))
 def test_sort_returns_sorted(items):
-    result = sorted(items)
-    assert result == sorted(result)          # invariant: sorted
-    assert len(result) == len(items)         # invariant: elemen tidak hilang
-    assert set(result) == set(items)         # invariant: permutasi
+    sortedItems = sorted(items)
+    assert sortedItems == sorted(sortedItems)  # invariant: sorted
+    assert len(sortedItems) == len(items)      # invariant: elemen tidak hilang
+    assert set(sortedItems) == set(items)      # invariant: permutasi
 
 
 @given(st.text())

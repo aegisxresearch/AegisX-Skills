@@ -14,7 +14,7 @@ function identity<T>(arg: T): T {
   return arg
 }
 
-const result = identity<string>("hello") // string
+const greeting = identity<string>("hello") // string
 const result2 = identity(42) // number (inferred)
 
 // Generic interface
@@ -171,16 +171,16 @@ type Result<T> =
   | { success: true; data: T }
   | { success: false; error: string }
 
-function isSuccess<T>(result: Result<T>): result is { success: true; data: T } {
-  return result.success === true
+function isSuccess<T>(outcome: Result<T>): outcome is { success: true; data: T } {
+  return outcome.success === true
 }
 
 // Usage
-function handleResult(result: Result<User>) {
-  if (isSuccess(result)) {
-    console.log(result.data.name) // `TypeScript` knows data exists
+function handleOutcome(outcome: Result<User>) {
+  if (isSuccess(outcome)) {
+    console.log(outcome.data.name) // `TypeScript` knows data exists
   } else {
-    console.log(result.error)
+    console.log(outcome.error)
   }
 }
 ```python
