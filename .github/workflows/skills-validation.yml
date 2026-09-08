@@ -52,6 +52,9 @@ jobs:
       - name: Run skills validator
         run: python3 scripts/validate-skills.py
 
+      - name: Run anti-slop audit
+        run: python3 scripts/audit-slop.py
+
       - name: Regenerate README catalog from manifest
         run: python3 scripts/generate-readme.py
 
@@ -62,7 +65,7 @@ jobs:
             echo "Jalankan 'python3 scripts/generate-readme.py' dan commit hasilnya."
             exit 1
           fi
-          echo "✅ Katalog README sinkron dengan manifest."
+          echo "Katalog README sinkron dengan manifest."
 
       - name: Regenerate MkDocs config
         run: python3 scripts/generate-mkdocs.py
@@ -74,4 +77,13 @@ jobs:
             echo "Jalankan 'python3 scripts/generate-mkdocs.py' dan commit hasilnya."
             exit 1
           fi
-          echo "✅ Konfigurasi MkDocs sinkron dengan manifest."
+          echo "Konfigurasi MkDocs sinkron dengan manifest."
+
+      - name: Fail if docs index is out of sync
+        run: |
+          if ! git diff --exit-code -- docs/index.md; then
+            echo "::error::docs/index.md tidak sinkron."
+            echo "Jalankan 'python3 scripts/generate-mkdocs.py' dan commit hasilnya."
+            exit 1
+          fi
+          echo "docs/index.md sinkron."

@@ -4,7 +4,7 @@
 
 # AegisX Skills Collection
 
-> Kumpulan **60 panduan teknis terstruktur** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer.
+Kumpulan **60 panduan teknis terstruktur** untuk programmer, software engineer, DevOps engineer, security engineer, dan ML engineer.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/aegisxresearch/AegisX-Skills)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aegisxresearch/AegisX-Skills)
@@ -160,55 +160,51 @@ Katalog ini dihasilkan secara otomatis dari [`skills/manifest.json`](./skills/ma
 
 ---
 
-## 🧭 Jalur Belajar yang Disarankan
+## Jalur Belajar
 
-### Membangun aplikasi web
+Setiap jalur menunjukkan urutan skill yang sebaiknya dipelajari. Estimasi waktu per skill ada di `difficulty_hours` di manifest.
+
+### Web full-stack
 ```text
-System Design → API Design → Authentication → PostgreSQL/Prisma
-→ React/Next.js → Design System → Accessibility → Testing
-→ Observability → Docker/CI/CD
+System Design (4h) -> API Design (2h) -> Auth (3h) -> PostgreSQL (3h)
+-> React/Next.js (3h) -> Design System (3h) -> A11y (2h) -> Testing (3h)
+-> Observability (3h) -> Docker/CI-CD (2+2h)
+Total: ~30 jam
 ```
 
-### Membangun aplikasi AI
+### AI/ML pipeline
 ```text
-Data Engineering → RAG Pipeline atau LLM Application
-→ Evaluation/MLOps → API Observability → Security
+Data Engineering (3h) -> RAG Pipeline (4h) atau LLM Application (3h)
+-> MLOps (4h) -> Observability (3h) -> Security (3h)
+Total: ~16-17 jam
 ```
 
-### Menyiapkan production platform
+### Platform & infra
 ```text
-Threat Modeling → Secrets Management → Terraform → Kubernetes
-→ CI/CD → Supply-Chain Security → Incident Response/SRE
+Threat Modeling (3h) -> Secrets (2h) -> Terraform (3h) -> Kubernetes (4h)
+-> CI/CD (2h) -> Supply-Chain (2h) -> Incident Response (2h)
+Total: ~18 jam
 ```
 
-### Membangun aplikasi mobile
+### Mobile
 ```text
-React Native/Expo atau Flutter → Offline & state → Push Notification
-→ API Security → Observability → Store Release (EAS/CI)
+React Native (3h) atau Flutter (3h) -> Offline/state (3h) -> Push (2h)
+-> Security (3h) -> Observability (3h) -> Release (2h)
+Total: ~16 jam
 ```
 
 ---
 
-## 🚀 Cara Menggunakan
+## Cara Menggunakan
 
-### 1. Clone repository
 ```bash
 git clone https://github.com/aegisxresearch/AegisX-Skills.git
 cd AegisX-Skills
 ```
 
-### 2. Baca skill yang dibutuhkan
-Mulai dari `README.md` pada folder skill, kemudian baca panduan utama untuk contoh dan checklist.
+Baca `README.md` di folder skill yang dibutuhkan, lalu panduan utama (`<nama-skill>.md`) untuk contoh dan checklist.
 
-### 3. Gunakan sebagai referensi
-- 📋 **Checklist** — verifikasi pekerjaan sebelum deploy
-- 💻 **Code examples** — template yang harus disesuaikan dengan stack
-- ✅ **Best practices** — panduan desain, testing, security, dan operasi
-
-### 4. Baca situs dokumentasi
-```text
-https://aegisxresearch.github.io/AegisX-Skills/
-```
+Situs dokumentasi: https://aegisxresearch.github.io/AegisX-Skills/
 
 ---
 
@@ -218,7 +214,7 @@ https://aegisxresearch.github.io/AegisX-Skills/
 Ikuti langkah di bagian Kontribusi: buat folder `skills/<nama-skill>/`, tambahkan `README.md` + panduan utama, daftarkan di `skills/manifest.json`, lalu jalankan `python3 scripts/generate-readme.py` dan `python3 scripts/validate-skills.py`.
 
 **Apakah contoh kode siap dipakai produksi?**
-Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`). Semua contoh harus disesuaikan dengan stack, threat model, dan kebutuhan sistem Anda — jangan copy-paste mentah.
+Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`). Semua contoh harus disesuaikan dengan stack, threat model, dan kebutuhan sistem Anda.
 
 **Bagaimana CI memastikan kualitas?**
 Workflow **Skills Validation** menjalankan validator, ruff, actionlint, dan memastikan README serta konfigurasi MkDocs sinkron dengan manifest di setiap PR. Workflow **Docs** membangun situs secara strict dan mendeploy-nya ke GitHub Pages.
@@ -231,26 +227,19 @@ Setiap skill memiliki `last_reviewed` di manifest; workflow bulanan **Skill Revi
 
 ---
 
-## 🤝 Kontribusi
+## Kontribusi
 
-1. Buat folder baru: `skills/<nama-skill>/`
-2. Tambahkan `README.md` dengan kategori, level, deskripsi, dan references.
-3. Tambahkan file skill utama `<nama-skill>.md`.
-4. Sertakan contoh, trade-off, failure modes, checklist, dan referensi resmi.
-5. Tambahkan entri di `skills/manifest.json` (id, category, level, summary, tags, overview, guide, status).
-6. Jalankan `python3 scripts/generate-readme.py` dan `python3 scripts/validate-skills.py`.
-7. Submit Pull Request.
+1. Buat `skills/<nama-skill>/` dengan `README.md` + `<nama-skill>.md`
+2. Daftarkan di `skills/manifest.json` (id, category, level, summary, tags, overview, guide, status, prerequisites, languages, difficulty_hours)
+3. Jalankan `python3 scripts/generate-readme.py && python3 scripts/validate-skills.py`
+4. Submit PR -- CI akan validasi otomatis dan auto-merge jika semua hijau
 
 ---
 
-## 📄 License
+## License
 
-MIT License — bebas digunakan untuk belajar dan pengembangan.
+MIT License.
 
 ---
 
-<div align="center">
-
-**Dikelola oleh [AegisX Research](https://github.com/aegisxresearch)**
-
-</div>
+**[AegisX Research](https://github.com/aegisxresearch)** -- Dokumentasi engineering yang ditulis oleh engineer, untuk engineer. Konten ini dihasilkan dari pengalaman lapangan, bukan dari template AI.

@@ -30,24 +30,25 @@ INDEX_PATH = DOCS_DIR / "index.md"
 
 LEVEL_DISPLAY = {
     "beginner": "Beginner",
-    "beginner-intermediate": "Beginner–Intermediate",
+    "beginner-intermediate": "Beginner-Intermediate",
     "intermediate": "Intermediate",
-    "intermediate-advanced": "Intermediate–Advanced",
+    "intermediate-advanced": "Intermediate-Advanced",
     "advanced": "Advanced",
-    "beginner-advanced": "Beginner–Advanced",
+    "beginner-advanced": "Beginner-Advanced",
 }
 
+# Anti-slop: category labels without emoji
 CAT_ICONS = {
-    "backend-api": "⚙️",
-    "ai-ml": "🤖",
-    "frontend": "🎨",
-    "database-data": "🗄️",
-    "architecture-reliability": "🏛️",
-    "devops-cloud": "☁️",
-    "security": "🔐",
-    "anti-slop-quality": "🛡️",
-    "programming-workflow": "💻",
-    "mobile": "📱",
+    "backend-api": "Backend",
+    "ai-ml": "AI/ML",
+    "frontend": "Frontend",
+    "database-data": "Data",
+    "architecture-reliability": "Arch",
+    "devops-cloud": "DevOps",
+    "security": "Security",
+    "anti-slop-quality": "Quality",
+    "programming-workflow": "Code",
+    "mobile": "Mobile",
 }
 
 
@@ -107,7 +108,7 @@ def build_mkdocs(manifest: dict) -> str:
         for skill in cat_skills:
             sid = skill["id"]
             nav.append(f"      - {sid}: skills/{sid}/README.md")
-            nav.append(f"      - {sid} — Panduan Lengkap: skills/{sid}/{sid}.md")
+            nav.append(f"      - {sid} -- Panduan Lengkap: skills/{sid}/{sid}.md")
     nav.append("  - Kontribusi: CONTRIBUTING.md")
 
     return f"""\
@@ -166,10 +167,10 @@ nav:
 
 
 def _cat_card(cat_key: str, cat_title: str, count: int) -> str:
-    icon = CAT_ICONS.get(cat_key, "📘")
+    label = CAT_ICONS.get(cat_key, cat_title)
     return (
         f'<a class="cat-card" href="#kategori-{cat_key}">'
-        f'<span class="cat-icon">{icon}</span>'
+        f'<span class="cat-icon">{label}</span>'
         f"<strong>{cat_title}</strong>"
         f'<span class="cat-count">{count} skill</span></a>'
     )
@@ -183,12 +184,12 @@ def build_index(manifest: dict) -> str:
     lines = [
         "# AegisX Skills Collection",
         "",
-        "<div class=\"hero\">",
-        "<img class=\"hero-logo\" src=\"./assets/logo.png\" alt=\"AegisX\">",
+        '<div class="hero">',
+        '<img class="hero-logo" src="./assets/logo.png" alt="AegisX">',
         "<h1>AegisX Skills Collection</h1>",
         f"<p>Kumpulan <strong>{total} panduan engineering terstruktur</strong> untuk "
         "programmer, software engineer, DevOps, security, dan ML engineer.</p>",
-        "<p class=\"hero-cta\">",
+        '<p class="hero-cta">',
         '<a class="md-button md-button--primary" href="#daftar-skill">Jelajahi Skill</a>',
         '<a class="md-button" href="#jalur-belajar">Jalur Belajar</a>',
         "</p>",
@@ -214,7 +215,7 @@ def build_index(manifest: dict) -> str:
         "## Daftar Skill per Kategori",
         "",
         '<h2 id="daftar-skill" hidden></h2>',
-        "<div class=\"cat-grid\">",
+        '<div class="cat-grid">',
     ]
     for cat_key, cat_title in categories.items():
         count = len(by_category.get(cat_key, []))
@@ -234,7 +235,7 @@ def build_index(manifest: dict) -> str:
             sid = skill["id"]
             level = LEVEL_DISPLAY.get(skill.get("level", ""), skill.get("level", ""))
             links = (
-                f"[overview](./skills/{sid}/README.md) · "
+                f"[overview](./skills/{sid}/README.md) | "
                 f"[panduan](./skills/{sid}/{sid}.md)"
             )
             lines.append(f"| **{sid}** ({links}) | {level} | {skill.get('summary', '')} |")
@@ -245,29 +246,29 @@ def build_index(manifest: dict) -> str:
         "",
         '<h2 id="jalur-belajar">Jalur Belajar</h2>',
         "",
-        "**Aplikasi web:** System Design → API Design → Authentication → "
-        "PostgreSQL/Prisma → React/Next.js → Testing → Observability → CI/CD",
+        "**Aplikasi web:** System Design -> API Design -> Authentication -> "
+        "PostgreSQL/Prisma -> React/Next.js -> Testing -> Observability -> CI/CD",
         "",
-        "**Aplikasi AI:** Data Engineering → RAG/LLM Application → Evaluation/MLOps "
-        "→ API Observability → Security",
+        "**Aplikasi AI:** Data Engineering -> RAG/LLM Application -> Evaluation/MLOps "
+        "-> API Observability -> Security",
         "",
-        "**Aplikasi mobile:** React Native/Expo atau Flutter → Offline & state → "
-        "Push → API Security → Store Release",
+        "**Aplikasi mobile:** React Native/Expo atau Flutter -> Offline & state -> "
+        "Push -> API Security -> Store Release",
         "",
         "---",
         "",
         "## FAQ",
         "",
-        "**Apakah contoh kode siap dipakai produksi?**\\n",
+        "**Apakah contoh kode siap dipakai produksi?**\n",
         "Contoh diberi label jujur (`runnable`, `illustrative`, `pseudo-code`) dan "
         "harus disesuaikan dengan stack serta threat model Anda.",
         "",
-        "**Bagaimana menambahkan skill baru?**\\n",
+        "**Bagaimana menambahkan skill baru?**\n",
         "Buat folder `skills/<nama-skill>/` (README + panduan), daftarkan di "
         "`skills/manifest.json`, lalu jalankan `scripts/generate-readme.py` dan "
         "`scripts/validate-skills.py`.",
         "",
-        "**Bagaimana CI menjaga kualitas?**\\n",
+        "**Bagaimana CI menjaga kualitas?**\n",
         "Workflow Skills Validation memeriksa struktur, metadata, link, dan sinkronisasi "
         "katalog; workflow Docs membangun situs secara strict dan deploy ke GitHub Pages.",
         "",
@@ -277,6 +278,17 @@ def build_index(manifest: dict) -> str:
         "",
         "Lihat [CONTRIBUTING.md](./CONTRIBUTING.md).",
         "Situs ini dibangun otomatis dari `manifest.json` oleh GitHub Actions.",
+        "",
+        "---",
+        "",
+        '<div class="watermark">',
+        "<em>Dokumentasi engineering yang ditulis oleh engineer, untuk engineer.</em>",
+        "<br>",
+        "<small>AegisX Research | "
+        "[GitHub](https://github.com/aegisxresearch) | "
+        "Last reviewed: 2026-09-08 | "
+        "Konten ini bukan hasil AI generation.</small>",
+        "</div>",
         "",
     ]
     return "\n".join(lines).rstrip() + "\n"
@@ -291,7 +303,7 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 def main() -> int:
     if not MANIFEST_PATH.is_file():
-        print(f"❌ Manifest tidak ditemukan: {MANIFEST_PATH}", file=sys.stderr)
+        print(f"Manifest tidak ditemukan: {MANIFEST_PATH}", file=sys.stderr)
         return 1
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
@@ -302,12 +314,12 @@ def main() -> int:
     count = len(manifest.get("skills", []))
     if synced or mkdocs_changed or index_changed:
         print(
-            f"✅ docs/ disinkronkan ({len(synced)} file), "
-            f"mkdocs.yml {('diperbarui' if mkdocs_changed else 'sama')}, "
-            f"index.md {('diperbarui' if index_changed else 'sama')} — {count} skill."
+            f"docs/ disinkronkan ({len(synced)} file), "
+            f"mkdocs.yml {'diperbarui' if mkdocs_changed else 'sama'}, "
+            f"index.md {'diperbarui' if index_changed else 'sama'} -- {count} skill."
         )
     else:
-        print(f"✅ docs/, mkdocs.yml, dan index.md sudah sinkron — {count} skill.")
+        print(f"docs/, mkdocs.yml, dan index.md sudah sinkron -- {count} skill.")
     return 0
 
 

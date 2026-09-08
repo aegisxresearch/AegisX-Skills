@@ -192,6 +192,27 @@
   background: #0d0a08;
 }
 
+/* --- Watermark / attribution footer ----------------------------------- */
+.watermark {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--aegis-border);
+  color: var(--aegis-ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.watermark em {
+  font-style: italic;
+  color: var(--aegis-ink);
+}
+
+.watermark small {
+  color: var(--aegis-ink-soft);
+  font-size: 0.72rem;
+}
+
 /* --- Responsive hero ----------------------------------------------------- */
 @media (max-width: 600px) {
   .hero {

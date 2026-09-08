@@ -19,6 +19,7 @@ jobs:
       - name: Approve PR and enable auto-merge (squash)
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: |
           PR="${{ github.event.pull_request.number }}"
           gh pr review "$PR" --approve || true
