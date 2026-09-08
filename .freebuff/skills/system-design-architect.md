@@ -1,0 +1,181 @@
+# System Design Architect
+
+## Overview
+Panduan system design: architecture patterns, scalability, microservices, dan distributed systems.
+
+---
+
+## 🏗️ Architecture Patterns
+
+### Monolith
+```
+┌─────────────────────────────────────────┐
+│              MONOLITH                   │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐ │
+│  │  User   │  │  Order  │  │ Product │ │
+│  │ Service │  │ Service │  │ Service │ │
+│  └────┬────┘  └────┬────┘  └────┬────┘ │
+│       └────────────┼────────────┘      │
+│                    │                   │
+│              ┌─────┴─────┐            │
+│              │ Database  │            │
+│              └───────────┘            │
+└─────────────────────────────────────────┘
+```
+
+### Microservices
+```
+┌──────────┐  ┌──────────┐  ┌──────────┐
+│   User   │  │  Order   │  │ Product  │
+│ Service  │  │ Service  │  │ Service  │
+└────┬─────┘  └────┬─────┘  └────┬─────┘
+     │             │             │
+┌────┴─────┐  ┌────┴─────┐  ┌────┴─────┐
+│ User DB  │  │ Order DB │  │Product DB│
+└──────────┘  └──────────┘  └──────────┘
+     │             │             │
+     └─────────────┼─────────────┘
+                   │
+            ┌──────┴──────┐
+            │   API       │
+            │   Gateway   │
+            └─────────────┘
+```
+
+---
+
+## 📊 Scalability Patterns
+
+### Horizontal Scaling
+```yaml
+# Load Balancer
+services:
+  app:
+    deploy:
+      replicas: 3
+    resources:
+      limits:
+        cpus: '1.0'
+        memory: 1G
+```
+
+### Caching Strategy
+```
+┌─────────┐     ┌─────────┐     ┌─────────┐
+│  Client  │────▶│  Redis  │────▶│Database │
+└─────────┘     │ (Cache) │     └─────────┘
+                └─────────┘
+                   │
+              Cache Hit? 
+              Yes → Return cached
+              No → Query DB, cache result
+```
+
+### Database Scaling
+```
+┌─────────────────────────────────────────┐
+│              PRIMARY                    │
+│           (Write Operations)            │
+└─────────────────┬───────────────────────┘
+                  │
+        ┌─────────┼─────────┐
+        ▼         ▼         ▼
+   ┌─────────┐ ┌─────────┐ ┌─────────┐
+   │ Replica │ │ Replica │ │ Replica │
+   │   (R)   │ │   (R)   │ │   (R)   │
+   └─────────┘ └─────────┘ └─────────┘
+   (Read Operations)
+```
+
+---
+
+## 🔄 Message Queue Patterns
+
+### Event-Driven Architecture
+```
+┌─────────┐    ┌─────────┐    ┌─────────┐
+│ Service │───▶│  Kafka  │───▶│ Service │
+│   A     │    │ (Queue) │    │   B     │
+└─────────┘    └─────────┘    └─────────┘
+                   │
+                   ▼
+              ┌─────────┐
+              │ Service │
+              │   C     │
+              └─────────┘
+```
+
+### Use Cases
+| Pattern | Use Case | Example |
+|---------|----------|---------|
+| Pub/Sub | Notifications | User signs up → Send welcome email |
+| Event Sourcing | Audit logs | Order placed → Store event |
+| CQRS | Read/write separation | Heavy reads, light writes |
+
+---
+
+## 🛡️ Resilience Patterns
+
+### Circuit Breaker
+```
+State Machine:
+CLOSED ──(failure threshold)──▶ OPEN
+  ▲                              │
+  │                         (timeout)
+  │                              │
+  └──(success)──── HALF-OPEN ◀──┘
+```
+
+### Retry with Backoff
+```typescript
+async function retryWithBackoff<T>(
+  fn: () => Promise<T>,
+  maxRetries: number = 3,
+  baseDelay: number = 1000
+): Promise<T> {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      return await fn()
+    } catch (error) {
+      if (i === maxRetries - 1) throw error
+      await sleep(baseDelay * Math.pow(2, i))
+    }
+  }
+  throw new Error('Max retries exceeded')
+}
+```
+
+---
+
+## 📋 System Design Checklist
+
+### Requirements
+- [ ] Functional requirements defined
+- [ ] Non-functional requirements (latency, throughput)
+- [ ] Scale estimates (QPS, storage)
+- [ ] Data model designed
+
+### Architecture
+- [ ] Component diagram created
+- [ ] API contracts defined
+- [ ] Database schema designed
+- [ ] Caching strategy defined
+
+### Scalability
+- [ ] Horizontal scaling plan
+- [ ] Database replication strategy
+- [ ] Load balancing configured
+- [ ] CDN for static assets
+
+### Resilience
+- [ ] Circuit breakers implemented
+- [ ] Retry logic with backoff
+- [ ] Graceful degradation
+- [ ] Monitoring and alerting
+
+---
+
+## 📚 References
+- https://github.com/donnemartin/system-design-primer
+- https://microservices.io/patterns/
+- https://aws.amazon.com/architecture/
